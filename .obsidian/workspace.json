@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.docs.md",
+                "file": "Readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index.docs"
+              "title": "Readme"
             }
           }
         ]
@@ -182,7 +182,7 @@
   "active": "46a03d15d8b2d3d9",
   "lastOpenFiles": [
     "react/hooks/useMemo.md",
-    "index.docs.md",
+    "Readme.md",
     "react/hooks/useReducer.md",
     "react/hooks/useCallback.md",
     "react/hooks/useContext.md",
