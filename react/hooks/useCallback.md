@@ -1,20 +1,71 @@
-Ha um problema no react, assim dizer, que toda função, mesmo que ela seja sempre igual e use valores estáticos, ela sempre vai fazer uma re-renderização na app, então se você usar essa função em outro componente, ele provavelmente vai ser renderizado novamente, e ai foi criado o useCallback, para memorizar a função que e passada, assim, não haverá renderizares desnecessárias na app.
+# `useCallback()`
 
-```js
-React.useCallback((text) => {
-	console.log(users[0]);
-	const filteredUsers = allUsers.filter((user) => user.includes(text));
-	setUsers(filteredUsers);
-}, []);
+O hook `useCallback` retorna uma versão memorizada de uma função (callback). Ele só recria a função se uma de suas dependências mudar.
+
+Isso é útil para otimização de performance, especialmente ao passar callbacks para componentes filhos otimizados que dependem da igualdade de referência para evitar renderizações desnecessárias.
+
+Tags: #react #hooks #performance
+
+---
+
+## Sintaxe
+
+```javascript
+const memoizedCallback = useCallback(
+  () => {
+    doSomething(a, b);
+  },
+  [a, b], // Array de dependências
+);
 ```
 
-Nesse exemplo ele congela a função, então no primeiro render, ele tem a lista de usuários estática, e faz um filtro dela e salva no state de usuários, porem, temos o console.log ali, e o que vai acontecer e que como esta congelada a função, ele vai mostrar o mesmo valor nesse log em toda execução, como arrumar isso?
+- O `useCallback` retornará a mesma instância da função entre renderizações, a menos que os valores no array de dependências (`[a, b]`) mudem.
 
-```js
-...
-}, [users]);
+---
+
+## Problema Comum
+
+Quando você passa uma função para um componente filho, uma nova função é criada a cada renderização do componente pai. Se o componente filho for otimizado com `React.memo`, ele ainda assim renderizará novamente porque a função (prop) é sempre "nova".
+
+## Exemplo
+
+```jsx
+import React, { useState, useCallback } from 'react';
+import Button from './Button'; // Suponha que Button usa React.memo
+
+const ParentComponent = () => {
+  const [count, setCount] = useState(0);
+  const [theme, setTheme] = useState('light');
+
+  // Sem useCallback, uma nova handleClick é criada a cada renderização
+  // const handleClick = () => {
+  //   setCount(count + 1);
+  // };
+
+  // Com useCallback, a função só é recriada se `count` mudar.
+  // No entanto, para um simples `setCount`, a dependência não é necessária
+  // porque o React garante que `setCount` é estável.
+  const handleClick = useCallback(() => {
+    setCount(prevCount => prevCount + 1);
+  }, []); // Array de dependências vazio, a função nunca é recriada
+
+  return (
+    <div>
+      <p>Contador: {count}</p>
+      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+        Mudar Tema
+      </button>
+      <Button onClick={handleClick}>Incrementar</Button>
+    </div>
+  );
+};
 ```
 
-Apenas adicionando o state users ao array de dependência do useCallback, sempre que o valor de users se alterar, ele vai fazer essa função renderizar novamente, o que obviamente, vai fazer os componentes que dependem desse valor, renderizar também, mas isso já era o esperado. 
+Neste exemplo, mesmo que `ParentComponent` renderize novamente por causa da mudança de tema, o componente `Button` não renderizará novamente, pois a prop `onClick` (a função `handleClick`) é a mesma instância memorizada pelo `useCallback`.
 
-Ainda assim, mesmo que o componente que usa o `users` renderize novamente, os demais componentes que usam outro estado ou algo do tipo, não serão renderizados novamente, o que para nos já esta ótimo.
+---
+
+## Links Relacionados
+
+- [[useMemo]]
+- [[memo]]

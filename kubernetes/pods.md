@@ -1,61 +1,83 @@
-### **O que são Pods no Kubernetes?**
+# Pods no Kubernetes
 
-No Kubernetes, um **Pod** é a menor unidade implantável e gerenciável. Ele representa um grupo de **um ou mais containers** que compartilham o mesmo **espaço de rede** e **armazenamento**.
+Um **Pod** é a menor e mais simples unidade de implantação que pode ser criada e gerenciada no Kubernetes. Ele representa uma única instância de uma aplicação em execução no seu cluster.
 
-### **Por que o Kubernetes usa Pods em vez de containers diretamente?**
+Um Pod pode conter um ou mais contêineres, mas o caso de uso mais comum é um **único contêiner por Pod**.
 
-O Kubernetes não gerencia containers individualmente. Em vez disso, ele os encapsula dentro de Pods para fornecer funcionalidades adicionais, como:
+Tags: #kubernetes #pods #workloads #containers
 
-- Compartilhamento de **rede** (todos os containers dentro de um Pod compartilham o mesmo **IP** e podem se comunicar via `localhost`).
-    
-- Compartilhamento de **armazenamento** (Pods podem montar volumes compartilhados entre seus containers).
-    
-- **Facilidade de escalonamento** (o Kubernetes gerencia a replicação de Pods, não de containers individuais).
-    
+---
 
-### **Como funciona um Pod?**
+## O que um Pod representa?
 
-- Um Pod pode conter **um ou mais containers**.
-    
-- Se houver mais de um container, eles rodam no mesmo **espaço de rede** e podem se comunicar diretamente.
-    
-- Os Pods são **efêmeros**. Se um Pod falhar, o Kubernetes cria um novo Pod em seu lugar, mas com um IP diferente.
-    
-- O Kubernetes pode escalar a aplicação ao criar múltiplas **réplicas** de um Pod.
-    
+Um Pod encapsula:
 
-### **Tipos de Pods**
+- **Um ou mais contêineres:** (ex: Docker, containerd).
+- **Recursos de armazenamento compartilhados:** Volumes que podem ser montados pelos contêineres.
+- **Opções de rede:** Um endereço IP único no cluster, que é compartilhado por todos os contêineres dentro do Pod.
+- **Informações sobre como executar cada contêiner:** Como a versão da imagem do contêiner, portas a serem usadas, etc.
 
-1. **Single-container Pod** → O caso mais comum, onde um Pod contém apenas um container.
-    
-2. **Multi-container Pod** → Quando múltiplos containers precisam trabalhar juntos no mesmo Pod. Um container pode ser o **principal** e os outros podem ser **sidecars** (ex.: um container de logging que monitora outro container).
-    
+Todos os contêineres em um Pod compartilham o mesmo ciclo de vida e os mesmos recursos de rede (IP e portas). Eles podem se comunicar uns com os outros usando `localhost`.
 
-### **Exemplo de criação de um Pod**
+---
+
+## Por que múltiplos contêineres?
+
+Embora um contêiner por Pod seja o padrão, você pode ter múltiplos contêineres em um Pod para casos de uso específicos, geralmente quando eles estão fortemente acoplados. Este padrão é chamado de **Sidecar**.
+
+Exemplos de Sidecars:
+
+- **Logging:** Um contêiner que coleta logs do contêiner principal e os envia para um sistema centralizado.
+- **Service Mesh Proxy:** Um proxy (como Envoy ou Linkerd) que gerencia o tráfego de rede para o contêiner principal.
+- **Data Puller:** Um contêiner que busca dados ou atualizações de uma fonte externa e os disponibiliza para o contêiner principal (ex: `git sync`).
+
+---
+
+## Ciclo de Vida do Pod
+
+Pods são considerados **efêmeros** e **descartáveis**. Eles não se curam sozinhos. Se um Pod falha ou é encerrado, ele não é reiniciado. Em vez disso, controladores de nível superior, como [[Deployment]] ou [[StatefulSet]], são responsáveis por criar um novo Pod para substituí-lo.
+
+Por causa disso, você raramente cria Pods diretamente. Você quase sempre os cria e gerencia usando um controlador.
+
+### Fases do Pod
+
+- **Pending:** O Pod foi aceito pelo cluster, mas um ou mais de seus contêineres ainda não foram criados. Isso inclui o tempo para baixar a imagem.
+- **Running:** O Pod foi vinculado a um [[Nó (Node)]] e todos os seus contêineres foram criados. Pelo menos um contêiner ainda está em execução, ou está no processo de iniciar ou reiniciar.
+- **Succeeded:** Todos os contêineres no Pod foram encerrados com sucesso (código de saída 0) e não serão reiniciados. (Típico para Jobs).
+- **Failed:** Todos os contêineres no Pod foram encerrados, e pelo menos um contêiner foi encerrado com falha (código de saída diferente de 0).
+- **Unknown:** O estado do Pod não pôde ser obtido, geralmente devido a um erro de comunicação com o nó onde o Pod deveria estar.
+
+---
+
+## Exemplo de Definição de Pod (YAML)
 
 ```yaml
 apiVersion: v1
 kind: Pod
 metadata:
-  name: meu-primeiro-pod
+  name: nginx-pod-example
+  labels:
+    app: webserver
 spec:
   containers:
-    - name: meu-container
-      image: nginx
-      ports:
-        - containerPort: 80
+  - name: nginx-container
+    image: nginx:1.21.6 # Imagem do Docker Hub
+    ports:
+    - containerPort: 80 # Porta que o contêiner expõe
 ```
 
-Esse código cria um Pod chamado `meu-primeiro-pod` rodando um container com a imagem `nginx`.
-
-### **Comandos úteis do `kubectl` para Pods**
+**Como aplicar:**
 
 ```bash
-kubectl get pods          # Lista os Pods rodando no cluster
-kubectl describe pod <nome-do-pod>  # Mostra detalhes sobre um Pod específico
-kubectl delete pod <nome-do-pod>    # Deleta um Pod
-kubectl logs <nome-do-pod>          # Exibe os logs do Pod
-kubectl exec -it <nome-do-pod> -- /bin/sh  # Entra no container dentro do Pod
+kubectl apply -f nome-do-arquivo.yaml
 ```
 
-Isso deve te dar uma boa base sobre Pods! Quer que eu aprofunde algum detalhe? 🚀
+---
+
+## Links Relacionados
+
+- [[Deployment]]
+- [[StatefulSet]]
+- [[Service]]
+- [[Container Runtime]]
+- [[Padrão Sidecar]]

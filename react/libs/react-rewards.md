@@ -1,16 +1,14 @@
-**React rewards** permite adicionar micro-interações ao seu app, recompensando os usuários com confetes, emojis ou balões. Fácil de integrar e altamente personalizável!
+# React Rewards
 
-- 🌲 Tree-shakeable
-- 🕵️‍♀️ Feito com TypeScript
-- 📦 3.6kB gzipped
+`react-rewards` é uma biblioteca divertida para adicionar micro-interações e efeitos de recompensa (como confetes ou emojis explodindo) aos seus componentes React.
 
-Inspirado no [react-dom-confetti](https://github.com/simonwep/react-dom-confetti).
+É uma ótima maneira de adicionar um toque de delight e feedback positivo para as ações do usuário.
+
+Tags: #react #libs #ui #animation #micro-interactions
 
 ---
 
-## 🚀 Instalação
-
-Instale via npm ou yarn:
+## Instalação
 
 ```bash
 npm install react-rewards
@@ -20,107 +18,63 @@ yarn add react-rewards
 
 ---
 
-## ⚡ Uso
+## Como Usar
 
-### Recompensa Única
+A biblioteca fornece um hook `useReward` e um componente `Reward`.
 
-```tsx
+1.  **`useReward`:** Hook que retorna um objeto com a função `reward` e o `isAnimating`.
+2.  **`Reward`:** Componente que você posiciona no local onde a animação deve ocorrer. Ele é controlado pela função `reward`.
+
+### Exemplo
+
+```jsx
+import React from 'react';
 import { useReward } from 'react-rewards';
 
-const { reward, isAnimating } = useReward('rewardId', 'confetti');
+const LikeButton = () => {
+  const { reward, isAnimating } = useReward('like-button-reward', 'balloons');
 
-<button disabled={isAnimating} onClick={reward}>
-  <span id="rewardId" />
-  🎉 Clique em mim!
-</button>
+  const handleClick = () => {
+    reward();
+  };
+
+  return (
+    <button onClick={handleClick} disabled={isAnimating}>
+      {/* O ID 'like-button-reward' conecta o hook ao componente Reward */}
+      <span id="like-button-reward" />
+      Like!
+    </button>
+  );
+};
 ```
 
-### Múltiplas Recompensas
+**Explicação:**
+- `useReward('like-button-reward', 'balloons')`: 
+  - O primeiro argumento é um ID único que conecta o hook ao elemento que servirá de âncora para a animação.
+  - O segundo argumento é o tipo de animação (`balloons`, `confetti`, `emoji`).
+- `reward()`: Função que dispara a animação.
+- `<span id="like-button-reward" />`: Elemento âncora. A animação de balões sairá deste ponto.
 
-```tsx
-import { useReward } from 'react-rewards';
+---
 
-const { reward: confettiReward, isAnimating: isConfettiAnimating } = useReward('confettiReward', 'confetti');
-const { reward: balloonsReward, isAnimating: isBalloonsAnimating } = useReward('balloonsReward', 'balloons');
+## Tipos de Recompensa
 
-<button
-  disabled={isConfettiAnimating || isBalloonsAnimating}
-  onClick={() => {
-    confettiReward();
-    balloonsReward();
-  }}
->
-  <span id="confettiReward" />
-  <span id="balloonsReward" />
-  🎉
-</button>
+- `confetti`: Lança confetes coloridos.
+- `balloons`: Lança balões coloridos.
+- `emoji`: Lança emojis aleatórios. Você pode customizar quais emojis usar.
+
+### Exemplo com Emoji Customizado
+
+```jsx
+const { reward } = useReward('reward-id', 'emoji', { 
+  emoji: ['❤️', '👍', '🎉'] 
+});
 ```
 
 ---
 
-## 🎨 Tipos de Animação
+## Links Relacionados
 
-- **confetti** 🎊
-- **balloons** 🎈
-- **emoji** 😍
-
----
-
-## 🛠️ Opções de Configuração
-
-### Configuração do Confetti
-
-- **fps**: Frames por segundo. Padrão: `60`
-- **lifetime**: Tempo de vida dos confetes em ms. Padrão: `200`
-- **angle**: Direção inicial das partículas em graus. Padrão: `90`
-- **decay**: Quanto a velocidade diminui a cada quadro. Padrão: `0.94`
-- **spread**: Espalhamento das partículas em graus. Padrão: `45`
-- **startVelocity**: Velocidade inicial das partículas. Padrão: `35`
-- **elementCount**: Quantidade de partículas. Padrão: `50`
-- **elementSize**: Tamanho das partículas em px. Padrão: `8`
-- **zIndex**: Z-index das partículas. Padrão: `0`
-- **position**: Posição das partículas (`absolute`, `fixed`, etc.). Padrão: `fixed`
-- **colors**: Cores usadas para gerar os confetes. Padrão: `['#A45BF1', '#25C6F6', '#72F753', '#F76C88', '#F5F770']`
-- **onAnimationComplete**: Função executada quando a animação termina. Padrão: `undefined`
-
-### Configuração dos Balões
-
-- **fps**: Frames por segundo. Padrão: `60`
-- **lifetime**: Tempo de vida dos balões em ms. Padrão: `600`
-- **angle**: Direção inicial dos balões em graus. Padrão: `90`
-- **decay**: Quanto a velocidade diminui a cada quadro. Padrão: `0.999`
-- **spread**: Espalhamento dos balões em graus. Padrão: `50`
-- **startVelocity**: Velocidade inicial dos balões. Padrão: `3`
-- **elementCount**: Quantidade de balões. Padrão: `10`
-- **elementSize**: Tamanho dos balões em px. Padrão: `20`
-- **zIndex**: Z-index dos balões. Padrão: `0`
-- **position**: Posição dos balões (`absolute`, `fixed`, etc.). Padrão: `fixed`
-- **colors**: Cores usadas para gerar os balões. Padrão: `['#A45BF1', '#25C6F6', '#72F753', '#F76C88', '#F5F770']`
-- **onAnimationComplete**: Função executada quando a animação termina. Padrão: `undefined`
-
-### Configuração dos Emojis
-
-- **fps**: Frames por segundo. Padrão: `60`
-- **lifetime**: Tempo de vida dos emojis em ms. Padrão: `200`
-- **angle**: Direção inicial dos emojis em graus. Padrão: `90`
-- **decay**: Quanto a velocidade diminui a cada quadro. Padrão: `0.94`
-- **spread**: Espalhamento dos emojis em graus. Padrão: `45`
-- **rotate**: Habilitar ou desabilitar rotação dos emojis. Padrão: `true`
-- **startVelocity**: Velocidade inicial dos emojis. Padrão: `35`
-- **elementCount**: Quantidade de emojis. Padrão: `20`
-- **elementSize**: Tamanho dos emojis em px. Padrão: `25`
-- **zIndex**: Z-index dos emojis. Padrão: `0`
-- **position**: Posição dos emojis (`absolute`, `fixed`, etc.). Padrão: `fixed`
-- **emoji**: Emojis para gerar. Padrão: `['🤓', '😊', '🥳']`
-- **onAnimationComplete**: Função executada quando a animação termina. Padrão: `undefined`
-
----
-
-## 🔗 Links
-
-- **GitHub**: [react-rewards](https://github.com/catdad/react-rewards)
-- **Demo**: [react-rewards.netlify.app](https://react-rewards.netlify.app/)
-
----
-
-Divirta-se com as recompensas! 🎉
+- [[Framer Motion]] (para animações mais complexas)
+- [[UI/UX Design]]
+- [[Gamification]]

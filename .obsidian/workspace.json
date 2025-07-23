@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Readme.md",
+                "file": "react/libs/react-icons.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Readme"
+              "title": "react-icons"
             }
           }
         ]
@@ -181,10 +181,19 @@
   },
   "active": "81280240682766f0",
   "lastOpenFiles": [
-    "vim/VISUAL.md",
-    "Readme.md",
-    "react/hooks/useContext.md",
     "typescript/!.md",
+    "typescript/_index.md",
+    "Readme.md",
+    "react/_index.md",
+    "kubernetes/introducao.md",
+    "kubernetes/overview.md",
+    "kubernetes/_index.md",
+    "javascript/_index.md",
+    "javascript/string/split.md",
+    "javascript/string/endsWith.md",
+    "javascript/array/filter.md",
+    "vim/VISUAL.md",
+    "react/hooks/useContext.md",
     "react/redux/store.md",
     "react/redux/reducers.md",
     "react/redux/dispatch.md",
@@ -197,8 +206,6 @@
     "react/libs/sonner.md",
     "react/libs/react-rewards.md",
     "kubernetes/pods.md",
-    "kubernetes/overview.md",
-    "kubernetes/introducao.md",
     "kubernetes",
     "react/redux/saga",
     "typescript",
@@ -208,14 +215,7 @@
     "react/redux",
     "react/react-query",
     "Untitled",
-    "javascript/string/endsWith.md",
     "vim",
-    "javascript/array/filter.md",
-    "javascript/string/split.md",
-    "javascript/array",
-    "react/hooks/useCallback.md",
-    "react/hooks/useEffect.md",
-    "react/hooks/memo.md",
-    "react/hooks/useMemo.md"
+    "javascript/array"
   ]
 }

@@ -1,81 +1,65 @@
-# Kubernetes (K8s)
+# Overview dos Componentes do Kubernetes
 
-Kubernetes, também conhecido como **K8s**, foi criado pelo Google e é um projeto **open source** para orquestração de containers.
+Um cluster Kubernetes funcional é composto por um conjunto de componentes que se dividem em duas categorias principais: o **Control Plane** (Plano de Controle) e os **Worker Nodes** (Nós de Trabalho).
 
-## Conceitos Fundamentais
+Tags: #kubernetes #architecture #control-plane #nodes
 
-Para entender o funcionamento do Kubernetes, é essencial conhecer dois conceitos principais:
+---
 
-- **Containers**
-    
-- **Orquestração de Containers**
-    
+## Control Plane (Master Node)
 
-## Containers
+O Control Plane é o cérebro do cluster. Ele toma decisões globais sobre o cluster (como agendamento de [[pods]]) e detecta e responde a eventos do cluster. Os componentes do Control Plane podem ser executados em qualquer máquina no cluster, mas geralmente são executados juntos em uma ou mais máquinas dedicadas (Master Nodes).
 
-Um exemplo popular de tecnologia de containers é o **Docker**. Ele permite que sua aplicação seja empacotada junto com todas as suas dependências, garantindo que ela rode de forma consistente em diferentes ambientes.
+### Componentes do Control Plane
 
-### Benefícios do Docker:
+- **`kube-apiserver` (API Server):**
+  - Expõe a API do Kubernetes. É o *frontend* do Control Plane.
+  - É por onde todas as ferramentas (como `kubectl`), componentes internos e usuários interagem com o cluster.
 
-- Facilita o desenvolvimento colaborativo ao manter um ambiente uniforme.
-    
-- Evita problemas de compatibilidade de versões entre os membros do time.
-    
-- Permite criar um ambiente isolado e reproduzível.
-    
-- Funciona como uma máquina virtual leve, mas apenas para rodar sua aplicação.
-    
+- **`etcd`:**
+  - Um banco de dados chave-valor consistente e de alta disponibilidade.
+  - Usado como o armazenamento de backup para todos os dados do cluster. É a "fonte da verdade" do Kubernetes.
 
-## Kubernetes
+- **`kube-scheduler` (Scheduler):**
+  - Observa os Pods recém-criados que não têm um nó atribuído.
+  - Seleciona um nó para o Pod ser executado com base em restrições de recursos, políticas e outras diretivas.
 
-O Kubernetes é um **orquestrador de containers**, ou seja, ele gerencia múltiplos containers simultaneamente, garantindo alta disponibilidade e escalabilidade das aplicações.
+- **`kube-controller-manager` (Controller Manager):**
+  - Executa os processos de controle (controllers).
+  - Cada controller é um loop de controle que observa o estado do cluster através da API e faz as mudanças necessárias para levar o estado atual em direção ao estado desejado.
+  - Exemplos: Node Controller, Replication Controller, Endpoints Controller.
 
-### Conceitos Básicos do Kubernetes
+- **`cloud-controller-manager` (Opcional):**
+  - Executa controllers que interagem com provedores de nuvem (AWS, Azure, GCP).
+  - Separa a lógica específica da nuvem da lógica principal do Kubernetes.
 
-#### **Nodes**
+---
 
-Um **node** é uma máquina física ou virtual onde os containers são executados.
+## Worker Nodes (Nós de Trabalho)
 
-#### **Cluster**
+Os Worker Nodes são as máquinas (VMs ou físicas) que executam as cargas de trabalho (suas aplicações em contêineres).
 
-Um **cluster** é um conjunto de **nodes**, permitindo que, caso um node falhe, outro assuma suas funções para manter a aplicação funcionando.
+### Componentes do Worker Node
 
-#### **Master Node**
+- **`kubelet`:**
+  - Um agente que roda em cada nó do cluster.
+  - Garante que os contêineres descritos nos PodSpecs estejam rodando e saudáveis.
+  - Ele não gerencia contêineres que não foram criados pelo Kubernetes.
 
-O **Master Node** é o responsável por gerenciar a orquestração dos containers. Ele monitora os **worker nodes**, garantindo que, se um deles falhar, a carga seja redistribuída.
+- **`kube-proxy`:**
+  - Um proxy de rede que roda em cada nó.
+  - Mantém as regras de rede nos nós, permitindo a comunicação de rede para seus Pods a partir de sessões de rede dentro ou fora do seu cluster.
+  - É o que torna o conceito de [[Service]] possível.
 
-## Componentes do Kubernetes
+- **Container Runtime:**
+  - O software responsável por executar os contêineres.
+  - O Kubernetes suporta vários runtimes, como **Docker**, **containerd** e **CRI-O**.
 
-- **API Server** → Interface do Kubernetes para comunicação com o cluster.
-    
-- **etcd** → Banco de dados distribuído onde o estado do cluster é armazenado.
-    
-- **kubelet** → Agente que roda em cada node e garante que os containers estejam funcionando corretamente.
-    
-- **Container Runtime** → Tecnologia que roda os containers (exemplo: Docker, containerd).
-    
-- **Controller Manager** → Controla o estado desejado do cluster e mantém a integridade dos serviços.
-    
-- **Scheduler** → Responsável por alocar os containers nos nodes disponíveis.
-    
+---
 
-## Tipos de Servidores no Kubernetes
+## Links Relacionados
 
-- **Master Node** → Controla e gerencia o cluster.
-    
-- **Worker Node** → Executa os containers e aplicações.
-    
-
-## Comandos do `kubectl`
-
-O `kubectl` é a ferramenta de linha de comando para gerenciar um cluster Kubernetes.
-
-### Comandos úteis:
-
-```bash
-kubectl cluster-info # Exibe informações do cluster
-kubectl get nodes    # Lista os nodes do cluster
-```
-
-
-
+- [[introducao]]
+- [[pods]]
+- [[Service]]
+- [[kubectl]] (a ferramenta de linha de comando para interagir com o API Server)
