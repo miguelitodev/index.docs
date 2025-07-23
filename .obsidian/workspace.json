@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3760f1c2364d80fb",
+        "id": "c1c53dd1c82f2255",
         "type": "tabs",
         "children": [
           {
-            "id": "d44ee4a9d9257061",
+            "id": "81280240682766f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 375.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,23 +179,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d44ee4a9d9257061",
+  "active": "81280240682766f0",
   "lastOpenFiles": [
-    "react/hooks/useCallback.md",
+    "vim/VISUAL.md",
     "Readme.md",
+    "react/hooks/useContext.md",
+    "typescript/!.md",
+    "react/redux/store.md",
+    "react/redux/reducers.md",
+    "react/redux/dispatch.md",
+    "react/redux/actions.md",
+    "react/redux/toolkit/configureStore.md",
+    "react/redux/saga/saga.md",
+    "react/redux/saga/middleware.md",
+    "react/redux/saga/effects.md",
+    "react/libs/react-icons.md",
+    "react/libs/sonner.md",
+    "react/libs/react-rewards.md",
+    "kubernetes/pods.md",
+    "kubernetes/overview.md",
+    "kubernetes/introducao.md",
+    "kubernetes",
+    "react/redux/saga",
+    "typescript",
+    "react/libs",
+    "react/hooks/useId.md",
+    "react/redux/toolkit",
+    "react/redux",
+    "react/react-query",
+    "Untitled",
+    "javascript/string/endsWith.md",
+    "vim",
+    "javascript/array/filter.md",
+    "javascript/string/split.md",
+    "javascript/array",
+    "react/hooks/useCallback.md",
     "react/hooks/useEffect.md",
     "react/hooks/memo.md",
-    "react/hooks/useMemo.md",
-    "react/hooks/useReducer.md",
-    "react/hooks/useContext.md",
-    "react/hooks/useId.md",
-    "react/hooks/useLayoutEffect.md",
-    "react/hooks/useRef.md",
-    "react/hooks/useState.md",
-    "Hooks/React.memo.md",
-    "Hooks",
-    "react/hooks",
-    "Página1.md",
-    "react"
+    "react/hooks/useMemo.md"
   ]
 }

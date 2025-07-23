@@ -2,7 +2,6 @@
 
 Repositório dedicado ao compartilhamento dos meus estudos sobre novas tecnologias e tópicos que preciso aprender para o meu aperfeiçoamento contínuo. Todo o conteúdo é organizado e documentado utilizando o Obsidian, com uma abordagem pessoal e detalhada, refletindo meu estilo de aprendizado. Vai ter de tudo um pouco! 😄
 
----
 ## Conteúdo
 
 ### React
@@ -20,7 +19,6 @@ Repositório dedicado ao compartilhamento dos meus estudos sobre novas tecnologi
 	- **[useRef](react/hooks/useRef.md)** – Referência mutável que persiste por toda a vida do componente.
 	- **[useContext](react/hooks/useContext.md)** – Permite o acesso a valores de contexto sem precisar de "prop drilling" (passar propriedades manualmente).
 
----
 
 ## Redes Sociais & Site
 
