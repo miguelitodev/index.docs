@@ -6,8 +6,6 @@ Aqui, você encontrará um compilado organizado dos meus estudos sobre novas tec
 
 Prepare-se para mergulhar em tópicos que vão desde o básico até o avançado, com uma abordagem prática e detalhada. A ideia é ter de tudo um pouco, sempre com o objetivo de consolidar o conhecimento e facilitar a consulta futura. 😄
 
-<!-- Se quiser adicionar um GIF legal aqui, é o lugar! Ex: ![GIF animado](link-do-seu-gif.gif) -->
-
 ## 🚀 Conteúdo
 
 ### React
