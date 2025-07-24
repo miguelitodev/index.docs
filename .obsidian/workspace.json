@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c1c53dd1c82f2255",
+        "id": "75e92cacdb511416",
         "type": "tabs",
         "children": [
           {
-            "id": "81280240682766f0",
+            "id": "b9e9408744d5f5c5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "react/libs/react-icons.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "react-icons"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -179,11 +179,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "81280240682766f0",
+  "active": "b9e9408744d5f5c5",
   "lastOpenFiles": [
-    "typescript/!.md",
+    "react/libs/zod.md",
+    "react/libs/react-hook-form.md",
+    "react/hooks/useLayoutEffect.md",
+    "react/hooks/useRef.md",
+    "react/hooks/memo.md",
     "typescript/_index.md",
+    "typescript/!.md",
+    "React Hook Form with zod.md",
     "Readme.md",
+    "Morgan-Love in The Dark.md",
+    "Brits-FIRE OBSESSION.md",
+    "Carlton_et_al-Assombrando Adeline.md",
+    "Maas-A lâmina da assassina.md",
+    "react/libs/react-icons.md",
     "react/_index.md",
     "kubernetes/introducao.md",
     "kubernetes/overview.md",
@@ -196,21 +207,10 @@
     "react/hooks/useContext.md",
     "react/redux/store.md",
     "react/redux/reducers.md",
-    "react/redux/dispatch.md",
-    "react/redux/actions.md",
-    "react/redux/toolkit/configureStore.md",
-    "react/redux/saga/saga.md",
-    "react/redux/saga/middleware.md",
-    "react/redux/saga/effects.md",
-    "react/libs/react-icons.md",
-    "react/libs/sonner.md",
-    "react/libs/react-rewards.md",
-    "kubernetes/pods.md",
     "kubernetes",
     "react/redux/saga",
     "typescript",
     "react/libs",
-    "react/hooks/useId.md",
     "react/redux/toolkit",
     "react/redux",
     "react/react-query",
