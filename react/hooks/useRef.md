@@ -6,7 +6,7 @@ O hook `useRef` retorna um objeto ref mutável cuja propriedade `.current` é in
 
 1.  **Acessar elementos do DOM.**
 2.  **Manter uma variável mutável que não causa re-renderização quando alterada.**
-
+dwdw
 Tags: #react #hooks #dom #reference
 
 ---
