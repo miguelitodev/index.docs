@@ -122,110 +122,60 @@ export const List = () => {
 
 ```tsx
 import { useEffect } from "react";
-
 import { useCounterStore } from "./store";
 
-  
-
 const logCount = () => {
-
-// print do estado, nao atualizado, ou seja, nao recria a tela
-
-const count = useCounterStore.getState().count;
-
-console.log(`Current count: ${count}`);
-
+  // print do estado, nao atualizado, ou seja, nao recria a tela
+  const count = useCounterStore.getState().count;
+  console.log(`Current count: ${count}`);
 };
 
-  
-
 export function App() {
+  // uma funcao que pega o estado atualizado, mas faz reiniciar a tela
+  const count = useCounterStore((state) => state.count);
+  const increment = useCounterStore((state) => state.increment);
+  const decrement = useCounterStore((state) => state.decrement);
+  const reset = useCounterStore((state) => state.reset);
 
-// uma funcao que pega o estado atualizado, mas faz reiniciar a tela
+  useEffect(() => {
+    logCount();
+  });
 
-const count = useCounterStore((state) => state.count);
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-slate-100 to-slate-300 p-4">
+      <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-sm text-center">
+        <h1 className="text-3xl font-bold text-gray-800 mb-4">
+          Simple Counter
+        </h1>
+        <p className="text-6xl font-extrabold text-blue-500 mb-6">{count}</p>
 
-const increment = useCounterStore((state) => state.increment);
+        <div className="flex justify-center gap-4">
+          <button
+            onClick={decrement}
+            className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-xl transition"
+          >
+            -
+          </button>
 
-const decrement = useCounterStore((state) => state.decrement);
+          <button
+            onClick={reset}
+            className="bg-gray-300 hover:bg-gray-400 text-gray-800 px-5 py-2 rounded-xl transition"
+          >
+            Reset
+          </button>
 
-const reset = useCounterStore((state) => state.reset);
-
-  
-
-useEffect(() => {
-
-logCount();
-
-});
-
-  
-
-return (
-
-<div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-slate-100 to-slate-300 p-4">
-
-<div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-sm text-center">
-
-<h1 className="text-3xl font-bold text-gray-800 mb-4">
-
-Simple Counter
-
-</h1>
-
-<p className="text-6xl font-extrabold text-blue-500 mb-6">{count}</p>
-
-  
-
-<div className="flex justify-center gap-4">
-
-<button
-
-onClick={decrement}
-
-className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-xl transition"
-
->
-
--
-
-</button>
-
-  
-
-<button
-
-onClick={reset}
-
-className="bg-gray-300 hover:bg-gray-400 text-gray-800 px-5 py-2 rounded-xl transition"
-
->
-
-Reset
-
-</button>
-
-  
-
-<button
-
-onClick={increment}
-
-className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-xl transition"
-
->
-
-+
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-);
-
+          <button
+            onClick={increment}
+            className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-xl transition"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }
+
 ```
+
+
