@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "75e92cacdb511416",
+        "id": "90539eac29402442",
         "type": "tabs",
         "children": [
           {
-            "id": "b9e9408744d5f5c5",
+            "id": "d3e42a5269b51c09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "react/libs/react-hook-form.md",
+                "file": "Zustand.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "react-hook-form"
+              "title": "Zustand"
             }
           }
         ]
@@ -166,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 375.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,13 +180,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b9e9408744d5f5c5",
+  "active": "d3e42a5269b51c09",
   "lastOpenFiles": [
+    "Zustand.md",
+    "react/libs/react-hook-form.md",
     "react/_index.md",
     "Readme.md",
     "react/hooks/useRef.md",
     "react/libs/zod.md",
-    "react/libs/react-hook-form.md",
     "react/hooks/useLayoutEffect.md",
     "react/hooks/memo.md",
     "typescript/_index.md",
@@ -206,7 +208,6 @@
     "vim/VISUAL.md",
     "react/hooks/useContext.md",
     "react/redux/store.md",
-    "react/redux/reducers.md",
     "kubernetes",
     "react/redux/saga",
     "typescript",
