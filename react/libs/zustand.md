@@ -168,7 +168,7 @@ Zustand tem um ecossistema de middlewares que adicionam funcionalidades extras d
 
 TypeScript
 
-```
+```tsx
 import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
 
