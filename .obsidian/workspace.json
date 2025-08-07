@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zustand.md",
+                "file": "react/libs/zustand.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zustand"
+              "title": "zustand"
             }
           }
         ]
@@ -180,9 +180,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d3e42a5269b51c09",
+  "active": "46a03d15d8b2d3d9",
   "lastOpenFiles": [
-    "Zustand.md",
+    "react/libs/zustand.md",
     "react/libs/react-hook-form.md",
     "react/_index.md",
     "Readme.md",
