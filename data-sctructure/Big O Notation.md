@@ -4,14 +4,17 @@ Ele da a média de tempo e espaço que meu algoritmo cresce, assim você pode cl
 ## Classificações
 
 ### Constantes
-As constantes são quando, indenpendente da entrada, sempre vai executar da mesma forma, em outras palavras o tempo de resposta é sempre o mesmo.
+As constantes são quando, independente da entrada, sempre vai executar da mesma forma, em outras palavras o tempo de resposta é sempre o mesmo.
 
 #### Exemplo:
 ```ts
 function log(array) {
-	console.log(array[0]);
-	console.log(array[1]);
+	console.log(array[0]); // Big O(1)
+	console.log(array[1]); // Big O(1)
 }
+
+log([1, 2, 3, 4, 5]);
+log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 ```
 
 ![[Pasted image 20250815191324.png]]
