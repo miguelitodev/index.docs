@@ -48,7 +48,7 @@ Esse aqui pega um pouco do tipo Linear, a diferença seria que, além de, ele in
 #### Exemplo:
 ```ts
 function addAndLog(array) {
-	for (var i = 0; i < array.length; i++) { // Big O(n)
+	for (var i = 0; i < array.length; i++) { // Big O(n²)
 		for (var j = 0; i < array.length; j++) {
 			console.log(array[i] + array[j]);
 		}
