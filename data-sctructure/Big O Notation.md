@@ -23,7 +23,7 @@ log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 
 ## Linear
 
-São classificadas pelo
+São classificadas pelo número de interações que tiverem com as entradas passadas. Então o tempo de execução vai depender diretamente da quantidade de entradas passadas.
 
 ## Bibliografia
 
