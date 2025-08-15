@@ -27,9 +27,16 @@ São classificadas pelo número de interações que tiverem com as entradas pass
 
 ```ts
 function log(array) {
-	for (var i = 0; )
+	for (var i = 0; i < array.length; i++) {
+		console.log(array[i]);
+	}
 }
+
+log([1, 2, 3, 4, 5]);
+log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 ```
+
+
 
 ## Bibliografia
 
