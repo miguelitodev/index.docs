@@ -47,7 +47,9 @@ Esse aqui pega um pouco do tipo Linear, a diferença seria que, além de, ele in
 
 #### Exemplo:
 ```ts
-function 
+function addAndLog(array) {
+	for (var i = 0; i )
+}
 ```
 
 ## Bibliografia
