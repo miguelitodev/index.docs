@@ -1,6 +1,13 @@
 
 Ele da a média de tempo e espaço que meu algoritmo cresce, assim você pode classificar se tua função ou algoritmo é escalável ou não, ai tem algumas formas de representar.
 
+## Classificações
+
+### Constantes
+As constantes são quando, indenpendente da entrada, sempre vai executar da mesma forma, em outras palavras o tempo de 
+
+![[Pasted image 20250815191324.png]]
+
 
 
 
