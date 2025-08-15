@@ -42,7 +42,14 @@ Funções/Algoritmos assim são chamados de O(n), sendo n o número de vezes que
 ![[Pasted image 20250815192206.png]]
 
 ### Quadrática
-Esse aqui pega um pouco do tipo Linear, a diferença seria que, além de, ele interagir com cada entrada, ele faz u
+
+Esse aqui pega um pouco do tipo Linear, a diferença seria que, além de, ele interagir com cada entrada, ele faz uma sub interação.
+
+#### Exemplo:
+```ts
+
+```
+
 ## Bibliografia
 
 - [Big O Notation: O Pesadelo do Programador Iniciante - Lucas Montano](https://www.youtube.com/watch?v=GLKDo13920k)
