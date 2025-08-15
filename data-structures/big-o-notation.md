@@ -1,6 +1,8 @@
 
 # Big O Notation
 
+Antes de tudo, o O significa Ordem kkk
+
 Ele da a média de tempo e espaço que meu algoritmo cresce, assim você pode classificar se tua função ou algoritmo é escalável ou não, ai tem algumas formas de representar. Basicamente, serve para sabermos a ordem de crescimento do algoritmo. 
 
 A Big O notation desconsidera constantes, ou seja se tiver 2 ou mais FORs dentro da função ele vai considerar apenas 1, e na vida real devemos considerar, pois é além da parte performática e escalável, temos que pensar na complexidade do algoritmo que estamos construindo.
