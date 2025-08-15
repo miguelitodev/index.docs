@@ -1,7 +1,7 @@
 
 Ele da a média de tempo e espaço que meu algoritmo cresce, assim você pode classificar se tua função ou algoritmo é escalável ou não, ai tem algumas formas de representar.
 
-## Classificações
+## Notações
 
 ### Constantes
 As constantes são quando, independente da entrada, sempre vai executar da mesma forma, em outras palavras o tempo de resposta é sempre o mesmo.
@@ -68,9 +68,9 @@ A notação que damos para esse tipo de algoritmo seria O(n²)
 
 ![[Pasted image 20250815193435.png]]
 
-### Logaritmos
+### Logarítmica
 
-Essa 
+Essa família é considerada muito performática, pois, oferece opç
 
 
 ## Bibliografia
