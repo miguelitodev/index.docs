@@ -68,7 +68,7 @@ A notação que damos para esse tipo de algoritmo seria O(n²)
 
 ![[Pasted image 20250815193435.png]]
 
-## Logaritmos
+### Logaritmos
 
 
 
