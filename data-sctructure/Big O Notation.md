@@ -70,7 +70,7 @@ A notação que damos para esse tipo de algoritmo seria O(n²)
 
 ### Logarítmica
 
-Essa família é considerada muito performática, pois, oferece opções de interação eficientes em casos de grande 
+Essa família é considerada muito performática, pois, oferece opções de interação eficientes em casos de grandes números de entradas.
 
 
 ## Bibliografia
