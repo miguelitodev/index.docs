@@ -3,7 +3,7 @@ Ele da a média de tempo e espaço que meu algoritmo cresce, assim você pode cl
 
 ## Notações
 
-### Constantes
+### Constantes - O(1)
 As constantes são quando, independente da entrada, sempre vai executar da mesma forma, em outras palavras o tempo de resposta é sempre o mesmo.
 
 #### Exemplo:
@@ -21,7 +21,7 @@ log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 
 
 
-### Linear
+### Linear - O(n)
 
 São classificadas pelo número de interações que tiverem com as entradas passadas. Então o tempo de execução vai depender diretamente da quantidade de entradas passadas.
 #### Exemplo:
@@ -41,7 +41,7 @@ Funções/Algoritmos assim são chamados de O(n), sendo n o número de vezes que
 
 ![[Pasted image 20250815192206.png]]
 
-### Quadrática
+### Quadrática - O(n²)
 
 Esse aqui pega um pouco do tipo Linear, a diferença seria que, além de, ele interagir com cada entrada, ele faz uma sub interação.
 
@@ -68,7 +68,7 @@ A notação que damos para esse tipo de algoritmo seria O(n²)
 
 ![[Pasted image 20250815193435.png]]
 
-### Logarítmica
+### Logarítmica - O 
 
 Essa família é considerada muito performática, pois, oferece opções de interação eficientes em casos de grandes números de entradas.
 
@@ -99,6 +99,10 @@ const numbers = [1, 3, 5, 7, 9, 11, 13];
 console.log(binarySearch(numbers, 7)); // Saída: 3 (índice do número)
 
 ```
+
+Você começa com **tudo** que pode ser a resposta, olha **bem no meio** e decide se o que quer está **antes ou depois** dessa posição. Assim, a cada passo você **descarta metade** das opções e só continua olhando na metade que ainda faz sentido.  
+
+Repete até encontrar o que procura. Esse “descartar metade” a cada passo é o que torna a busca **O(log n)** — poucas comparações mesmo com muitos elementos.
 
 ## Bibliografia
 
