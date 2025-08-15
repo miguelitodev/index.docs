@@ -27,7 +27,7 @@ São classificadas pelo número de interações que tiverem com as entradas pass
 
 ```ts
 function log(array) {
-	for (var i = 0; i < array.length; i++) {
+	for (var i = 0; i < array.length; i++) { // Big O(n)
 		console.log(array[i]);
 	}
 }
@@ -36,7 +36,7 @@ log([1, 2, 3, 4, 5]);
 log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 ```
 
-
+Funções/Algoritmos assim são chamados de O(n), sendo n o número de vezes que ele é chamado, 
 
 ## Bibliografia
 
