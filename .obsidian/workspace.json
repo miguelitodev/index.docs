@@ -11,14 +11,12 @@
             "id": "f1281f31cc1f4d23",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "data-structures/Big O Notation.md",
-                "mode": "source",
-                "source": false
+                "file": "assets/Pasted image 20250815191324.png"
               },
-              "icon": "lucide-file",
-              "title": "Big O Notation"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250815191324"
             }
           }
         ]
@@ -181,8 +179,8 @@
   },
   "active": "f1281f31cc1f4d23",
   "lastOpenFiles": [
-    "data-sctructure/Big O Notation.md",
     "data-structures/Big O Notation.md",
+    "data-sctructure/Big O Notation.md",
     "data-structures",
     "assets/Pasted image 20250815195914.png",
     "assets/Pasted image 20250815195256.png",
