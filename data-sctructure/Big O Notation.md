@@ -72,6 +72,33 @@ A notação que damos para esse tipo de algoritmo seria O(n²)
 
 Essa família é considerada muito performática, pois, oferece opções de interação eficientes em casos de grandes números de entradas.
 
+#### Exemplo:
+```ts
+function binarySearch(arr: number[], target: number): number {
+  let left = 0;
+  let right = arr.length - 1;
+
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+
+    if (arr[mid] === target) {
+      return mid; // encontrado
+    }
+    if (arr[mid] < target) {
+      left = mid + 1; // procura na metade direita
+    } else {
+      right = mid - 1; // procura na metade esquerda
+    }
+  }
+
+  return -1; // não encontrado
+}
+
+// Exemplo de uso:
+const numbers = [1, 3, 5, 7, 9, 11, 13];
+console.log(binarySearch(numbers, 7)); // Saída: 3 (índice do número)
+
+```
 
 ## Bibliografia
 
