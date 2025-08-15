@@ -60,6 +60,7 @@ addAndLog(['A', 'B', 'C', 'D']); // 16 pares
 addAndLog(['A', 'B', 'C', 'D', 'E']); // 16 pares
 ```
 
+Nessa função acima, a gente gera os pares baseado em cada campo do array, então apesar de finitas p
 ## Bibliografia
 
 - [Big O Notation: O Pesadelo do Programador Iniciante - Lucas Montano](https://www.youtube.com/watch?v=GLKDo13920k)
