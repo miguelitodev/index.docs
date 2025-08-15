@@ -21,8 +21,11 @@ log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 
 
 
+## Linear
 
-#### Bibliografia
+São classificadas pelo
+
+## Bibliografia
 
 - [Big O Notation: O Pesadelo do Programador Iniciante - Lucas Montano](https://www.youtube.com/watch?v=GLKDo13920k)
 - [O que é Big O Notation? - Matheus Kielkowski](https://medium.com/linkapi-solutions/o-que-%C3%A9-big-o-notation-32f171e4a045)
