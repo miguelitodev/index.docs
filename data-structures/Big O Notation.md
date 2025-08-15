@@ -1,9 +1,8 @@
-
 Ele da a média de tempo e espaço que meu algoritmo cresce, assim você pode classificar se tua função ou algoritmo é escalável ou não, ai tem algumas formas de representar. Basicamente, serve para sabermos a ordem de crescimento do algoritmo. 
 
 A Big O notation desconsidera constantes, ou seja se tiver 2 ou mais FORs dentro da função ele vai considerar apenas 1, e na vida real devemos considerar, pois é além da parte performática e escalável, temos que pensar na complexidade do algoritmo que estamos construindo.
 
-![[Pasted image 20250815195914.png]]
+![[assets/Pasted image 20250815195914.png]]
 
 ## Notações
 
@@ -21,7 +20,7 @@ log([1, 2, 3, 4, 5]);
 log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 ```
 
-![[Pasted image 20250815191324.png]]
+![[assets/Pasted image 20250815191324.png]]
 
 
 
@@ -43,7 +42,7 @@ log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 
 Funções/Algoritmos assim são chamados de O(n), sendo n o número de vezes que ele é chamado, o que pode ser muitas vezes.
 
-![[Pasted image 20250815192206.png]]
+![[assets/Pasted image 20250815192206.png]]
 
 ### Quadrática - O(n²)
 
@@ -70,7 +69,7 @@ Esse tipo de algoritmo geralmente não é interessante pois não é performátic
 
 A notação que damos para esse tipo de algoritmo seria O(n²)
 
-![[Pasted image 20250815193435.png]]
+![[assets/Pasted image 20250815193435.png]]
 
 ### Logarítmica - O(log n)
 
@@ -108,7 +107,7 @@ Você começa com **tudo** que pode ser a resposta, olha **bem no meio** e decid
 
 Repete até encontrar o que procura. Esse “descartar metade” a cada passo é o que torna a busca **O(log n)** — poucas comparações mesmo com muitos elementos.
 
-![[Pasted image 20250815195256.png]]
+![[assets/Pasted image 20250815195256.png]]
 ## Bibliografia
 
 - [Big O Notation: O Pesadelo do Programador Iniciante - Lucas Montano](https://www.youtube.com/watch?v=GLKDo13920k)
