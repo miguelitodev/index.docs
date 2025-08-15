@@ -25,6 +25,8 @@ log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 
 São classificadas pelo número de interações que tiverem com as entradas passadas. Então o tempo de execução vai depender diretamente da quantidade de entradas passadas.
 
+### Exemplo:
+
 ```ts
 function log(array) {
 	for (var i = 0; i < array.length; i++) { // Big O(n)
@@ -36,7 +38,9 @@ log([1, 2, 3, 4, 5]);
 log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 ```
 
-Funções/Algoritmos assim são chamados de O(n), sendo n o número de vezes que ele é chamado, 
+Funções/Algoritmos assim são chamados de O(n), sendo n o número de vezes que ele é chamado, o que pode ser muitas vezes.
+
+![[Pasted image 20250815192206.png]]
 
 ## Bibliografia
 
