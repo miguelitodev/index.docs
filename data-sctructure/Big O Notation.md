@@ -70,6 +70,7 @@ A notação que damos para esse tipo de algoritmo seria O(n²)
 
 ### Logaritmos
 
+Essa 
 
 
 ## Bibliografia
