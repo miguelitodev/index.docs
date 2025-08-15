@@ -11,14 +11,10 @@
             "id": "f1281f31cc1f4d23",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "data-sctructure/Big O Notation.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Big O Notation"
+              "title": "New tab"
             }
           }
         ]
@@ -181,12 +177,20 @@
   },
   "active": "f1281f31cc1f4d23",
   "lastOpenFiles": [
+    "data-sctructure/Big O Notation.md",
+    "data-structures/Big O Notation.md",
+    "data-structures",
+    "assets/Pasted image 20250815195914.png",
+    "assets/Pasted image 20250815195256.png",
+    "assets/Pasted image 20250815193435.png",
+    "assets/Pasted image 20250815192206.png",
+    "assets/Pasted image 20250815191324.png",
+    "assets",
     "Pasted image 20250815195914.png",
     "Pasted image 20250815195256.png",
     "Pasted image 20250815193435.png",
     "Pasted image 20250815192206.png",
     "Pasted image 20250815191324.png",
-    "data-sctructure/Big O Notation.md",
     "data-sctructure",
     "react/libs/zustand.md",
     "react/libs/react-rewards.md",
@@ -218,8 +222,6 @@
     "react/libs",
     "react/redux/toolkit",
     "react/redux",
-    "react/react-query",
-    "vim",
-    "javascript/array"
+    "react/react-query"
   ]
 }
