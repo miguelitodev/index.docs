@@ -11,12 +11,14 @@
             "id": "f1281f31cc1f4d23",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/data-structures/big-o-notation/quadratic-o-n2.png"
+                "file": "data-structures/big-o-notation.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "quadratic-o-n2"
+              "icon": "lucide-file",
+              "title": "big-o-notation"
             }
           }
         ]
@@ -179,6 +181,7 @@
   },
   "active": "f1281f31cc1f4d23",
   "lastOpenFiles": [
+    "assets/data-structures/big-o-notation/quadratic-o-n2.png",
     "assets/data-structures/big-o-notation/logarithmic-o-log-n.png",
     "assets/data-structures/big-o-notation/linear-o-n.png",
     "assets/data-structures/big-o-notation/constant-o-1.png",
@@ -186,7 +189,6 @@
     "data-structures/big-o-notation.md",
     "data-structures/Big O Notation.md",
     "assets/Pasted image 20250815191324.png",
-    "assets/data-structures/big-o-notation/quadratic-o-n2.png",
     "assets/data-structures/big-o-notation",
     "assets/data-structures",
     "data-sctructure/Big O Notation.md",
