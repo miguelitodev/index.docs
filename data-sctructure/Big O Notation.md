@@ -62,7 +62,13 @@ addAndLog(['A', 'B', 'C', 'D', 'E']); // 16 pares
 
 Nessa função acima, a gente gera os pares baseado em cada campo do array, então apesar de finitas possibilidades, são diversas interações, pois para cada campo que adicionarmos ao array o tempo de execução aumenta de forma Quadrática
 
-Esse tipo de algoritmo geralmente não 
+Esse tipo de algoritmo geralmente não é interessante pois não é performático por conta do grande volume de entrada de dados.
+
+A notação que damos para esse tipo de algoritmo seria O(n²)
+
+![[Pasted image 20250815193435.png]]
+
+
 ## Bibliografia
 
 - [Big O Notation: O Pesadelo do Programador Iniciante - Lucas Montano](https://www.youtube.com/watch?v=GLKDo13920k)
