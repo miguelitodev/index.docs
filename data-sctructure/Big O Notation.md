@@ -68,7 +68,7 @@ A notação que damos para esse tipo de algoritmo seria O(n²)
 
 ![[Pasted image 20250815193435.png]]
 
-### Logarítmica - O 
+### Logarítmica - O(log n)
 
 Essa família é considerada muito performática, pois, oferece opções de interação eficientes em casos de grandes números de entradas.
 
@@ -104,6 +104,7 @@ Você começa com **tudo** que pode ser a resposta, olha **bem no meio** e decid
 
 Repete até encontrar o que procura. Esse “descartar metade” a cada passo é o que torna a busca **O(log n)** — poucas comparações mesmo com muitos elementos.
 
+![[Pasted image 20250815195256.png]]
 ## Bibliografia
 
 - [Big O Notation: O Pesadelo do Programador Iniciante - Lucas Montano](https://www.youtube.com/watch?v=GLKDo13920k)
