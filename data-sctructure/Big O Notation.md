@@ -48,8 +48,14 @@ Esse aqui pega um pouco do tipo Linear, a diferença seria que, além de, ele in
 #### Exemplo:
 ```ts
 function addAndLog(array) {
-	for (var i = 0; i )
+	for (var i = 0; i < array.length; i++) {
+		for (var j = 0; i < array.length; j++) {
+			console.log(array[i] + array[j]);
+		}
+	}
 }
+
+addAnd
 ```
 
 ## Bibliografia
