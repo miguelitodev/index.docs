@@ -25,6 +25,12 @@ log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 
 São classificadas pelo número de interações que tiverem com as entradas passadas. Então o tempo de execução vai depender diretamente da quantidade de entradas passadas.
 
+```ts
+function log(array) {
+	for (var i = 0; )
+}
+```
+
 ## Bibliografia
 
 - [Big O Notation: O Pesadelo do Programador Iniciante - Lucas Montano](https://www.youtube.com/watch?v=GLKDo13920k)
