@@ -1,5 +1,5 @@
 
-Ele da a média de tempo e espaço que meu algoritmo cresce, assim você pode classificar se tua função ou algoritmo é escalável ou não, ai tem algumas formas de representar.
+Ele da a média de tempo e espaço que meu algoritmo cresce, assim você pode classificar se tua função ou algoritmo é escalável ou não, ai tem algumas formas de representar. Basicamente, serve para sabermos a ordem de crescimento do algoritmo. A Big O notari
 
 ![[Pasted image 20250815195914.png]]
 
