@@ -47,7 +47,7 @@ Esse aqui pega um pouco do tipo Linear, a diferença seria que, além de, ele in
 
 #### Exemplo:
 ```ts
-
+function 
 ```
 
 ## Bibliografia
