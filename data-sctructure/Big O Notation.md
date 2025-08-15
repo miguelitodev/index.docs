@@ -21,11 +21,10 @@ log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 
 
 
-## Linear
+### Linear
 
 São classificadas pelo número de interações que tiverem com as entradas passadas. Então o tempo de execução vai depender diretamente da quantidade de entradas passadas.
-
-### Exemplo:
+#### Exemplo:
 
 ```ts
 function log(array) {
@@ -42,6 +41,8 @@ Funções/Algoritmos assim são chamados de O(n), sendo n o número de vezes que
 
 ![[Pasted image 20250815192206.png]]
 
+### Quadrática
+Esse aqui pega um pouco do tipo Linear, a diferença seria que, além de, ele interagir com cada entrada, ele faz u
 ## Bibliografia
 
 - [Big O Notation: O Pesadelo do Programador Iniciante - Lucas Montano](https://www.youtube.com/watch?v=GLKDo13920k)
