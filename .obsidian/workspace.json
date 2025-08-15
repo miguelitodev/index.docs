@@ -11,12 +11,14 @@
             "id": "f1281f31cc1f4d23",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/Pasted image 20250815191324.png"
+                "file": "data-structures/big-o-notation.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250815191324"
+              "icon": "lucide-file",
+              "title": "big-o-notation"
             }
           }
         ]
@@ -180,19 +182,22 @@
   "active": "f1281f31cc1f4d23",
   "lastOpenFiles": [
     "data-structures/Big O Notation.md",
+    "data-structures/big-o-notation.md",
+    "assets/Pasted image 20250815191324.png",
+    "assets/data-structures/big-o-notation/logarithmic-o-log-n.png",
+    "assets/data-structures/big-o-notation/quadratic-o-n2.png",
+    "assets/data-structures/big-o-notation/linear-o-n.png",
+    "assets/data-structures/big-o-notation/constant-o-1.png",
+    "assets/data-structures/big-o-notation/big-o-notation-chart.png",
+    "assets/data-structures/big-o-notation",
+    "assets/data-structures",
     "data-sctructure/Big O Notation.md",
     "data-structures",
     "assets/Pasted image 20250815195914.png",
     "assets/Pasted image 20250815195256.png",
     "assets/Pasted image 20250815193435.png",
     "assets/Pasted image 20250815192206.png",
-    "assets/Pasted image 20250815191324.png",
     "assets",
-    "Pasted image 20250815195914.png",
-    "Pasted image 20250815195256.png",
-    "Pasted image 20250815193435.png",
-    "Pasted image 20250815192206.png",
-    "Pasted image 20250815191324.png",
     "data-sctructure",
     "react/libs/zustand.md",
     "react/libs/react-rewards.md",
@@ -217,13 +222,10 @@
     "javascript/_index.md",
     "javascript/string/split.md",
     "javascript/string/endsWith.md",
-    "javascript/array/filter.md",
     "kubernetes",
     "react/redux/saga",
     "typescript",
     "react/libs",
-    "react/redux/toolkit",
-    "react/redux",
-    "react/react-query"
+    "react/redux/toolkit"
   ]
 }
