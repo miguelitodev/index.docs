@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "28c5dc1f9b30e231",
+        "id": "90539eac29402442",
         "type": "tabs",
         "children": [
           {
-            "id": "f1281f31cc1f4d23",
+            "id": "d3e42a5269b51c09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "data-structures/big-o-notation.md",
+                "file": "react/libs/zustand.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "big-o-notation"
+              "title": "zustand"
             }
           }
         ]
@@ -179,29 +179,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f1281f31cc1f4d23",
+  "active": "d3e42a5269b51c09",
   "lastOpenFiles": [
+    "data-structures/big-o-notation.md",
+    "data-structures",
     "assets/data-structures/big-o-notation/quadratic-o-n2.png",
     "assets/data-structures/big-o-notation/logarithmic-o-log-n.png",
     "assets/data-structures/big-o-notation/linear-o-n.png",
     "assets/data-structures/big-o-notation/constant-o-1.png",
     "assets/data-structures/big-o-notation/big-o-notation-chart.png",
-    "data-structures/big-o-notation.md",
-    "data-structures/Big O Notation.md",
-    "assets/Pasted image 20250815191324.png",
     "assets/data-structures/big-o-notation",
     "assets/data-structures",
-    "data-sctructure/Big O Notation.md",
-    "data-structures",
-    "assets/Pasted image 20250815195914.png",
-    "assets/Pasted image 20250815195256.png",
-    "assets/Pasted image 20250815193435.png",
-    "assets/Pasted image 20250815192206.png",
     "assets",
-    "data-sctructure",
-    "react/libs/zustand.md",
     "react/libs/react-rewards.md",
     "react/libs/zod.md",
+    "react/libs/zustand.md",
     "react/libs/react-hook-form.md",
     "react/_index.md",
     "Readme.md",
@@ -221,10 +213,14 @@
     "kubernetes/_index.md",
     "javascript/_index.md",
     "javascript/string/split.md",
+    "javascript/string/endsWith.md",
+    "javascript/array/filter.md",
+    "vim/VISUAL.md",
     "kubernetes",
     "react/redux/saga",
     "typescript",
     "react/libs",
-    "react/redux/toolkit"
+    "react/redux/toolkit",
+    "react/redux"
   ]
 }
