@@ -67,6 +67,7 @@ Funções/Algoritmos assim são chamados de O(n), sendo n o número de vezes que
 
 Esse aqui pega um pouco do tipo Linear, a diferença seria que, além de, ele interagir com cada entrada, ele faz uma sub interação.
 
+No quesito complexidade de tempo, ele vai exigir mais tempo de processamento, ja que vai ter que fazer interação de um array com o outro.
 #### Exemplo:
 ```ts
 function addAndLog(array) {
