@@ -145,4 +145,4 @@ Repete até encontrar o que procura. Esse “descartar metade” a cada passo é
 - [Big-O Notation in 100 Seconds - Fireship]
 - [O que significa Big O(n)???? - Lucas Montano](https://www.youtube.com/shorts/aPhU-ZUYpeo?feature=share)
 - [Explicando Big O - spacecoding](https://www.youtube.com/shorts/CyL-3ZhCwGo?feature=share)
-- 
+- [Binary Search em 5 minutos - ](https://youtu.be/zSyV0VaTF3k)
