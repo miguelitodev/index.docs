@@ -13,7 +13,7 @@ A Big O notation desconsidera constantes, ou seja se tiver 2 ou mais FORs dentro
 - Espaço
 		- É eficiencia do algoritmo na memória RAM
 - Tempo
-	- É a eficiencia do 
+	- É a eficiencia do algoritmo no processador
 
 ## Notações
 
@@ -124,3 +124,4 @@ Repete até encontrar o que procura. Esse “descartar metade” a cada passo é
 - [Big O Notation: O Pesadelo do Programador Iniciante - Lucas Montano](https://www.youtube.com/watch?v=GLKDo13920k)
 - [O que é Big O Notation? - Matheus Kielkowski](https://medium.com/linkapi-solutions/o-que-%C3%A9-big-o-notation-32f171e4a045)
 - [Site com dicas e colas de Big O](https://www.bigocheatsheet.com/)
+- [O que é Big O (Complexidade de Algoritmos)? Vem aprender tudo!](https://www.youtube.com/watch?v=QndXJL5ehS0)
