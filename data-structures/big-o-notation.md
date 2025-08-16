@@ -43,7 +43,9 @@ O melhor exemplo, é as constantes que temos na programação, como no JS/TS que
 
 São classificadas pelo número de interações que tiverem com as entradas passadas. Então o tempo de execução vai depender diretamente da quantidade de entradas passadas.
 
-A complexidade de espaço depende do tamanho do array por exemplo, conforme o array aumenta a comp
+A complexidade de espaço depende do tamanho do array por exemplo, conforme o array aumenta a complexidade de tempo também aumenta
+
+E a complexidade de tempo, vai dependet
 #### Exemplo:
 
 ```ts
