@@ -45,7 +45,7 @@ São classificadas pelo número de interações que tiverem com as entradas pass
 
 A complexidade de espaço depende do tamanho do array por exemplo, conforme o array aumenta a complexidade de tempo também aumenta
 
-E a complexidade de tempo, vai dependet
+E a complexidade de tempo, vai depender 
 #### Exemplo:
 
 ```ts
