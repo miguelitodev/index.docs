@@ -1,9 +1,9 @@
 
 # Notação Big O
 
-Antes de tudo, o O significa Ordem kkk
+Antes de tudo, o O significa Ordem kk, e outra informação importante é que, n = é a quantidade de passos do algoritmo.
 
-n = é a quantidade de passos do algoritmo 
+Agora podemos começar...
 
 Ele da a média de tempo e espaço que meu algoritmo cresce, assim você pode classificar se tua função ou algoritmo é escalável ou não, ai tem algumas formas de representar. Basicamente, serve para sabermos a ordem de crescimento do algoritmo. 
 
