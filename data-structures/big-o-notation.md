@@ -11,7 +11,7 @@ A Big O notation desconsidera constantes, ou seja se tiver 2 ou mais FORs dentro
 
 #### Complexidades
 - Espaço
-	- É eficiencia do algoritmo na memória RAM
+	- É eficiencia do algoritmo na memória RAM, ou seja, é a quantidade de memória que o programa/algoritmo vai alocar na memória
 - Tempo
 	- É a eficiencia do algoritmo no processador, ou seja, é a medida de tempo que o programa/algoritmo leva para executar uma tarefa.
 
