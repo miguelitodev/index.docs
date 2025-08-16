@@ -134,3 +134,4 @@ Repete até encontrar o que procura. Esse “descartar metade” a cada passo é
 - [O que é Big O Notation? - Matheus Kielkowski](https://medium.com/linkapi-solutions/o-que-%C3%A9-big-o-notation-32f171e4a045)
 - [Site com dicas e colas de Big O](https://www.bigocheatsheet.com/)
 - [O que é Big O (Complexidade de Algoritmos)? Vem aprender tudo!](https://www.youtube.com/watch?v=QndXJL5ehS0)
+- [Big O Notation fácil de entender! (Complexidade de Tempo e Espaço na Programação)](https://youtu.be/FR44uWofQ7o)
