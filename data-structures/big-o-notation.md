@@ -141,3 +141,5 @@ Repete até encontrar o que procura. Esse “descartar metade” a cada passo é
 - [Site com dicas e colas de Big O](https://www.bigocheatsheet.com/)
 - [O que é Big O (Complexidade de Algoritmos)? Vem aprender tudo!](https://www.youtube.com/watch?v=QndXJL5ehS0)
 - [Big O Notation fácil de entender! (Complexidade de Tempo e Espaço na Programação)](https://youtu.be/FR44uWofQ7o)
+- [Learn Big O notation in 6 minutes 📈](https://youtu.be/XMUe3zFhM5c)
+- 
