@@ -48,7 +48,7 @@ A complexidade de espaço depende do tamanho do array por exemplo, conforme o ar
 E a complexidade de tempo, vai depender do tamanho do array, porque ai é o tempo que ele vai levar para percorrer todo o array.
 #### Exemplo:
 
-A;
+Além do algoritmo abaixo, também podemos usar de exemplo quando precisamos achar uma página especifica em um livro, fazendo pela busca linear, a gente passaria página a página até chegar na que queremos.
 
 ```ts
 function log(array) {
