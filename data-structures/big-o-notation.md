@@ -10,7 +10,10 @@ A Big O notation desconsidera constantes, ou seja se tiver 2 ou mais FORs dentro
 ![[assets/data-structures/big-o-notation/big-o-notation-chart.png]]
 
 #### Complexidades
-- 
+- Espaço
+		- É eficiencia do algoritmo na memória RAM
+- Tempo
+	- É a eficiencia do 
 
 ## Notações
 
