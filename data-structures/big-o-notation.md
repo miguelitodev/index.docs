@@ -1,5 +1,5 @@
 
-# Big O Notation
+# Notação Big O
 
 Antes de tudo, o O significa Ordem kkk
 
