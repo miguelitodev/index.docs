@@ -13,7 +13,7 @@ A Big O notation desconsidera constantes, ou seja se tiver 2 ou mais FORs dentro
 - Espaço
 	- É eficiencia do algoritmo na memória RAM
 - Tempo
-	- É a eficiencia do algoritmo no processador, ou seja, é a medida de tempo que o programa/algoritmo leva para executar o pro
+	- É a eficiencia do algoritmo no processador, ou seja, é a medida de tempo que o programa/algoritmo leva para executar uma tarefa.
 
 ## Notações
 
@@ -47,6 +47,8 @@ A complexidade de espaço depende do tamanho do array por exemplo, conforme o ar
 
 E a complexidade de tempo, vai depender do tamanho do array, porque ai é o tempo que ele vai levar para percorrer todo o array.
 #### Exemplo:
+
+A;
 
 ```ts
 function log(array) {
