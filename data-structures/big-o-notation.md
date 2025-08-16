@@ -143,4 +143,5 @@ Repete até encontrar o que procura. Esse “descartar metade” a cada passo é
 - [Big O Notation fácil de entender! (Complexidade de Tempo e Espaço na Programação) - Attekita Dev](https://youtu.be/FR44uWofQ7o)
 - [Learn Big O notation in 6 minutes 📈 - Bro Code](https://youtu.be/XMUe3zFhM5c)
 - [Big-O Notation in 100 Seconds - Fireship]
+- [O que significa Big O(n)???? - Lucas Montano](https://www.youtube.com/shorts/aPhU-ZUYpeo?feature=share)
 - 
