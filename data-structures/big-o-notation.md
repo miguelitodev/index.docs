@@ -11,7 +11,7 @@ A Big O notation desconsidera constantes, ou seja se tiver 2 ou mais FORs dentro
 
 #### Complexidades
 - Espaço
-		- É eficiencia do algoritmo na memória RAM
+	- É eficiencia do algoritmo na memória RAM
 - Tempo
 	- É a eficiencia do algoritmo no processador
 
@@ -42,6 +42,8 @@ O melhor exemplo, é as constantes que temos na programação, como no JS/TS que
 ### Linear - O(n)
 
 São classificadas pelo número de interações que tiverem com as entradas passadas. Então o tempo de execução vai depender diretamente da quantidade de entradas passadas.
+
+A complexidade de espaço depende do tamanho do array por exemplo, conforme o array aumenta a comp
 #### Exemplo:
 
 ```ts
