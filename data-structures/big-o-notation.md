@@ -146,4 +146,4 @@ Repete até encontrar o que procura. Esse “descartar metade” a cada passo é
 - [O que significa Big O(n)???? - Lucas Montano](https://www.youtube.com/shorts/aPhU-ZUYpeo?feature=share)
 - [Explicando Big O - spacecoding](https://www.youtube.com/shorts/CyL-3ZhCwGo?feature=share)
 - [Binary Search em 5 minutos - Augusto Galego](https://youtu.be/zSyV0VaTF3k)
-- [Big O explained with a deck of cards - Spaceship](https://www.youtube.com/shorts/WbF2bLbAUik?feature=share)
+- [Big O explained with a deck of cards - Fireship](https://www.youtube.com/shorts/WbF2bLbAUik?feature=share)
