@@ -9,6 +9,9 @@ A Big O notation desconsidera constantes, ou seja se tiver 2 ou mais FORs dentro
 
 ![[assets/data-structures/big-o-notation/big-o-notation-chart.png]]
 
+#### Complexidades
+- 
+
 ## Notações
 
 ### Constantes - O(1)
