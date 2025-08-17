@@ -99,6 +99,7 @@ Algoritmos com complexidade logarítmica são considerados muito eficientes, esp
 
 O exemplo clássico é a **busca binária**.
 
+
 #### Exemplo:
 
 ```ts
