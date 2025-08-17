@@ -72,6 +72,7 @@ Funções/Algoritmos assim são chamados de O(n), sendo n o número de vezes que
 
 ![Linear O(n)](assets/data-structures/big-o-notation/linear-o-n.png)
 
+
 ### Quadrática - O(n²)
 
 Esse aqui pega um pouco do tipo Linear, a diferença seria que, além de, ele interagir com cada entrada, ele faz uma sub interação.
