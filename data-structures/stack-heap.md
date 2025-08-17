@@ -5,4 +5,4 @@
 - [Stack vs Heap Memory - Simple Explanation](https://www.youtube.com/watch?v=5OJRqkYbK-4&pp=ugMICgJwdBABGAHKBRRtZW1vcmlhIHN0YWNrIGUgaGVhcNIHCQmtCQGHKiGM7w%3D%3D "Stack vs Heap Memory - Simple Explanation")
 - [O que são e onde estão a "stack" e "heap"?](https://pt.stackoverflow.com/questions/3797/o-que-s%c3%a3o-e-onde-est%c3%a3o-a-stack-e-heap)
 - [Stack e Heap no Java: Entenda como a JVM usa a memória do seu programa!](https://www.youtube.com/watch?v=DAzYQCTH-JE)
-- [Entendendo COLETOR DE LIXO DO JAVA (memória Heap, Stack, Garbage Collector)]()
+- [Entendendo COLETOR DE LIXO DO JAVA (memória Heap, Stack, Garbage Collector)](https://youtu.be/cgUfurMJosE)
