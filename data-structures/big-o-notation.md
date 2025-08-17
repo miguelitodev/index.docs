@@ -1,7 +1,7 @@
 
 # Notação Big O
 
-Antes de tudo, o O significa Ordem kk, e outra informação importante é que, n = é a quantidade de entrada de dados.
+Antes de tudo, o O significa Ordem kk, e outra informação importante é que, n = é a quantidade de entrada de dados. Pense em `n` como "o número de elementos no array" ou "o número de itens a serem processados".
 
 Agora podemos começar...
 
