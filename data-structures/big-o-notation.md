@@ -9,6 +9,13 @@ Ele da a média de tempo e espaço que meu algoritmo cresce, assim você pode cl
 
 A Big O notation desconsidera constantes, ou seja se tiver 2 ou mais FORs dentro da função ele vai considerar apenas 1, e na vida real devemos considerar, pois é além da parte performática e escalável, temos que pensar na complexidade do algoritmo que estamos construindo.
 
+MAS
+
+**Laços Sequenciais (um depois do outro):** Se você tem um `for` que executa `n` vezes e, _depois_, outro `for` que também executa `n` vezes, a complexidade total é O(n + n) = O(2n). Como desconsideramos a constante `2`, a complexidade final é **O(n)**. Neste caso, seu raciocínio se aplica.
+
+**Laços Aninhados (um dentro do outro):** Se você tem um `for` _dentro_ de outro `for`, a complexidade é multiplicada. A complexidade total é O(n * n) = **O(n²)**. Neste caso, você definitivamente **não pode** "considerar apenas 1".
+
+
 ![[assets/data-structures/big-o-notation/big-o-notation-chart.png]]
 
 #### Complexidades
