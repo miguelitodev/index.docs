@@ -71,8 +71,6 @@ log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 Funções/Algoritmos assim são chamados de O(n), sendo n o número de vezes que ele é chamado, o que pode ser muitas vezes.
 
 ![Linear O(n)](assets/data-structures/big-o-notation/linear-o-n.png)
-
-
 ### Quadrática - O(n²)
 
 Esse aqui pega um pouco do tipo Linear, a diferença seria que, além de, ele interagir com cada entrada, ele faz uma sub interação.
