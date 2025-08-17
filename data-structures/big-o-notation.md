@@ -1,7 +1,7 @@
 
 # Notação Big O
 
-Antes de tudo, o O significa Ordem kk, e outra informação importante é que, n = é a quantidade de passos do algoritmo.
+Antes de tudo, o O significa Ordem kk, e outra informação importante é que, n = é a quantidade de entrada de dados.
 
 Agora podemos começar...
 
