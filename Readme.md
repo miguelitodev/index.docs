@@ -48,6 +48,12 @@ Prepare-se para mergulhar em tópicos que vão desde o básico até o avançado,
 
 	- **[tipos](typescript/!.md)** – Anotações e inferência de tipos em TypeScript.
 
+### Data Structures
+
+- #### Big O Notation
+
+	- **[Big O Notation](data-structures/big-o-notation.md)** – Entendendo a complexidade de algoritmos com Big O.
+
 ## 🔗 Redes Sociais & Site
 
 - **Website**: [miguelito.dev](https://miguelito.dev)
