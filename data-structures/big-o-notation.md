@@ -42,8 +42,6 @@ log([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 
 Como eu estou acessando direto, acaba que a complexidade é menor, ja que eu estou especificando o valor direto na chave do elemento que eu quero pegar no array
 
-O melhor exemplo, é as constantes que temos na programação, como no JS/TS que temos a const, ela é imutável, não se altera, ai a complexidade dele é 1
-
 ![[assets/data-structures/big-o-notation/constant-o-1.png]]
 
 
