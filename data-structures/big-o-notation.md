@@ -83,7 +83,7 @@ Ai a o tempo de execução vai ser determinado pelo tamanho dos dados
 ```ts
 function addAndLog(array) {
 	for (var i = 0; i < array.length; i++) { // Big O(n²)
-		for (var j = 0; i < array.length; j++) {
+		for (var j = 0; j < array.length; j++) {
 			console.log(array[i] + array[j]);
 		}
 	}
@@ -91,7 +91,7 @@ function addAndLog(array) {
 
 addAndLog(['A', 'B', 'C']); // 9 pares
 addAndLog(['A', 'B', 'C', 'D']); // 16 pares
-addAndLog(['A', 'B', 'C', 'D', 'E']); // 16 pares
+addAndLog(['A', 'B', 'C', 'D', 'E']); // 25 pares
 ```
 
 Nessa função acima, a gente gera os pares baseado em cada campo do array, então apesar de finitas possibilidades, são diversas interações, pois para cada campo que adicionarmos ao array o tempo de execução aumenta de forma Quadrática
