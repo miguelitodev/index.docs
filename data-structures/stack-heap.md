@@ -117,4 +117,4 @@ Em resumo, a **Stack** cuida de dados de tamanho fixo e do fluxo de execução d
 - [O que são e onde estão a "stack" e "heap"?](https://pt.stackoverflow.com/questions/3797/o-que-s%c3%a3o-e-onde-est%c3%a3o-a-stack-e-heap)
 - [Stack e Heap no Java: Entenda como a JVM usa a memória do seu programa!](https://www.youtube.com/watch?v=DAzYQCTH-JE)
 - [Entendendo COLETOR DE LIXO DO JAVA (memória Heap, Stack, Garbage Collector)](https://youtu.be/cgUfurMJosE)
-- Heap, Stack e Garbage Collector — Um guia prático para o gerenciamento de memória no .NET
+- [Heap, Stack e Garbage Collector — Um guia prático para o gerenciamento de memória no .NET](https://andresantarosa.medium.com/heap-stack-e-garbage-collector-um-guia-pr%C3%A1tico-para-o-gerenciamento-de-mem%C3%B3ria-no-net-3faf6c4cd0ed)
