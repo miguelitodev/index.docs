@@ -6,6 +6,8 @@ Monitora a nossa memória heap, e libera espaço dela quando não estiver sendo 
 
 Porque a _Stack_ é uma pilha, em ingles _stack_ é literalmente pilha. E quando empilhamos itens sempre o último item a ser empilhado vai em cima, resultando assim no esquema LIFO (_Last In — First Out_), pra facilitar, pense em uma pilha de pratos, sempre o ultimo a ser colocado é o primeiro a ser retirado.
 
+“_Tipos Valor vão na Stack e Tipos referencia vão na Heap_”.
+
 ## Heap
 Armazena objetos
 
