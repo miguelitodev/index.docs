@@ -1,11 +1,3 @@
----
-Tags:
-  - typescript
-  - javascript
-  - frontend
-O código TypeScript (TS) é sempre transpilado para JavaScript (JS) antes da execução. Por isso, o **gerenciamento de memória** em ambas as linguagens é idêntico, sendo orquestrado pelo motor JavaScript do ambiente (ex:
-O modelo de memória do JS é dividido em duas áreas cruciais: a **Stack** e a **Heap**.
----
 ### A Stack (Pilha de Execução)
 
 A **Stack** é uma região de memória rápida e organizada, usada para o contexto de execução estático. Ela opera no formato **LIFO** (Last-In, First-Out): o último item a entrar é o primeiro a sair.
