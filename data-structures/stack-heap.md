@@ -1,7 +1,9 @@
 ## Garbage Collector
 
 ## Stack
-É uma pilha, armazena as chamadas de métodos, ou seja, durante a execução do método, todas as variáveis primitivas, chamadas, serão empilhadas dentro da memória stack, até que ele finalize a execução do método. Inclusive as variáveis primitivas. Também armazena informa
+É uma pilha, armazena as chamadas de métodos, ou seja, durante a execução do método, todas as variáveis primitivas, chamadas, serão empilhadas dentro da memória stack, até que ele finalize a execução do método. Inclusive as variáveis primitivas.
+
+ 
 
 ## Bibliografia
 - [wtf is “the stack” ?](https://www.youtube.com/watch?v=CRTR5ljBjPM&pp=ugMICgJwdBABGAHKBRRtZW1vcmlhIHN0YWNrIGUgaGVhcA%3D%3D "wtf is “the stack” ?")
