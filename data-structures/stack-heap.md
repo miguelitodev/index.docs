@@ -1,15 +1,11 @@
 ---
-
-# Gerenciamento de Memória em JavaScript & TypeScript
-
-Tags: #javascript #typescript #programacao #memoria
-
-O código TypeScript (TS) é sempre transpilado para JavaScript (JS) antes da execução. Por isso, o **gerenciamento de memória** em ambas as linguagens é idêntico, sendo orquestrado pelo motor JavaScript do ambiente (ex: V8 no Chrome/Node.js, SpiderMonkey no Firefox).
-
+Tags:
+  - typescript
+  - javascript
+  - frontend
+O código TypeScript (TS) é sempre transpilado para JavaScript (JS) antes da execução. Por isso, o **gerenciamento de memória** em ambas as linguagens é idêntico, sendo orquestrado pelo motor JavaScript do ambiente (ex:
 O modelo de memória do JS é dividido em duas áreas cruciais: a **Stack** e a **Heap**.
-
 ---
-
 ### A Stack (Pilha de Execução)
 
 A **Stack** é uma região de memória rápida e organizada, usada para o contexto de execução estático. Ela opera no formato **LIFO** (Last-In, First-Out): o último item a entrar é o primeiro a sair.
@@ -138,7 +134,7 @@ outroHeroi = null;
 ### Bibliografia
 
 - [wtf is “the stack” ?](https://www.youtube.com/watch?v=CRTR5ljBjPM)
-    
+  
 - [Gerenciamento de memória - Stack vs Heap | Dias de Dev](https://www.youtube.com/watch?v=7kJwVQGJCbw)
     
 - [Stack vs Heap Memory - Simple Explanation](https://www.youtube.com/watch?v=5OJRqkYbK-4)
