@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "stack-heap"
             }
-          },
-          {
-            "id": "77cf39c99ffee6c9",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.10"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,7 +182,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "77cf39c99ffee6c9",
+  "active": "8ee7463e661614bb",
   "lastOpenFiles": [
     "data-structures/big-o-notation.md",
     "Readme.md",
