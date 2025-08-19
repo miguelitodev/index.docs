@@ -4,6 +4,8 @@ Monitora a nossa memória heap, e libera espaço dela quando não estiver sendo 
 ## Stack
 É uma pilha, armazena as chamadas de métodos, ou seja, durante a execução do método, todas as variáveis primitivas, chamadas, serão empilhadas dentro da memória stack, até que ele finalize a execução do método. Inclusive as variáveis primitivas.
 
+Porque a _Stack_ é uma pilha, em ingles _stack_ é literalmente pilha. E quando empilhamos itens sempre o último item a ser empilhado vai em cima, resultando assim no esquema LIFO (_Last In — First Out_), pra facilitar, pense em uma pilha de pratos, sempre o ultimo a ser colocado é o primeiro a ser retirado.
+
 ## Heap
 Armazena objetos
 
