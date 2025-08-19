@@ -1,6 +1,7 @@
 ## Garbage Collector
 
-
+## Stack
+É uma pilha, armazena as chamadas de métodos, ou seja, todas as variáveis primitivas, chamadas, serão empilhadas dentro da memória stack, 
 
 ## Bibliografia
 - [wtf is “the stack” ?](https://www.youtube.com/watch?v=CRTR5ljBjPM&pp=ugMICgJwdBABGAHKBRRtZW1vcmlhIHN0YWNrIGUgaGVhcA%3D%3D "wtf is “the stack” ?")
