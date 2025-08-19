@@ -1,3 +1,4 @@
+#javascript #typescript #frontend 
 ### A Stack (Pilha de Execução)
 
 A **Stack** é uma região de memória rápida e organizada, usada para o contexto de execução estático. Ela opera no formato **LIFO** (Last-In, First-Out): o último item a entrar é o primeiro a sair.
