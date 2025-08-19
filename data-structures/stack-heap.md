@@ -1,4 +1,5 @@
 ## Garbage Collector
+Monitora a nossa memória heap, e libera espaço dela quando não estiver sendo utilizada
 
 ## Stack
 É uma pilha, armazena as chamadas de métodos, ou seja, durante a execução do método, todas as variáveis primitivas, chamadas, serão empilhadas dentro da memória stack, até que ele finalize a execução do método. Inclusive as variáveis primitivas.
