@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b4f7d18dee51b001",
+        "id": "9045763836132cc7",
         "type": "tabs",
         "children": [
           {
-            "id": "8ee7463e661614bb",
+            "id": "f46f7696b2f5cdea",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20250819193312.png"
+                "file": "data-structures/data-types.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250819193312"
+              "icon": "lucide-file",
+              "title": "data-types"
             }
           }
         ]
@@ -179,15 +181,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8ee7463e661614bb",
+  "active": "f46f7696b2f5cdea",
   "lastOpenFiles": [
-    "Pasted image 20250820065549.png",
+    "assets/data-structures/data-types/stack.png",
+    "assets/data-structures/data-types",
+    "Pasted image 20250819193312.png",
     "data-structures/data-types.md",
     "javascript/closures.md",
     "data-structures/Untitled",
     "data-structures/stack-heap.md",
     "data-structures/big-o-notation.md",
-    "Pasted image 20250819193312.png",
     "Readme.md",
     "assets/data-structures/big-o-notation/quadratic-o-n2.png",
     "assets/data-structures/big-o-notation/logarithmic-o-log-n.png",
@@ -224,7 +227,6 @@
     "kubernetes/overview.md",
     "kubernetes",
     "react/redux/saga",
-    "typescript",
-    "react/libs"
+    "typescript"
   ]
 }
