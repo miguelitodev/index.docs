@@ -21,7 +21,11 @@ console.log(numTwo); // outputs 50
 ![[stack.png]]
 
 ## Referência
-Diferente dos dados primitivos, os de referência são fixos por natureza, ou seja, não tem tamanho fixo
+Diferente dos dados primitivos, os de referência são fixos por natureza, ou seja, não tem tamanho fixo. E a maioria é considerada um Objeto, então possuem métodos.
+
+Exemplos: `Objects`, `Functions`, `Collections`, `Arrays`, `Dates`, etc..
+
+
 
 ## Bibliografia
 - [Primitive vs Reference Data Types in JavaScript](https://www.freecodecamp.org/news/primitive-vs-reference-data-types-in-javascript/)
