@@ -12,7 +12,9 @@ Quando declaramos um tipo de dado primitivo, ele vai ser armazenado na memória 
 let banana1 = "Amarela"
 let banana2 = "Verde"
 
-ba
+banana2 = banana1
+
+console.log(banana2) // Amarela
 ```
 
 ![[Pasted image 20250820071917.png]]
