@@ -31,7 +31,9 @@ A principal diferença é que quando você declara esse tipo de dado, o computad
 
 Na imagem acima, nós criamos o ponteiro na stack e como pode-se ver, ele está apontando para a memória heap, que é onde o valor vai ficar armazenado de fato.
 
-Se por exemplo criarmos outra variável e atribuir o objeto a ela, poderiamos dizer que agora temos dois valores individuais correto? Errado, pois fazendo dessa forma a gente apenas cria outro 
+Se por exemplo criarmos outra variável e atribuir o objeto a ela, poderiamos dizer que agora temos dois valores individuais correto? Errado, pois fazendo dessa forma a gente apenas cria outro ponteiro, o valor em si continua armazenado lá, você só vai apontar para o mesmo local, logo vai receber o mesmo valor.
+
+
 ## Bibliografia
 - [Primitive vs Reference Data Types in JavaScript](https://www.freecodecamp.org/news/primitive-vs-reference-data-types-in-javascript/)
 - 
