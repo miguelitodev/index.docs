@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "data-structures/primitivos-x-referencias.md",
+                "file": "data-structures/data-types.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "primitivos-x-referencias"
+              "title": "data-types"
             }
           }
         ]
@@ -187,7 +187,7 @@
     "data-structures/Untitled",
     "data-structures/stack-heap.md",
     "data-structures/big-o-notation.md",
-    "data-structures/primitivos-x-referencias.md",
+    "data-structures/data-types.md",
     "Pasted image 20250819193312.png",
     "Readme.md",
     "assets/data-structures/big-o-notation/quadratic-o-n2.png",
