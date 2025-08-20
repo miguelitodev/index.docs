@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "data-structures/data-types.md",
+                "file": "Readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data-types"
+              "title": "Readme"
             }
           }
         ]
@@ -183,6 +183,9 @@
   },
   "active": "f46f7696b2f5cdea",
   "lastOpenFiles": [
+    "data-structures/stack-heap.md",
+    "data-structures/big-o-notation.md",
+    "data-structures/data-types.md",
     "typescript/non-null-assertion-operator.md",
     "assets/pasted-images/Pasted image 20250820071917.png",
     "assets/pasted-images/Pasted image 20250820071432.png",
@@ -194,11 +197,8 @@
     "assets/data-structures/data-types/stack.png",
     "assets/data-structures/data-types",
     "Pasted image 20250819193312.png",
-    "data-structures/data-types.md",
     "javascript/closures.md",
     "data-structures/Untitled",
-    "data-structures/stack-heap.md",
-    "data-structures/big-o-notation.md",
     "Readme.md",
     "assets/data-structures/big-o-notation/quadratic-o-n2.png",
     "assets/data-structures/big-o-notation/logarithmic-o-log-n.png",
