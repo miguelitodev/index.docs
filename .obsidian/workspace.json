@@ -11,14 +11,12 @@
             "id": "f46f7696b2f5cdea",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Readme.md",
-                "mode": "source",
-                "source": false
+                "file": "assets/pasted-images/Pasted image 20250820070242.png"
               },
-              "icon": "lucide-file",
-              "title": "Readme"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250820070242"
             }
           }
         ]
@@ -183,13 +181,14 @@
   },
   "active": "f46f7696b2f5cdea",
   "lastOpenFiles": [
+    "assets/pasted-images/Pasted image 20250820071432.png",
+    "assets/pasted-images/Pasted image 20250820071917.png",
+    "assets/pasted-images/Pasted image 20250820070242.png",
+    "Readme.md",
     "data-structures/stack-heap.md",
     "data-structures/big-o-notation.md",
     "data-structures/data-types.md",
     "typescript/non-null-assertion-operator.md",
-    "assets/pasted-images/Pasted image 20250820071917.png",
-    "assets/pasted-images/Pasted image 20250820071432.png",
-    "assets/pasted-images/Pasted image 20250820070242.png",
     "assets/pasted-images",
     "Pasted image 20250820071917.png",
     "Pasted image 20250820071432.png",
@@ -199,7 +198,6 @@
     "Pasted image 20250819193312.png",
     "javascript/closures.md",
     "data-structures/Untitled",
-    "Readme.md",
     "assets/data-structures/big-o-notation/quadratic-o-n2.png",
     "assets/data-structures/big-o-notation/logarithmic-o-log-n.png",
     "data-structures/Big O Notation.md",
@@ -226,7 +224,6 @@
     "Maas-A lâmina da assassina.md",
     "react/libs/react-icons.md",
     "kubernetes/introducao.md",
-    "kubernetes/overview.md",
     "kubernetes",
     "react/redux/saga"
   ]

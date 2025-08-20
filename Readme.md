@@ -1,4 +1,4 @@
-# 📚 Notinhas do Miguelito: Meu Caderno de Estudos e Descobertas
+# 📚 index.docs: Meu Caderno de Estudos e Descobertas
 
 Bem-vindo(a) ao meu cantinho de estudos e anotações! Este repositório é o meu diário de bordo no mundo da tecnologia, um espaço onde compartilho minhas jornadas de aprendizado, descobertas e aprofundamento em diversas áreas do desenvolvimento.
 
