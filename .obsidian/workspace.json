@@ -181,8 +181,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8ee7463e661614bb",
+  "active": "46a03d15d8b2d3d9",
   "lastOpenFiles": [
+    "data-structures/Untitled",
     "data-structures/stack-heap.md",
     "data-structures/big-o-notation.md",
     "javascript/closures.md",
@@ -223,7 +224,6 @@
     "react/libs/react-icons.md",
     "kubernetes/introducao.md",
     "kubernetes/overview.md",
-    "kubernetes/_index.md",
     "kubernetes",
     "react/redux/saga",
     "typescript",
