@@ -10,15 +10,18 @@ Quando declaramos um tipo de dado primitivo, ele vai ser armazenado na memória 
 
 ```js
 let numOne = 50;
-let numTwo = numOne; //numTwo -> numOne -> 50
+let numTwo = numOne; // numTwo -> numOne -> 50
 
 numOne = 100;
 
-console.log(numOne); //outputs 100
-console.log(numTwo); //outputs 50
+console.log(numOne); // outputs 100
+console.log(numTwo); // outputs 50
 ```
 
 ![[stack.png]]
+
+## Referência
+
 
 ## Bibliografia
 - [Primitive vs Reference Data Types in JavaScript](https://www.freecodecamp.org/news/primitive-vs-reference-data-types-in-javascript/)
