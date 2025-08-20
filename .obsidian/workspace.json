@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/closures.md",
+                "file": "data-structures/stack-heap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "closures"
+              "title": "stack-heap"
             }
           }
         ]
@@ -183,11 +183,11 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "data-structures/big-o-notation.md",
+    "javascript/closures.md",
     "data-structures/stack-heap.md",
     "data-structures/variaveis.md",
-    "javascript/closures.md",
     "Pasted image 20250819193312.png",
-    "data-structures/big-o-notation.md",
     "Readme.md",
     "assets/data-structures/big-o-notation/quadratic-o-n2.png",
     "assets/data-structures/big-o-notation/logarithmic-o-log-n.png",
