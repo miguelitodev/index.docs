@@ -33,6 +33,22 @@ Na imagem acima, nós criamos o ponteiro na stack e como pode-se ver, ele está 
 
 Se por exemplo criarmos outra variável e atribuir o objeto a ela, poderiamos dizer que agora temos dois valores individuais correto? Errado, pois fazendo dessa forma a gente apenas cria outro ponteiro, o valor em si continua armazenado lá, você só vai apontar para o mesmo local, logo vai receber o mesmo valor.
 
+E nesse caso, se alterarmos o valor do objeto1 ou objeto2, vai mudar para ambos, porque ambos estão apontando para o mesmo lugar.
+
+```js
+let object1 = {
+name:'Bingeh',
+age:18
+};
+let object2 = object1;
+
+
+object1.age = 20;
+
+console.log(object2); 
+```
+
+![[Pasted image 20250820071432.png]]
 
 ## Bibliografia
 - [Primitive vs Reference Data Types in JavaScript](https://www.freecodecamp.org/news/primitive-vs-reference-data-types-in-javascript/)
