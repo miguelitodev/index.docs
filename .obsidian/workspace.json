@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/closures.md",
+                "file": "data-structures/primitivos-x-referencias.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "closures"
+              "title": "primitivos-x-referencias"
             }
           }
         ]
@@ -183,11 +183,11 @@
   },
   "active": "46a03d15d8b2d3d9",
   "lastOpenFiles": [
+    "javascript/closures.md",
     "data-structures/Untitled",
     "data-structures/stack-heap.md",
     "data-structures/big-o-notation.md",
-    "javascript/closures.md",
-    "data-structures/variaveis.md",
+    "data-structures/primitivos-x-referencias.md",
     "Pasted image 20250819193312.png",
     "Readme.md",
     "assets/data-structures/big-o-notation/quadratic-o-n2.png",
@@ -227,7 +227,6 @@
     "kubernetes",
     "react/redux/saga",
     "typescript",
-    "react/libs",
-    "react/redux/toolkit"
+    "react/libs"
   ]
 }
