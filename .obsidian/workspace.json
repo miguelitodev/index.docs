@@ -11,12 +11,14 @@
             "id": "f46f7696b2f5cdea",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/pasted-images/Pasted image 20250820070242.png"
+                "file": "data-structures/data-types.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250820070242"
+              "icon": "lucide-file",
+              "title": "data-types"
             }
           }
         ]
@@ -181,11 +183,11 @@
   },
   "active": "f46f7696b2f5cdea",
   "lastOpenFiles": [
+    "data-structures/stack-heap.md",
+    "assets/pasted-images/Pasted image 20250820070242.png",
     "assets/pasted-images/Pasted image 20250820071432.png",
     "assets/pasted-images/Pasted image 20250820071917.png",
-    "assets/pasted-images/Pasted image 20250820070242.png",
     "Readme.md",
-    "data-structures/stack-heap.md",
     "data-structures/big-o-notation.md",
     "data-structures/data-types.md",
     "typescript/non-null-assertion-operator.md",
