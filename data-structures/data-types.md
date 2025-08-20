@@ -9,11 +9,13 @@ Mas `strings`, não tem métodos? Sim, mas é uma conversão que o Javascript fa
 Quando declaramos um tipo de dado primitivo, ele vai ser armazenado na memória Stack, a famosa pilha, e lá ele vai ser identificado pelo nome da variável que tu declarou. Idenpendente se eu declaro várias com o mesmo valor, para cada variável, ou melhor, para cada dado primitivo que eu for utilizar, ele vai utilizar um espaço individual na stack. E como cada um tem seu espaço na pilha, se eu alterar o valor de um, não vai alterar o valor do outro.
 
 ```js
-let banana1 = "Amarela";
-let banana2 = banana1;
-banana2 = "Verde";
+let numOne = 50;
+let numTwo = numOne; // numTwo -> numOne -> 50
 
-console.log(banana1) // Amarela
+numOne = 100;
+
+console.log(numOne); // outputs 100
+console.log(numTwo); // outputs 50
 ```
 
 ![[stack.png]]
@@ -35,9 +37,10 @@ E nesse caso, se alterarmos o valor do objeto1 ou objeto2, vai mudar para ambos,
 
 ```js
 let object1 = {
-name:'Bingeh',
-age:18
+	name:'Bingeh',
+	age:18
 };
+
 let object2 = object1;
 
 
