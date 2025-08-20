@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ab3c78f623a7597c",
@@ -184,10 +183,11 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "data-structures/variaveis.md",
+    "data-structures/stack-heap.md",
     "Pasted image 20250819193312.png",
     "data-structures/big-o-notation.md",
     "Readme.md",
-    "data-structures/stack-heap.md",
     "assets/data-structures/big-o-notation/quadratic-o-n2.png",
     "assets/data-structures/big-o-notation/logarithmic-o-log-n.png",
     "assets/data-structures/big-o-notation/linear-o-n.png",
@@ -202,7 +202,6 @@
     "assets/Pasted image 20250815195914.png",
     "assets/Pasted image 20250815195256.png",
     "assets/Pasted image 20250815193435.png",
-    "assets/Pasted image 20250815192206.png",
     "assets",
     "data-sctructure",
     "react/libs/zustand.md",

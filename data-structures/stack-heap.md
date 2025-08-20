@@ -114,6 +114,8 @@ outroHeroi = null;
 
 ---
 
+memory leak
+
 ### Resumo
 
 > [!SUMMARY]
