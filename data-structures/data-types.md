@@ -21,7 +21,7 @@ console.log(numTwo); // outputs 50
 ![[stack.png]]
 
 ## Referência
-
+Diferente dos dados primitivos, os de referência são fixos por natureza, ou seja, não tem tamanho fixo
 
 ## Bibliografia
 - [Primitive vs Reference Data Types in JavaScript](https://www.freecodecamp.org/news/primitive-vs-reference-data-types-in-javascript/)
