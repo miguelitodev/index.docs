@@ -29,6 +29,9 @@ A principal diferença é que quando você declara esse tipo de dado, o computad
 
 ![[Pasted image 20250820070242.png]]
 
+Na imagem acima, nós criamos o ponteiro na stack e como pode-se ver, ele está apontando para a memória heap, que é onde o valor vai ficar armazenado de fato.
+
+Se por exemplo criarmos 
 ## Bibliografia
 - [Primitive vs Reference Data Types in JavaScript](https://www.freecodecamp.org/news/primitive-vs-reference-data-types-in-javascript/)
 - 
