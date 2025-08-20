@@ -25,7 +25,7 @@ Diferente dos dados primitivos, os de referência são fixos por natureza, ou se
 
 Exemplos: `Objects`, `Functions`, `Collections`, `Arrays`, `Dates`, etc..
 
-
+A principal diferença é que quando você declara esse tipo de dado, o computador 
 
 ## Bibliografia
 - [Primitive vs Reference Data Types in JavaScript](https://www.freecodecamp.org/news/primitive-vs-reference-data-types-in-javascript/)
