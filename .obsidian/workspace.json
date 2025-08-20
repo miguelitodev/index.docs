@@ -11,14 +11,12 @@
             "id": "8ee7463e661614bb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "data-structures/data-types.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20250819193312.png"
               },
-              "icon": "lucide-file",
-              "title": "data-types"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250819193312"
             }
           }
         ]
@@ -181,13 +179,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46a03d15d8b2d3d9",
+  "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "Pasted image 20250820065549.png",
+    "data-structures/data-types.md",
     "javascript/closures.md",
     "data-structures/Untitled",
     "data-structures/stack-heap.md",
     "data-structures/big-o-notation.md",
-    "data-structures/data-types.md",
     "Pasted image 20250819193312.png",
     "Readme.md",
     "assets/data-structures/big-o-notation/quadratic-o-n2.png",
@@ -203,7 +202,6 @@
     "data-structures",
     "assets/Pasted image 20250815195914.png",
     "assets/Pasted image 20250815195256.png",
-    "assets/Pasted image 20250815193435.png",
     "assets",
     "data-sctructure",
     "react/libs/zustand.md",
