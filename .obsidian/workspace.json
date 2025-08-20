@@ -183,6 +183,10 @@
   },
   "active": "f46f7696b2f5cdea",
   "lastOpenFiles": [
+    "assets/pasted-images/Pasted image 20250820071917.png",
+    "assets/pasted-images/Pasted image 20250820071432.png",
+    "assets/pasted-images/Pasted image 20250820070242.png",
+    "assets/pasted-images",
     "Pasted image 20250820071917.png",
     "Pasted image 20250820071432.png",
     "Pasted image 20250820070242.png",
@@ -198,10 +202,7 @@
     "assets/data-structures/big-o-notation/quadratic-o-n2.png",
     "assets/data-structures/big-o-notation/logarithmic-o-log-n.png",
     "assets/data-structures/big-o-notation/linear-o-n.png",
-    "assets/data-structures/big-o-notation/constant-o-1.png",
-    "assets/data-structures/big-o-notation/big-o-notation-chart.png",
     "data-structures/Big O Notation.md",
-    "assets/Pasted image 20250815191324.png",
     "assets/data-structures/big-o-notation",
     "assets/data-structures",
     "data-sctructure/Big O Notation.md",
@@ -227,7 +228,6 @@
     "kubernetes/introducao.md",
     "kubernetes/overview.md",
     "kubernetes",
-    "react/redux/saga",
-    "typescript"
+    "react/redux/saga"
   ]
 }
