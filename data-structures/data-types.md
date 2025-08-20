@@ -18,7 +18,7 @@ console.log(numOne); // outputs 100
 console.log(numTwo); // outputs 50
 ```
 
-![[stack.png]]
+![[Pasted image 20250820071917.png]]
 
 ## Referência
 Diferente dos dados primitivos, os de referência são fixos por natureza, ou seja, não tem tamanho fixo. E a maioria é considerada um Objeto, então possuem métodos.
