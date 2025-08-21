@@ -180,8 +180,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f46f7696b2f5cdea",
+  "active": "46a03d15d8b2d3d9",
   "lastOpenFiles": [
+    "assets/pasted-images",
     "Untitled.base",
     "data-structures/complexity-and-memory/data-types.md",
     "data-structures/complexity-and-memory/stack-heap.md",
@@ -202,7 +203,6 @@
     "data-structures/complexity-and-memory",
     "Readme.md",
     "typescript/non-null-assertion-operator.md",
-    "assets/pasted-images",
     "Pasted image 20250820071917.png",
     "assets/data-structures/complexity-and-memory/data-types",
     "javascript/closures.md",
