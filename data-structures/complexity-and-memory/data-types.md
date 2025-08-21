@@ -69,7 +69,7 @@ console.log(a); // 10
 console.log(b); // 20
 ```
 
-![[../assets/data-structures/data-types/stack.png]]
+![[stack.png]]
 
 ---
 
@@ -99,7 +99,7 @@ Os principais tipos de referência são:
 
 Quando você cria um objeto, ele é alocado na Heap. A variável correspondente, que vive na Stack, armazena apenas o endereço de memória (a referência) para esse objeto.
 
-![[../assets/pasted-images/Pasted image 20250820070242.png]]
+![[Pasted image 20250820070242.png]]
 
 Se você atribuir uma variável de referência a outra, você está apenas copiando a referência, não o objeto em si. Ambas as variáveis apontarão para o **mesmo objeto** na Heap.
 
@@ -116,7 +116,7 @@ carro2.modelo = "Mobi";
 console.log(carro1.modelo); // "Mobi"
 ```
 
-![[../assets/pasted-images/Pasted image 20250820071432.png]]
+![[Pasted image 20250820071432.png]]
 
 Isso acontece porque `carro1` e `carro2` são apenas "controles remotos" que apontam para o mesmo "aparelho de TV" (o objeto na Heap).
 

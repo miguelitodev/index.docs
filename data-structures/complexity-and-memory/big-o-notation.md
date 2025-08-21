@@ -13,7 +13,7 @@ Uma característica fundamental da notação Big O é que ela **desconsidera con
 - **Laços Sequenciais (um após o outro):** Se você tem um laço `for` que executa `n` vezes e, em seguida, outro laço `for` que também executa `n` vezes, a complexidade total é O(n + n), que simplifica para O(2n). Como as constantes são desconsideradas, a complexidade final é **O(n)**.
 - **Laços Aninhados (um dentro do outro):** Se um laço `for` está contido dentro de outro, a complexidade é multiplicada. A complexidade total se torna O(n * n), ou **O(n²)**. Neste caso, a aninhamento é crucial e não pode ser ignorado.
 
-![Gráfico de Notação Big O](../assets/data-structures/big-o-notation/big-o-notation-chart.png)
+![Gráfico de Notação Big O](big-o-notation-chart.png)
 
 ### Tipos de Complexidade
 
@@ -40,7 +40,7 @@ logFirstTwoElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 Neste exemplo, acessamos os elementos diretamente pelo seu índice. Não importa o tamanho do array, a operação levará sempre o mesmo tempo, resultando em uma complexidade **O(1)**.
 
-![Gráfico de Complexidade Constante](../assets/data-structures/big-o-notation/constant-o-1.png)
+![Gráfico de Complexidade Constante](constant-o-1.png)
 
 ### Linear — O(n)
 
@@ -65,7 +65,7 @@ logAllElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 A função acima é classificada como **O(n)**, pois o laço `for` percorre cada um dos `n` elementos do array.
 
-![Gráfico de Complexidade Linear](../assets/data-structures/big-o-notation/linear-o-n.png)
+![Gráfico de Complexidade Linear](linear-o-n.png)
 
 ### Quadrática — O(n²)
 
@@ -91,7 +91,7 @@ addAndLog(['A', 'B', 'C', 'D', 'E']); // 25 pares
 
 Na função acima, para cada elemento adicionado ao array, o tempo de execução aumenta quadraticamente. A notação para este tipo de algoritmo é **O(n²)**.
 
-![Gráfico de Complexidade Quadrática](../assets/data-structures/big-o-notation/quadratic-o-n2.png)
+![Gráfico de Complexidade Quadrática](quadratic-o-n2.png)
 
 ### Logarítmica — O(log n)
 
@@ -128,7 +128,7 @@ console.log(binarySearch(numbers, 7)); // Saída: 3 (índice do elemento)
 
 A busca binária funciona em arrays ordenados. A cada iteração, ela "descarta" metade dos elementos restantes, olhando para o meio e decidindo se o alvo está na metade esquerda ou direita. Esse processo de divisão pela metade a cada passo resulta em uma complexidade **O(log n)**.
 
-![Gráfico de Complexidade Logarítmica](../assets/data-structures/big-o-notation/logarithmic-o-log-n.png)
+![Gráfico de Complexidade Logarítmica](logarithmic-o-log-n.png)
 
 ## Bibliografia
 
