@@ -69,7 +69,7 @@ console.log(a); // 10
 console.log(b); // 20
 ```
 
-![Stack](../../assets/data-structures/data-types/stack.png)
+![Stack](stack.png)
 
 ---
 
@@ -99,7 +99,7 @@ Os principais tipos de referência são:
 
 Quando você cria um objeto, ele é alocado na Heap. A variável correspondente, que vive na Stack, armazena apenas o endereço de memória (a referência) para esse objeto.
 
-![Stack e Heap para Tipos de Referência](../../assets/data-structures/data-types/stack-heap-reference-types.png)
+![Stack e Heap para Tipos de Referência](stack-heap-reference-types.png)
 
 Se você atribuir uma variável de referência a outra, você está apenas copiando a referência, não o objeto em si. Ambas as variáveis apontarão para o **mesmo objeto** na Heap.
 
