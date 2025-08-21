@@ -11,13 +11,14 @@
             "id": "f46f7696b2f5cdea",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Untitled.base",
-                "viewName": "Table"
+                "file": "data-structures/complexity-and-memory/data-types.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "data-types"
             }
           }
         ]
@@ -180,12 +181,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46a03d15d8b2d3d9",
+  "active": "f46f7696b2f5cdea",
   "lastOpenFiles": [
-    "assets/pasted-images",
-    "Untitled.base",
-    "data-structures/complexity-and-memory/data-types.md",
     "data-structures/complexity-and-memory/stack-heap.md",
+    "data-structures/complexity-and-memory/data-types.md",
+    "Untitled.base",
+    "assets/pasted-images",
     "assets/data-structures/complexity-and-memory/big-o-notation/quadratic-o-n2.png",
     "assets/data-structures/complexity-and-memory/big-o-notation/logarithmic-o-log-n.png",
     "assets/data-structures/complexity-and-memory/big-o-notation/linear-o-n.png",
@@ -210,7 +211,6 @@
     "assets/data-structures/complexity-and-memory/big-o-notation",
     "assets/data-structures",
     "data-sctructure/Big O Notation.md",
-    "data-structures",
     "react/libs/zustand.md",
     "react/libs/react-rewards.md",
     "react/libs/zod.md",
