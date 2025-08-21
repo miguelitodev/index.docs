@@ -5,6 +5,8 @@
 ## Interativa != Recursiva
 As funções interativas usam os loops, mas a recursiva chama ela mesma até que o problema seja resolvido.
 
+Geralmente a recursiva é mais lenta ja que gera mais cópias dela mesma na memória, mas pode simplificar a compreensão de um problema, em coin
+
 Um bom exemplo para entender a diferença, seria o cálculo de uma fatorial por exemplo
 
 // TODO: explicar fatorial
