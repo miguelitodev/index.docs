@@ -10,9 +10,9 @@ Prepare-se para mergulhar em tópicos que vão desde o básico até o avançado,
 
 ### Data Structures
 
-- **[Big O Notation](big-o-notation.md)** – Entendendo a complexidade de algoritmos com Big O.
-- **[Data Types](data-types.md)** – Tipos de dados primitivos e de referência em JavaScript.
-- **[Stack e Heap](stack-heap.md)** – Gerenciamento de memória em JavaScript.
+- **[Big O Notation](data-structures/complexity-and-memory/big-o-notation.md)** – Entendendo a complexidade de algoritmos com Big O.
+- **[Data Types](data-structures/complexity-and-memory/data-types.md)** – Tipos de dados primitivos e de referência em JavaScript.
+- **[Stack e Heap](data-structures/complexity-and-memory/stack-heap.md)** – Gerenciamento de memória em JavaScript.
 
 ### JavaScript
 

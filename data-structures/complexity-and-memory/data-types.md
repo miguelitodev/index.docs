@@ -116,7 +116,7 @@ carro2.modelo = "Mobi";
 console.log(carro1.modelo); // "Mobi"
 ```
 
-![[Pasted image 20250820071432.png]]
+![Stack e Heap com Referência Compartilhada](../../assets/data-structures/data-types/stack-heap-shared-reference.png)
 
 Isso acontece porque `carro1` e `carro2` são apenas "controles remotos" que apontam para o mesmo "aparelho de TV" (o objeto na Heap).
 
