@@ -184,8 +184,9 @@
   },
   "active": "da24fd603acf05c1",
   "lastOpenFiles": [
-    "Readme.md",
+    "().md",
     "data-structures/recursion/recursive-functions.md",
+    "Readme.md",
     "assets/data-structures/complexity-and-memory/data-types/stack.png",
     "assets/data-structures/complexity-and-memory/data-types/stack-heap-shared-reference.png",
     "assets/data-structures/complexity-and-memory/data-types/stack-heap-reference-types.png",
@@ -228,7 +229,6 @@
     "Brits-FIRE OBSESSION.md",
     "Carlton_et_al-Assombrando Adeline.md",
     "Maas-A lâmina da assassina.md",
-    "react/libs/react-icons.md",
-    "kubernetes/introducao.md"
+    "react/libs/react-icons.md"
   ]
 }

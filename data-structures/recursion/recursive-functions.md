@@ -12,3 +12,7 @@ Um bom exemplo para entender a diferença, seria o cálculo de uma fatorial por 
 // TODO: exemplo fatorial com loop
 
 // TODO: exemplo fatorial com recursiva
+
+## Bibliografia
+- [A melhor explicação de Recursividade do Youtube](https://youtu.be/qUe36p4P2CI)
+- 
