@@ -69,7 +69,7 @@ console.log(a); // 10
 console.log(b); // 20
 ```
 
-![[Pasted image 20250821065815.png]]
+![Stack](../../assets/data-structures/data-types/stack.png)
 
 ---
 
