@@ -128,7 +128,7 @@ console.log(binarySearch(numbers, 7)); // Saída: 3 (índice do elemento)
 
 A busca binária funciona em arrays ordenados. A cada iteração, ela "descarta" metade dos elementos restantes, olhando para o meio e decidindo se o alvo está na metade esquerda ou direita. Esse processo de divisão pela metade a cada passo resulta em uma complexidade **O(log n)**.
 
-![Gráfico de Complexidade Logarítmica](logarithmic-o-log-n.png)
+![Gráfico de Complexidade Logarítmica](../../assets/data-structures/complexity-and-memory/big-o-notation/logarithmic-o-log-n.png)
 
 ## Bibliografia
 
