@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Readme.md",
+                "file": "data-structures/recursion/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Readme"
+              "title": "Untitled"
             }
           }
         ]
@@ -181,8 +181,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46a03d15d8b2d3d9",
+  "active": "da24fd603acf05c1",
   "lastOpenFiles": [
+    "Readme.md",
+    "data-structures/recursion/Untitled.md",
     "assets/data-structures/complexity-and-memory/data-types/stack.png",
     "assets/data-structures/complexity-and-memory/data-types/stack-heap-shared-reference.png",
     "assets/data-structures/complexity-and-memory/data-types/stack-heap-reference-types.png",
@@ -198,7 +200,6 @@
     "Untitled.base",
     "data-structures/complexity-and-memory/stack-heap.md",
     "data-structures/complexity-and-memory/data-types.md",
-    "assets/data-structures/complexity-and-memory/data-types/Pasted image 20250821065815.png",
     "assets/pasted-images",
     "assets/data-structures/complexity-and-memory/big-o-notation",
     "assets/data-structures/complexity-and-memory/data-types",
@@ -206,7 +207,6 @@
     "data-structures/complexity-and-memory/big-o-notation.md",
     "data-structures/recursion",
     "data-structures/complexity-and-memory",
-    "Readme.md",
     "typescript/non-null-assertion-operator.md",
     "assets/data-structures/complexity-and-memory/data-types",
     "javascript/closures.md",
