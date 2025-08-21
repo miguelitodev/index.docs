@@ -11,10 +11,13 @@
             "id": "f46f7696b2f5cdea",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "bases",
+              "state": {
+                "file": "Untitled.base",
+                "viewName": "Table"
+              },
+              "icon": "lucide-table",
+              "title": "Untitled"
             }
           }
         ]
@@ -179,6 +182,7 @@
   },
   "active": "f46f7696b2f5cdea",
   "lastOpenFiles": [
+    "Untitled.base",
     "data-structures/complexity-and-memory/data-types.md",
     "data-structures/complexity-and-memory/stack-heap.md",
     "assets/data-structures/complexity-and-memory/big-o-notation/quadratic-o-n2.png",
