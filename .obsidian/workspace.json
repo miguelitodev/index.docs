@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "data-structures/recursion/Untitled.md",
+                "file": "data-structures/recursion/recursive-functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "recursive-functions"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 222.5,
+    "collapsed": true
   },
   "right": {
     "id": "ab3c78f623a7597c",
@@ -184,7 +185,7 @@
   "active": "da24fd603acf05c1",
   "lastOpenFiles": [
     "Readme.md",
-    "data-structures/recursion/Untitled.md",
+    "data-structures/recursion/recursive-functions.md",
     "assets/data-structures/complexity-and-memory/data-types/stack.png",
     "assets/data-structures/complexity-and-memory/data-types/stack-heap-shared-reference.png",
     "assets/data-structures/complexity-and-memory/data-types/stack-heap-reference-types.png",
