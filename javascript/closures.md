@@ -8,9 +8,25 @@ Uma **closure** é uma função que **lembra do escopo léxico onde foi criada**
 
 ---
 
-## 2️⃣ Exemplo clássico – Contador
+---
+tags:
+  - javascript
+  - closures
+  - scope
+creation-date: "2025-08-25"
+---
 
-```js
+# Closure em JavaScript
+
+> [!NOTE] Summary
+> Uma **closure** é uma função que **lembra do escopo léxico onde foi criada**, mesmo depois que a função externa terminou sua execução. Em outras palavras, a função interna **mantém acesso às variáveis do seu escopo pai**.
+> > Importante: nem toda função é closure. Para ser closure, a função precisa **acessar variáveis externas ao seu escopo**.
+
+## Syntax
+
+### Exemplo clássico – Contador
+
+```javascript
 function criarContador() {
   let contador = 0;          // variável do escopo pai
   return function() {        // função interna → closure
@@ -25,10 +41,37 @@ console.log(contar()); // 2
 ```
 
 - `contar` **é uma função interna** que lembra da variável `contador` do escopo pai.
-    
 - Cada vez que você chama `contar()`, o valor de `contador` **é preservado e incrementado**.
-    
 - Isso acontece porque a **closure mantém o estado do escopo pai**.
+
+### Transformando em closure
+
+```javascript
+function criarDataGuardada() {
+  const dataAgora = new Date();
+  return function() {       // função interna → closure
+    return dataAgora;       // lembra do escopo do pai
+  }
+}
+
+const pegarData = criarDataGuardada();
+console.log(pegarData());  // sempre retorna a mesma data
+```
+
+- Agora sim: a função interna **lembra do valor `dataAgora` do escopo externo** → é closure.
+
+## Use Cases
+
+- **Estado privado:** Closures são fundamentais para criar estado privado, contadores, caches, e funções que precisam lembrar de valores do escopo externo.
+- **Programação funcional:** É uma das bases para entender JavaScript moderno e programação funcional.
+
+## See Also
+
+- [[javascript/scope]]
+
+## References
+
+- [MDN Web Docs: Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
     
 
 ### 🔹 Analogia macaco-banana

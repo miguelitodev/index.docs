@@ -71,7 +71,93 @@ Mesmo após a função `criarUsuario` terminar, o objeto `{ nome: 'Carlos' }` so
 
 Se a Heap não é limpa automaticamente, o que impede a memória de se esgotar? O **Garbage Collector (GC)**.
 
-O GC é um processo automático do motor JavaScript (como o V8) que periodicamente identifica e libera a memória da Heap que não está mais em uso.
+---
+tags:
+  - javascript
+  - memory-management
+  - fundamentals
+  - data-structures
+related:
+  - "[[data-structures/complexity-and-memory/data-types]]"
+creation-date: "2025-08-25"
+---
+
+# Stack vs. Heap: Gerenciamento de Memória em JavaScript
+
+> [!NOTE] Summary
+> Entender como JavaScript gerencia a memória é crucial para escrever código eficiente e evitar problemas como vazamentos de memória (memory leaks). A memória em um ambiente de execução JavaScript é dividida principalmente em duas áreas: a **Stack** e a **Heap**.
+
+## Syntax
+
+### A Stack (Pilha de Execução)
+
+A **Stack** é uma estrutura de dados estática e altamente organizada que armazena o contexto de execução do código. Ela funciona no formato **LIFO** (Last-In, First-Out), ou seja, o último item adicionado é o primeiro a ser removido.
+
+> [!NOTE] O que a Stack armazena?
+> 1.  **Valores Primitivos:** Variáveis de tipos como `number`, `string`, `boolean`, `null`, `undefined`, `symbol` e `bigint`. Por terem tamanho fixo, são armazenados diretamente aqui.
+> 2.  **Referências (Ponteiros):** O "endereço" de onde objetos e funções estão localizados na Heap.
+> 3.  **Contexto de Execução (Call Stack):** Cada vez que uma função é chamada, um "quadro" (_stack frame_) é empilhado. Ele contém os argumentos da função, suas variáveis locais e o ponto de retorno.
+
+```javascript
+function calcularQuadrado(n) {
+  // 3. Quadro de 'calcularQuadrado' é empilhado.
+  const resultado = n * n;
+  return resultado; // 4. Quadro é desempilhado.
+}
+
+function logicaPrincipal() {
+  // 1. Quadro de 'logicaPrincipal' é empilhado.
+  const valor = 5;
+  const quadrado = calcularQuadrado(valor); // 2. Chama outra função.
+  console.log(quadrado);
+}
+
+logicaPrincipal(); // 5. Quadro é desempilhado. A Stack fica vazia.
+```
+
+### A Heap (Monte)
+
+A **Heap** é uma região de memória muito maior e menos organizada, usada para armazenamento dinâmico. É aqui que os objetos residem.
+
+> [!NOTE] O que a Heap armazena?
+> - **Objetos:** Tudo que não é um tipo primitivo. Isso inclui objetos literais (`{}`), arrays (`[]`), e as próprias definições de funções.
+
+```javascript
+function criarUsuario(nome) {
+  // O objeto { nome } é criado na HEAP.
+  const user = { nome: nome };
+  // A função retorna a REFERÊNCIA para o objeto.
+  return user;
+}
+
+// 'novoUsuario' (na STACK) recebe a REFERÊNCIA para o objeto na HEAP.
+let novoUsuario = criarUsuario('Carlos');
+```
+
+## Use Cases
+
+### Vazamentos de Memória (Memory Leaks)
+
+Um vazamento de memória ocorre quando a memória alocada na Heap não é liberada pelo GC porque ainda existem referências desnecessárias a ela.
+
+Causas comuns em JavaScript:
+
+1.  **Variáveis Globais Acidentais:** Se você esquecer `let`, `const` ou `var` dentro de uma função, a variável pode se tornar global e nunca ser coletada.
+2.  **Timers e Callbacks Esquecidos:** Se um `setInterval` ou `setTimeout` referencia um objeto, esse objeto não será coletado enquanto o timer não for limpo (`clearInterval`).
+3.  **Closures:** Funções aninhadas que mantêm referência a variáveis de seu escopo pai podem impedir que essas variáveis sejam coletadas.
+4.  **Referências a Elementos do DOM Removidos:** Se você mantém uma referência a um elemento do DOM em seu código JavaScript, mas remove esse elemento da árvore do DOM, a memória não será liberada.
+
+## See Also
+
+- "[[javascript/closures]]"
+
+## References
+
+- [wtf is “the stack” ?](https://www.youtube.com/watch?v=CRTR5ljBjPM)
+- [Gerenciamento de memória - Stack vs Heap | Dias de Dev](https://www.youtube.com/watch?v=7kJwVQGJCbw)
+- [Stack vs Heap Memory - Simple Explanation](https://www.youtube.com/watch?v=5OJRqkYbK-4)
+- [O que são e onde estão a "stack" e "heap"?](https://pt.stackoverflow.com/questions/3797/o-que-s%c3%a3o-e-onde-est%c3%a3o-a-stack-e-heap)
+
 
 > [!NOTE] Como o GC sabe o que é "lixo"?
 > Um objeto é considerado "lixo" quando se torna **inacessível** a partir do código. Isso acontece quando não existe mais nenhuma referência ativa que aponte para ele.
