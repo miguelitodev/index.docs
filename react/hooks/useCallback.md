@@ -1,14 +1,20 @@
-# `useCallback()`
-
-O hook `useCallback` retorna uma versão memorizada de uma função (callback). Ele só recria a função se uma de suas dependências mudar.
-
-Isso é útil para otimização de performance, especialmente ao passar callbacks para componentes filhos otimizados que dependem da igualdade de referência para evitar renderizações desnecessárias.
-
-Tags: #react #hooks #performance
-
+---
+tags:
+  - react
+  - hooks
+  - performance
+related:
+  - "[[useMemo]]"
+  - "[[memo]]"
+creation-date: "2025-08-25"
 ---
 
-## Sintaxe
+# `useCallback()`
+
+> [!NOTE] Summary
+> O hook `useCallback` retorna uma versão memorizada de uma função (callback). Ele só recria a função se uma de suas dependências mudar.
+
+## Syntax
 
 ```javascript
 const memoizedCallback = useCallback(
@@ -21,13 +27,9 @@ const memoizedCallback = useCallback(
 
 - O `useCallback` retornará a mesma instância da função entre renderizações, a menos que os valores no array de dependências (`[a, b]`) mudem.
 
----
+## Use Cases
 
-## Problema Comum
-
-Quando você passa uma função para um componente filho, uma nova função é criada a cada renderização do componente pai. Se o componente filho for otimizado com `React.memo`, ele ainda assim renderizará novamente porque a função (prop) é sempre "nova".
-
-## Exemplo
+Isso é útil para otimização de performance, especialmente ao passar callbacks para componentes filhos otimizados que dependem da igualdade de referência para evitar renderizações desnecessárias.
 
 ```jsx
 import React, { useState, useCallback } from 'react';
@@ -37,14 +39,7 @@ const ParentComponent = () => {
   const [count, setCount] = useState(0);
   const [theme, setTheme] = useState('light');
 
-  // Sem useCallback, uma nova handleClick é criada a cada renderização
-  // const handleClick = () => {
-  //   setCount(count + 1);
-  // };
-
   // Com useCallback, a função só é recriada se `count` mudar.
-  // No entanto, para um simples `setCount`, a dependência não é necessária
-  // porque o React garante que `setCount` é estável.
   const handleClick = useCallback(() => {
     setCount(prevCount => prevCount + 1);
   }, []); // Array de dependências vazio, a função nunca é recriada
@@ -61,11 +56,11 @@ const ParentComponent = () => {
 };
 ```
 
-Neste exemplo, mesmo que `ParentComponent` renderize novamente por causa da mudança de tema, o componente `Button` não renderizará novamente, pois a prop `onClick` (a função `handleClick`) é a mesma instância memorizada pelo `useCallback`.
-
----
-
-## Links Relacionados
+## See Also
 
 - [[useMemo]]
 - [[memo]]
+
+## References
+
+- [React Docs: `useCallback`](https://react.dev/reference/react/useCallback)

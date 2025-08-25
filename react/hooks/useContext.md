@@ -1,14 +1,22 @@
-# `useContext()`
-
-O hook `useContext` permite que você leia e se inscreva em um contexto do React. Ele aceita um objeto de contexto (o valor retornado de `React.createContext`) e retorna o valor atual do contexto.
-
-É uma maneira de passar dados através da árvore de componentes sem ter que passar props manualmente em todos os níveis (evitando o "prop drilling").
-
-Tags: #react #hooks #context #state-management
-
+---
+tags:
+  - react
+  - hooks
+  - context
+  - state-management
+related:
+  - "[[useState]]"
+  - "[[useReducer]]"
+  - "[[Prop Drilling]]"
+creation-date: "2025-08-25"
 ---
 
-## Sintaxe
+# `useContext()`
+
+> [!NOTE] Summary
+> O hook `useContext` permite que você leia e se inscreva em um contexto do React. Ele aceita um objeto de contexto (o valor retornado de `React.createContext`) e retorna o valor atual do contexto.
+
+## Syntax
 
 ```javascript
 const value = useContext(MyContext);
@@ -16,13 +24,13 @@ const value = useContext(MyContext);
 
 - `MyContext`: O objeto de contexto que você deseja ler. Você deve criá-lo primeiro com `React.createContext`.
 
----
+## Use Cases
 
-## Exemplo Completo
+É uma maneira de passar dados através da árvore de componentes sem ter que passar props manualmente em todos os níveis (evitando o "prop drilling").
+
+### Exemplo Completo
 
 **1. Crie o Contexto**
-
-Primeiro, crie um arquivo para o seu contexto. Isso permite que você o importe em qualquer componente que precise dele.
 
 ```javascript
 // ThemeContext.js
@@ -32,8 +40,6 @@ export const ThemeContext = createContext('light'); // 'light' é o valor padrã
 ```
 
 **2. Forneça o Contexto (Provider)**
-
-No componente de nível superior, use o `Provider` para envolver os componentes que precisam de acesso ao contexto. Você pode passar um valor dinâmico para a prop `value`.
 
 ```jsx
 // App.js
@@ -57,8 +63,6 @@ function App() {
 
 **3. Consuma o Contexto (useContext)**
 
-Agora, qualquer componente filho (não importa quão profundo) pode usar o hook `useContext` para ler o valor do contexto.
-
 ```jsx
 // Toolbar.js
 import React, { useContext } from 'react';
@@ -77,12 +81,12 @@ function Toolbar() {
 }
 ```
 
-Quando o botão em `App.js` é clicado, o `value` do `Provider` muda, e o componente `Toolbar` renderiza novamente com o novo valor do tema.
-
----
-
-## Links Relacionados
+## See Also
 
 - [[useState]]
-- [[useReducer]] (frequentemente usado em conjunto para gerenciar estados mais complexos)
-- [[Prop Drilling]] (o problema que o `useContext` resolve)
+- [[useReducer]]
+- [[Prop Drilling]]
+
+## References
+
+- [React Docs: `useContext`](https://react.dev/reference/react/useContext)
