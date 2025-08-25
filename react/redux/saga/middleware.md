@@ -1,14 +1,26 @@
-# Middleware do Redux Saga
-
-O Redux Saga é implementado como um **middleware** do Redux. Um middleware fornece um ponto de extensão de terceiros entre o despacho de uma [[actions|ação]] e o momento em que ela atinge o [[reducers|reducer]].
-
-É o lugar perfeito para colocar lógica que não pertence à UI (componentes) nem à lógica de atualização de estado (reducers), como chamadas de API, acesso ao `localStorage`, etc.
-
-Tags: #react #redux #redux-saga #middleware #side-effects
-
+---
+tags:
+  - react
+  - redux
+  - redux-saga
+  - middleware
+  - side-effects
+related:
+  - "[[saga]]"
+  - "[[effects]]"
+  - "[[store]]"
+  - "[[Redux Thunk]]"
+creation-date: "2025-08-25"
 ---
 
-## Como o Middleware Funciona
+# Middleware do Redux Saga
+
+> [!NOTE] Summary
+> O Redux Saga é implementado como um **middleware** do Redux. Um middleware fornece um ponto de extensão de terceiros entre o despacho de uma [[actions|ação]] e o momento em que ela atinge o [[reducers|reducer]].
+
+## Syntax
+
+### Como o Middleware Funciona
 
 Quando você despacha uma ação, ela passa por uma cadeia de middlewares antes de chegar ao reducer.
 
@@ -23,15 +35,13 @@ Cada middleware pode:
 
 O Redux Saga usa essa capacidade para observar ações específicas e executar [[saga|sagas]] em resposta a elas.
 
----
+## Use Cases
 
-## Configurando o Middleware do Saga
+### Configurando o Middleware do Saga
 
 Para usar o Redux Saga, você precisa conectá-lo à [[store]] do Redux usando a função `applyMiddleware`.
 
 **1. Crie a instância do middleware**
-
-Primeiro, você cria uma instância do middleware do Saga usando `createSagaMiddleware()`.
 
 ```javascript
 // app/saga.js
@@ -50,8 +60,6 @@ export default function* rootSaga() {
 ```
 
 **2. Conecte à Store**
-
-Em seguida, ao configurar sua store, você aplica o middleware.
 
 ```javascript
 // app/store.js
@@ -76,16 +84,13 @@ export const store = configureStore({
 sagaMiddleware.run(rootSaga);
 ```
 
-**Explicação:**
-1.  `createSagaMiddleware()`: Cria a instância do middleware.
-2.  `middleware: ...`: O `configureStore` do Redux Toolkit permite que você adicione middlewares customizados. Nós pegamos os middlewares padrão (`getDefaultMiddleware()`) e adicionamos o `sagaMiddleware`.
-3.  `sagaMiddleware.run(rootSaga)`: Inicia a sua `rootSaga`. A partir deste ponto, a `rootSaga` estará em execução, pronta para observar ações e executar outros sagas.
-
----
-
-## Links Relacionados
+## See Also
 
 - [[saga]]
 - [[effects]]
 - [[store]]
-- [[Redux Thunk]] (outra opção popular de middleware para efeitos colaterais)
+- [[Redux Thunk]]
+
+## References
+
+- [Redux Saga Docs: Middleware](https://redux-saga.js.org/docs/advanced/Middleware.html)

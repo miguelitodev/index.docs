@@ -1,23 +1,25 @@
+---
+tags:
+  - react
+  - redux
+  - redux-toolkit
+  - store
+  - state-management
+related:
+  - "[[Redux Toolkit]]"
+  - "[[createSlice]]"
+  - "[[store]]"
+  - "[[reducers]]"
+  - "[[Redux Thunk]]"
+creation-date: "2025-08-25"
+---
+
 # `configureStore` do Redux Toolkit
 
-`configureStore` é a função principal do [[Redux Toolkit]] para criar a [[store]] do Redux. Ela substitui a função `createStore` original do Redux e simplifica muito o processo de configuração, incluindo padrões recomendados por padrão.
+> [!NOTE] Summary
+> `configureStore` é a função principal do [[Redux Toolkit]] para criar a [[store]] do Redux. Ela substitui a função `createStore` original do Redux e simplifica muito o processo de configuração, incluindo padrões recomendados por padrão.
 
-Tags: #react #redux #redux-toolkit #store #state-management
-
----
-
-## O que `configureStore` Faz?
-
-Ao usar `configureStore`, você obtém automaticamente:
-
-1.  **`combineReducers`:** Você pode passar um objeto de "slice reducers" para a opção `reducer`, e `configureStore` os combinará para você.
-2.  **`redux-thunk`:** O middleware [[Redux Thunk]] é adicionado por padrão, permitindo a lógica assíncrona básica.
-3.  **Redux DevTools Extension:** O suporte para a popular extensão de navegador é configurado automaticamente.
-4.  **Middlewares de Verificação:** Vários middlewares que verificam erros comuns, como mutação acidental do estado, são adicionados em ambiente de desenvolvimento.
-
----
-
-## Sintaxe
+## Syntax
 
 ```javascript
 import { configureStore } from '@reduxjs/toolkit';
@@ -37,9 +39,16 @@ export const store = configureStore({
 });
 ```
 
----
+## Use Cases
 
-## Exemplo com `createSlice`
+Ao usar `configureStore`, você obtém automaticamente:
+
+1.  **`combineReducers`:** Você pode passar um objeto de "slice reducers" para a opção `reducer`, e `configureStore` os combinará para você.
+2.  **`redux-thunk`:** O middleware [[Redux Thunk]] é adicionado por padrão, permitindo a lógica assíncrona básica.
+3.  **Redux DevTools Extension:** O suporte para a popular extensão de navegador é configurado automaticamente.
+4.  **Middlewares de Verificação:** Vários middlewares que verificam erros comuns, como mutação acidental do estado, são adicionados em ambiente de desenvolvimento.
+
+### Exemplo com `createSlice`
 
 `configureStore` é projetado para funcionar perfeitamente com `createSlice`, outra API do Redux Toolkit que gera [[actions]] e [[reducers]] a partir de um nome de slice e um objeto de funções redutoras.
 
@@ -86,14 +95,14 @@ export const store = configureStore({
 });
 ```
 
-Essa configuração é muito mais concisa e menos propensa a erros do que a abordagem manual com `createStore` e `combineReducers`.
-
----
-
-## Links Relacionados
+## See Also
 
 - [[Redux Toolkit]]
 - [[createSlice]]
 - [[store]]
 - [[reducers]]
 - [[Redux Thunk]]
+
+## References
+
+- [Redux Toolkit Docs: `configureStore`](https://redux-toolkit.js.org/api/configureStore)
