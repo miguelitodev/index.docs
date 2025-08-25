@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "template/Titulo.md",
+                "file": "template/note-template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Titulo"
+              "title": "note-template"
             }
           }
         ]
@@ -182,9 +182,9 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "template/Titulo.md",
     "template/note-template.md",
     "data-structures/recursion/recursive-functions.md",
-    "template/Titulo.md",
     "template",
     "().md",
     "assets/data-structures/recursion/recursive-functions/recursive-factorial-call-stack.png",
