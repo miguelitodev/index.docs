@@ -1,12 +1,32 @@
-# `useId()`
-
-O hook `useId` gera IDs únicos e estáveis que podem ser usados tanto no lado do servidor (SSR - Server-Side Rendering) quanto no cliente. Isso é útil para evitar "mismatches" de hidratação em componentes que precisam de IDs, como `label` e `input`.
-
-Tags: #react #hooks #accessibility #ssr
-
+---
+tags:
+  - react
+  - hooks
+  - accessibility
+  - ssr
+related:
+  - "[[Server-Side Rendering (SSR)]]"
+  - "[[Acessibilidade (a11y)]]"
+creation-date: "2025-08-25"
 ---
 
-## Problema que Resolve
+# `useId()`
+
+> [!NOTE] Summary
+> O hook `useId` gera IDs únicos e estáveis que podem ser usados tanto no lado do servidor (SSR - Server-Side Rendering) quanto no cliente. Isso é útil para evitar "mismatches" de hidratação em componentes que precisam de IDs, como `label` e `input`.
+
+## Syntax
+
+```javascript
+const uniqueId = useId();
+```
+
+- O hook não recebe argumentos.
+- O ID gerado é estável entre renderizações.
+
+## Use Cases
+
+### Problema que Resolve
 
 Ao criar componentes reutilizáveis, você frequentemente precisa conectar um `<label>` a um `<input>`. Isso é feito com os atributos `htmlFor` e `id`.
 
@@ -17,20 +37,7 @@ Ao criar componentes reutilizáveis, você frequentemente precisa conectar um `<
 
 Se você renderizar este componente várias vezes na mesma página, terá IDs duplicados, o que é inválido em HTML e quebra a acessibilidade. `useId` resolve isso gerando um ID garantido como único.
 
----
-
-## Sintaxe
-
-```javascript
-const uniqueId = useId();
-```
-
-- O hook não recebe argumentos.
-- O ID gerado é estável entre renderizações.
-
----
-
-## Exemplo
+### Exemplo
 
 ```jsx
 import React, { useId } from 'react';
@@ -80,9 +87,11 @@ function AdvancedForm() {
 }
 ```
 
----
-
-## Links Relacionados
+## See Also
 
 - [[Server-Side Rendering (SSR)]]
 - [[Acessibilidade (a11y)]]
+
+## References
+
+- [React Docs: `useId`](https://react.dev/reference/react/useId)

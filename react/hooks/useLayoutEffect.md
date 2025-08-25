@@ -1,14 +1,37 @@
+---
+tags:
+  - react
+  - hooks
+  - lifecycle
+  - dom
+related:
+  - "[[useEffect]]"
+  - "[[useRef]]"
+  - "[[Renderização no Navegador]]"
+creation-date: "2025-08-25"
+---
+
 # `useLayoutEffect()`
 
-O hook `useLayoutEffect` tem a mesma assinatura do `useEffect`, mas ele é executado **sincronamente** após todas as mutações do DOM serem concluídas, mas **antes** que o navegador pinte a tela.
+> [!NOTE] Summary
+> O hook `useLayoutEffect` tem a mesma assinatura do `useEffect`, mas ele é executado **sincronamente** após todas as mutações do DOM serem concluídas, mas **antes** que o navegador pinte a tela.
+
+## Syntax
+
+```javascript
+useLayoutEffect(() => {
+  // Código do efeito colateral
+  return () => {
+    // Função de limpeza (opcional)
+  };
+}, [dependencies]); // Array de dependências (opcional)
+```
+
+## Use Cases
 
 Use isso para ler o layout do DOM e, de forma síncrona, re-renderizar. Atualizações agendadas dentro do `useLayoutEffect` serão processadas de forma síncrona antes que o navegador tenha a chance de pintar.
 
-Tags: #react #hooks #lifecycle #dom
-
----
-
-## `useEffect` vs `useLayoutEffect`
+### `useEffect` vs `useLayoutEffect`
 
 - **`useEffect` (Padrão):**
   - Executa **assincronamente** após a renderização e a pintura da tela.
@@ -22,11 +45,7 @@ Tags: #react #hooks #lifecycle #dom
 
 **Regra geral:** Comece sempre com `useEffect`. Se você notar um *flicker* (piscada) na tela (o componente renderiza em um estado inicial e depois muda rapidamente para outro estado), `useLayoutEffect` pode ser a solução.
 
----
-
-## Exemplo: Medindo a Posição de um Tooltip
-
-Imagine que você precisa posicionar um tooltip com base no tamanho de um elemento. Se você usar `useEffect`, o tooltip pode aparecer no lugar errado por um instante e depois "pular" para a posição correta, causando um *flicker*.
+### Exemplo: Medindo a Posição de um Tooltip
 
 ```jsx
 import React, { useState, useLayoutEffect, useRef } from 'react';
@@ -55,12 +74,12 @@ function Tooltip() {
 }
 ```
 
-Neste caso, `useLayoutEffect` garante que, no momento em que o componente é exibido na tela, o `marginTop` do tooltip já foi calculado e aplicado corretamente, evitando qualquer piscada visual.
-
----
-
-## Links Relacionados
+## See Also
 
 - [[useEffect]]
 - [[useRef]]
 - [[Renderização no Navegador]]
+
+## References
+
+- [React Docs: `useLayoutEffect`](https://react.dev/reference/react/useLayoutEffect)
