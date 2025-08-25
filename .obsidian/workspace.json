@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kubernetes/introducao.md",
+                "file": "kubernetes/pods.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "introducao"
+              "title": "pods"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ab3c78f623a7597c",
@@ -182,6 +183,8 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "kubernetes/overview.md",
+    "kubernetes/introducao.md",
     "react/libs/react-hook-form.md",
     "data-structures/recursion/recursive-functions.md",
     "template/note-template.md",
@@ -225,8 +228,6 @@
     "react/hooks/memo.md",
     "typescript/_index.md",
     "typescript/!.md",
-    "React Hook Form with zod.md",
-    "Morgan-Love in The Dark.md",
-    "Brits-FIRE OBSESSION.md"
+    "React Hook Form with zod.md"
   ]
 }

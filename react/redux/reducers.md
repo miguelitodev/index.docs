@@ -1,16 +1,31 @@
-# Reducers no Redux
-
-Um **Reducer** é uma função pura que especifica como o estado de uma aplicação muda em resposta a uma [[actions|ação]]. A função `reducer` recebe dois argumentos: o estado atual (`state`) e uma `action`, e deve retornar o próximo estado (`newState`).
-
-`(currentState, action) => newState`
-
-Reducers são o coração da lógica do Redux.
-
-Tags: #react #redux #state-management #reducers
-
+---
+tags:
+  - react
+  - redux
+  - state-management
+  - reducers
+related:
+  - "[[actions]]"
+  - "[[store]]"
+  - "[[Imutabilidade]]"
+  - "[[Redux Toolkit]]"
+creation-date: "2025-08-25"
 ---
 
-## Princípios de um Reducer
+# Reducers no Redux
+
+> [!NOTE] Summary
+> Um **Reducer** é uma função pura que especifica como o estado de uma aplicação muda em resposta a uma [[actions|ação]]. A função `reducer` recebe dois argumentos: o estado atual (`state`) e uma `action`, e deve retornar o próximo estado (`newState`).
+
+## Syntax
+
+```javascript
+(currentState, action) => newState
+```
+
+## Use Cases
+
+### Princípios de um Reducer
 
 1.  **Função Pura:**
     - Dado o mesmo `state` e `action`, deve sempre retornar o mesmo `newState`.
@@ -22,11 +37,7 @@ Tags: #react #redux #state-management #reducers
     - Para objetos, use `...` (spread syntax) ou `Object.assign()`.
     - Para arrays, use `...` (spread syntax), `.map()`, `.filter()`, etc.
 
----
-
-## Exemplo de um Reducer
-
-Vamos criar um reducer para gerenciar uma lista de tarefas (todos).
+### Exemplo de um Reducer
 
 ```javascript
 import { ADD_TODO, TOGGLE_TODO } from './actions';
@@ -75,13 +86,9 @@ function todoAppReducer(state = initialState, action) {
 export default todoAppReducer;
 ```
 
----
-
-## `combineReducers`
+### `combineReducers`
 
 À medida que a aplicação cresce, é comum dividir a lógica de redução em múltiplos reducers, cada um gerenciando uma parte do estado. A função `combineReducers` do Redux ajuda a combinar esses reducers em um único reducer raiz.
-
-### Exemplo
 
 ```javascript
 import { combineReducers } from 'redux';
@@ -101,13 +108,13 @@ const rootReducer = combineReducers({
 export default rootReducer;
 ```
 
-O estado global agora terá a forma: `{ todos: [...], visibilityFilter: '...' }`.
-
----
-
-## Links Relacionados
+## See Also
 
 - [[actions]]
 - [[store]]
 - [[Imutabilidade]]
-- [[Redux Toolkit]] (que simplifica a escrita de reducers com `createSlice`)
+- [[Redux Toolkit]]
+
+## References
+
+- [Redux Docs: Reducers](https://redux.js.org/basics/reducers)
