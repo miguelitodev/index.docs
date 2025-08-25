@@ -1,14 +1,25 @@
-# React Rewards
-
-`react-rewards` é uma biblioteca divertida para adicionar micro-interações e efeitos de recompensa (como confetes ou emojis explodindo) aos seus componentes React.
-
-É uma ótima maneira de adicionar um toque de delight e feedback positivo para as ações do usuário.
-
-Tags: #react #libs #ui #animation #micro-interactions
-
+---
+tags:
+  - react
+  - libs
+  - ui
+  - animation
+  - micro-interactions
+related:
+  - "[[Framer Motion]]"
+  - "[[UI/UX Design]]"
+  - "[[Gamification]]"
+creation-date: "2025-08-25"
 ---
 
-## Instalação
+# React Rewards
+
+> [!NOTE] Summary
+> `react-rewards` é uma biblioteca divertida para adicionar micro-interações e efeitos de recompensa (como confetes ou emojis explodindo) aos seus componentes React.
+
+## Syntax
+
+### Instalação
 
 ```bash
 npm install react-rewards
@@ -16,9 +27,7 @@ npm install react-rewards
 yarn add react-rewards
 ```
 
----
-
-## Como Usar
+### Como Usar
 
 A biblioteca fornece um hook `useReward` e um componente `Reward`.
 
@@ -55,9 +64,9 @@ const LikeButton = () => {
 - `reward()`: Função que dispara a animação.
 - `<span id="like-button-reward" />`: Elemento âncora. A animação de balões sairá deste ponto.
 
----
+## Use Cases
 
-## Tipos de Recompensa
+### Tipos de Recompensa
 
 - `confetti`: Lança confetes coloridos.
 - `balloons`: Lança balões coloridos.
@@ -66,15 +75,17 @@ const LikeButton = () => {
 ### Exemplo com Emoji Customizado
 
 ```jsx
-const { reward } = useReward('reward-id', 'emoji', { 
-  emoji: ['❤️', '👍', '🎉'] 
+const { reward } = useReward('reward-id', 'emoji', {
+  emoji: ['❤️', '👍', '🎉']
 });
 ```
 
----
+## See Also
 
-## Links Relacionados
-
-- [[Framer Motion]] (para animações mais complexas)
+- [[Framer Motion]]
 - [[UI/UX Design]]
 - [[Gamification]]
+
+## References
+
+- [React Rewards GitHub Repository](https://github.com/thedevs-network/react-rewards)

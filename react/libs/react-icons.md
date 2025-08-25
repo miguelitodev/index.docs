@@ -1,14 +1,23 @@
-# React Icons
-
-`react-icons` é uma biblioteca que permite incluir facilmente ícones populares (Font Awesome, Material Icons, Ant Design Icons, etc.) em seus projetos React.
-
-Ela utiliza importações do ES6, então você só inclui os ícones que realmente usa, otimizando o tamanho final do seu bundle.
-
-Tags: #react #libs #icons #ui
-
+---
+tags:
+  - react
+  - libs
+  - icons
+  - ui
+related:
+  - "[[Styled Components]]"
+  - "[[UI/UX Design]]"
+creation-date: "2025-08-25"
 ---
 
-## Instalação
+# React Icons
+
+> [!NOTE] Summary
+> `react-icons` é uma biblioteca que permite incluir facilmente ícones populares (Font Awesome, Material Icons, Ant Design Icons, etc.) em seus projetos React.
+
+## Syntax
+
+### Instalação
 
 ```bash
 npm install react-icons --save
@@ -16,9 +25,7 @@ npm install react-icons --save
 yarn add react-icons
 ```
 
----
-
-## Como Usar
+### Como Usar
 
 1.  **Encontre um ícone:** Navegue pelo site da [React Icons](https://react-icons.github.io/react-icons/) para encontrar o ícone que você precisa.
 2.  **Importe o ícone:** Importe o componente do pacote de ícones apropriado.
@@ -47,11 +54,11 @@ function MyComponent() {
 }
 ```
 
----
+## Use Cases
 
-## Customização
+### Customização
 
-Você pode usar CSS para estilizar os ícones (cor, tamanho, etc.) ou usar o `IconContext` para aplicar estilos a todos os ícones de uma vez.
+You can use CSS to style the icons (color, size, etc.) or use `IconContext` to apply styles to all icons at once.
 
 ### Exemplo com `IconContext`
 
@@ -71,9 +78,11 @@ function App() {
 }
 ```
 
----
+## See Also
 
-## Links Relacionados
-
-- [[Styled Components]] (uma forma de estilizar os ícones)
+- [[Styled Components]]
 - [[UI/UX Design]]
+
+## References
+
+- [React Icons Documentation](https://react-icons.github.io/react-icons/)
