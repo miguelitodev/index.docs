@@ -182,6 +182,7 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "template/note-template.md",
     "data-structures/recursion/recursive-functions.md",
     "template/Titulo.md",
     "template",
@@ -226,7 +227,6 @@
     "typescript/!.md",
     "React Hook Form with zod.md",
     "Morgan-Love in The Dark.md",
-    "Brits-FIRE OBSESSION.md",
-    "Carlton_et_al-Assombrando Adeline.md"
+    "Brits-FIRE OBSESSION.md"
   ]
 }
