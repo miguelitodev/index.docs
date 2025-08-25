@@ -85,7 +85,7 @@ fatorial(5) = 5 * 24  = 120
 
 👉 Pense nisso como **descer de galho em galho até o menor** e depois **subir carregando as respostas**.
 
-![[Pasted image 20250825191137.png]]
+![[assets/data-structures/recursion/recursive-functions/recursive-factorial-call-stack.png]]
 
 ---
 
