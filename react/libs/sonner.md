@@ -1,12 +1,25 @@
-# Sonner
-
-Sonner é uma biblioteca de notificações (também conhecidas como "toasts") para React. Ela se destaca por ser opinativa, fácil de usar e esteticamente agradável, seguindo um design moderno.
-
-Tags: #react #libs #ui #notifications #toast
-
+---
+tags:
+  - react
+  - libs
+  - ui
+  - notifications
+  - toast
+related:
+  - "[[React Hot Toast]]"
+  - "[[UI/UX Design]]"
+  - "[[Feedback ao Usuário]]"
+creation-date: "2025-08-25"
 ---
 
-## Instalação
+# Sonner
+
+> [!NOTE] Summary
+> Sonner é uma biblioteca de notificações (também conhecidas como "toasts") para React. Ela se destaca por ser opinativa, fácil de usar e esteticamente agradável, seguindo um design moderno.
+
+## Syntax
+
+### Instalação
 
 ```bash
 npm install sonner
@@ -14,9 +27,7 @@ npm install sonner
 yarn add sonner
 ```
 
----
-
-## Como Usar
+### Como Usar
 
 1.  **Adicione o `Toaster`:** Coloque o componente `<Toaster />` na raiz do seu aplicativo (por exemplo, no `App.js`).
 2.  **Chame a função `toast`:** Importe a função `toast` de `sonner` e chame-a de qualquer lugar do seu código para exibir uma notificação.
@@ -64,9 +75,9 @@ function MyPage() {
 }
 ```
 
----
+## Use Cases
 
-## Tipos de Toast
+### Tipos de Toast
 
 Sonner oferece vários tipos de toasts prontos para uso:
 
@@ -93,10 +104,12 @@ function uploadFile(file) {
 }
 ```
 
----
+## See Also
 
-## Links Relacionados
-
-- [[React Hot Toast]] (outra biblioteca popular de toasts)
+- [[React Hot Toast]]
 - [[UI/UX Design]]
 - [[Feedback ao Usuário]]
+
+## References
+
+- [Sonner Documentation](https://sonner.emilkowalski.app/)

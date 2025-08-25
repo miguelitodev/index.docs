@@ -1,20 +1,22 @@
+---
+tags:
+  - typescript
+  - validation
+  - schema
+  - library
+related:
+  - "[[React Hook Form]]"
+creation-date: "2025-08-25"
+---
+
 # Zod: Validação de Esquemas com TypeScript
 
-Zod é uma biblioteca de declaração e validação de esquemas baseada em TypeScript. Ela é super útil para garantir que seus dados (sejam eles de formulários, APIs, etc.) estejam no formato certo. E o melhor: ela infere os tipos automaticamente, o que é uma mão na roda para quem usa TypeScript!
+> [!NOTE] Summary
+> Zod é uma biblioteca de declaração e validação de esquemas baseada em TypeScript. Ela é super útil para garantir que seus dados (sejam eles de formulários, APIs, etc.) estejam no formato certo. E o melhor: ela infere os tipos automaticamente, o que é uma mão na roda para quem usa TypeScript!
 
-## O Básico do Zod
+## Syntax
 
-### 1. Importando o Zod
-
-Você importa o Zod de forma bem simples:
-
-```typescript
-import { z } from "zod";
-```
-
-### 2. Criando um Schema
-
-Um schema Zod é a "receita" de como seus dados devem ser. Você define o tipo de cada campo e as regras de validação.
+### Criando um Schema
 
 ```typescript
 // Exemplo de um schema para um formulário de login
@@ -33,9 +35,7 @@ const userSchema = z.object({
 });
 ```
 
-### 3. Validando Dados com Zod
-
-Depois de criar seu schema, você pode usá-lo para validar qualquer dado. O método `parse` vai lançar um erro se a validação falhar, e o `safeParse` retorna um objeto com `success` e `data` ou `error`.
+### Validando Dados com Zod
 
 ```typescript
 try {
@@ -49,17 +49,13 @@ try {
 const result = loginSchema.safeParse({ email: "email-invalido", password: "123" });
 
 if (result.success) {
-  console.log("Dados válidos (safeParse):
-", result.data);
+  console.log("Dados válidos (safeParse):\n", result.data);
 } else {
-  console.error("Erro de validação (safeParse):
-", result.error.errors);
+  console.error("Erro de validação (safeParse):\n", result.error.errors);
 }
 ```
 
-### 4. Inferência de Tipos
-
-Uma das maiores vantagens do Zod é que ele pode inferir os tipos TypeScript a partir do seu schema. Isso significa menos trabalho manual para você!
+### Inferência de Tipos
 
 ```typescript
 type LoginFormData = z.infer<typeof loginSchema>;
@@ -69,23 +65,11 @@ type User = z.infer<typeof userSchema>;
 // User agora é: { id: string; name: string; age: number; isActive: boolean; roles: string[]; }
 ```
 
-## Zod com React Hook Form
+## Use Cases
+
+### Zod com React Hook Form
 
 A integração do Zod com o React Hook Form é super fácil e recomendada para validações mais robustas e complexas.
-
-### 1. Instalando o Resolver
-
-Você vai precisar de um pacote extra para fazer a ponte entre os dois:
-
-```bash
-npm install @hookform/resolvers zod
-# ou
-yarn add @hookform/resolvers zod
-```
-
-### 2. Usando o Zod Resolver
-
-Agora, é só passar seu schema Zod para o `resolver` do `useForm`:
 
 ```jsx
 import React from 'react';
@@ -121,19 +105,19 @@ function MeuFormularioComZod() {
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label>Nome de Usuário:</label>
-        <input {...register("username")} />
+        <input {...register("username")}/>
         {errors.username && <p style={{ color: 'red' }}>{errors.username.message}</p>}
       </div>
 
       <div>
         <label>Email:</label>
-        <input type="email" {...register("email")} />
+        <input type="email" {...register("email")}/>
         {errors.email && <p style={{ color: 'red' }}>{errors.email.message}</p>}
       </div>
 
       <div>
         <label>Idade:</label>
-        <input type="number" {...register("age", { valueAsNumber: true })} />
+        <input type="number" {...register("age", { valueAsNumber: true }) }/>
         {errors.age && <p style={{ color: 'red' }}>{errors.age.message}</p>}
       </div>
 
@@ -141,42 +125,20 @@ function MeuFormularioComZod() {
     </form>
   );
 }
-
-export default MeuFormularioComZod;
 ```
 
 ### Recursos Avançados do Zod
 
-O Zod vai muito além do básico. Aqui estão alguns recursos que podem ser muito úteis:
-
-*   **Transformações (`transform`)**: Altera o valor de um campo após a validação. Por exemplo, converter uma string para um número.
-    ```typescript
-    const priceSchema = z.string().transform(val => parseFloat(val));
-    ```
+*   **Transformações (`transform`)**: Altera o valor de um campo após a validação.
 *   **Uniões (`union`)**: Define que um campo pode ser de um tipo OU de outro.
-    ```typescript
-    const idSchema = z.union([z.string().uuid(), z.number().int()]);
-    ```
 *   **Interseções (`intersection`)**: Combina dois schemas em um só.
-    ```typescript
-    const baseUser = z.object({ name: z.string() });
-    const adminUser = z.object({ role: z.literal("admin") });
-    const fullAdmin = z.intersection(baseUser, adminUser);
-    ```
 *   **Validações Personalizadas (`refine`, `superRefine`)**: Para regras de validação que dependem de múltiplos campos ou lógicas mais complexas.
-    ```typescript
-    const passwordConfirmSchema = z.object({
-      password: z.string(),
-      confirmPassword: z.string(),
-    }).refine(data => data.password === data.confirmPassword, {
-      message: "Senhas não conferem!",
-      path: ["confirmPassword"], // Onde o erro será anexado
-    });
-    ```
 *   **`optional()` e `nullable()`**: Para campos que podem ser opcionais ou nulos.
-    ```typescript
-    const optionalField = z.string().optional(); // undefined
-    const nullableField = z.string().nullable(); // null
-    ```
 
-Com o Zod, você tem um poder enorme para validar seus dados de forma segura e com a ajuda do TypeScript, garantindo que seus formulários sejam robustos e livres de erros de tipo. 
+## See Also
+
+- [[React Hook Form]]
+
+## References
+
+- [Zod Documentation](https://zod.dev/)

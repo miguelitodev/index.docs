@@ -1,39 +1,33 @@
-
+---
+tags:
+  - react
+  - libs
+  - state-management
+  - performance
+  - frontend
+related:
+  - "[[React Hooks]]"
+  - "[[Gerenciamento de Estado]]"
+  - "[[Performance em React]]"
+creation-date: "2025-08-25"
 ---
 
 # 🐻 Zustand - Gerenciamento de Estado Simples e Performático
 
-`Zustand` é uma biblioteca de gerenciamento de estado para React, pequena, rápida e flexível. O nome significa "estado" em alemão. Ela se baseia em hooks e oferece uma API mínima e intuitiva, removendo grande parte da complexidade e do _boilerplate_ associados a outras libs como o Redux.
+> [!NOTE] Summary
+> `Zustand` é uma biblioteca de gerenciamento de estado para React, pequena, rápida e flexível. Ela se baseia em hooks e oferece uma API mínima e intuitiva, removendo grande parte da complexidade e do _boilerplate_ associados a outras libs como o Redux.
 
-A filosofia do Zustand é que o estado é desacoplado do componente. Ele vive fora da árvore do React, permitindo o acesso de qualquer lugar da aplicação de forma performática.
+## Syntax
 
-**Recursos:**
-
-- **Site Oficial / Demo:** [zustand-demo.pmnd.rs](https://zustand-demo.pmnd.rs/)
-    
-- **Vídeo de Referência:** [Fireship - Zustand in 100 Seconds](https://www.youtube.com/watch?v=_ngCLZ5Iz-0)
-    
-
-**Tags:** #react #libs #state-management #performance #frontend
-
----
-
-## 💡 Conceitos Fundamentais
-
-### 1. O Store (`create`)
+### O Store (`create`)
 
 Tudo começa com a função `create`. Ela recebe uma função que define o estado inicial e as ações que podem modificá-lo.
 
 - **`state`**: Os dados que você quer armazenar (ex: `count`, `notes`).
-    
 - **`set`**: A função usada para atualizar o estado. Ela é imutável por baixo dos panos; você sempre descreve o _novo_ estado.
-    
 - **Ações**: Funções que vivem dentro do store e que usam o `set` para realizar as atualizações.
-    
 
-TypeScript
-
-```
+```typescript
 // store.ts
 import { create } from "zustand";
 
@@ -52,16 +46,13 @@ export const useCounterStore = create<CounterState>((set) => ({
 }));
 ```
 
-### 2. Consumindo o Estado no Componente (O Hook)
+### Consumindo o Estado no Componente (O Hook)
 
 Para usar o estado em um componente, basta chamar o hook que criamos. A "mágica" da performance do Zustand está no **seletor**.
 
 - **Seletor**: É a função que passamos para o hook para extrair apenas os pedaços do estado que o componente precisa. **O componente só vai re-renderizar se o valor retornado pelo seletor mudar.**
-    
 
-JavaScript
-
-```
+```javascript
 // Counter.tsx
 import { useCounterStore } from './store';
 
@@ -80,34 +71,11 @@ function Counter() {
 }
 ```
 
-### ⚠️ Otimização de Performance: O Anti-Padrão a Evitar
-
-Se você selecionar o estado inteiro, seu componente vai re-renderizar a **qualquer** mudança no store, mesmo que não use aquele pedaço do estado.
-
-JavaScript
-
-```
-// ❌ RUIM: Evite isso!
-// Este componente re-renderiza sempre que QUALQUER coisa no store mudar.
-const state = useCounterStore(); // ou useCounterStore(state => state)
-
-return <div>{state.count}</div>;
-```
-
----
-
-## 🚀 Padrões Avançados e Boas Práticas
-
 ### Acessando o Estado Fora de Componentes (`getState`)
 
-Como o estado do Zustand vive fora do React, você pode acessá-lo de qualquer lugar do seu código JS, sem precisar de um hook. Isso é útil para lógicas em callbacks, funções utilitárias ou integrações.
+Como o estado do Zustand vive fora do React, você pode acessá-lo de qualquer lugar do seu código JS, sem precisar de um hook.
 
-- `useStore.getState()`: Retorna uma "foto" do estado naquele exato momento. **Não é reativo**, ou seja, não dispara re-renderizações.
-    
-
-JavaScript
-
-```ts
+```typescript
 import { useCounterStore } from "./store";
 
 // Uma função utilitária qualquer
@@ -118,13 +86,39 @@ export const logCurrentCount = () => {
 };
 ```
 
+### Middlewares: Superpoderes para seu Store
+
+Zustand tem um ecossistema de middlewares que adicionam funcionalidades extras de forma simples.
+
+- **`devtools`**: Integra seu store com a extensão Redux DevTools do navegador.
+- **`persist`**: Salva o estado no `localStorage` (ou outro storage) e o reidrata automaticamente.
+
+```tsx
+import { create } from 'zustand';
+import { devtools, persist } from 'zustand/middleware';
+
+// ... (definição do type do seu estado)
+
+export const useMyStore = create<MyState>()(
+  // Envolvemos nosso 'create' com os middlewares
+  devtools(
+    persist(
+      (set) => ({
+        // ... seu estado e ações aqui
+      }),
+      {
+        name: 'my-app-storage', // nome da chave no localStorage
+      }
+    )
+  )
+);
+```
+
+## Use Cases
+
 ### Exemplo Prático: Lista de Notas
 
-Este é um ótimo exemplo de como lidar com um array de objetos.
-
-TypeScript
-
-```ts
+```typescript
 // listStore.ts
 import { create } from "zustand";
 import { v4 as uuidv4 } from 'uuid'; // ou crypto.randomUUID()
@@ -155,53 +149,13 @@ export const useListStore = create<ListState>((set) => ({
 }));
 ```
 
-### Middlewares: Superpoderes para seu Store
-
-Zustand tem um ecossistema de middlewares que adicionam funcionalidades extras de forma simples.
-
-- **`devtools`**: Integra seu store com a extensão Redux DevTools do navegador. **Indispensável para debugar!**
-    
-- **`persist`**: Salva o estado no `localStorage` (ou outro storage) e o reidrata automaticamente. Perfeito para manter a sessão do usuário ou o conteúdo de um carrinho.
-    
-
-**Como usar:**
-
-TypeScript
-
-```tsx
-import { create } from 'zustand';
-import { devtools, persist } from 'zustand/middleware';
-
-// ... (definição do type do seu estado)
-
-export const useMyStore = create<MyState>()(
-  // Envolvemos nosso 'create' com os middlewares
-  devtools(
-    persist(
-      (set) => ({
-        // ... seu estado e ações aqui
-      }),
-      {
-        name: 'my-app-storage', // nome da chave no localStorage
-      }
-    )
-  )
-);
-```
-
----
-
-## 🆚 Zustand vs. Outras Ferramentas
-
-- **vs. Context API**: O Context API causa a re-renderização de **todos** os componentes consumidores quando o valor do contexto muda, mesmo que o componente não use aquele pedaço específico do valor. Zustand resolve isso com seu sistema de seletores, sendo muito mais performático.
-    
-- **vs. Redux**: Redux exige muito mais código de configuração (_boilerplate_): actions, reducers, dispatchers, etc. Zustand oferece uma API muito mais simples e direta para a maioria dos casos de uso.
-    
-
-## Links Relacionados
+## See Also
 
 - [[React Hooks]]
-    
 - [[Gerenciamento de Estado]]
-    
 - [[Performance em React]]
+
+## References
+
+- [Zustand Documentation](https://zustand-demo.pmnd.rs/)
+- [Fireship - Zustand in 100 Seconds](https://www.youtube.com/watch?v=_ngCLZ5Iz-0)
