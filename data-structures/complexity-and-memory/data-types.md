@@ -1,10 +1,18 @@
+---
+tags:
+  - javascript
+  - fundamentals
+  - data-types
+related:
+  - "[[data-structures/complexity-and-memory/stack-heap]]"
+creation-date: "2025-08-25"
+---
+
 # Tipos de Dados em JavaScript
 
 Em JavaScript, os tipos de dados definem a natureza dos valores que uma variável pode conter. Eles são fundamentalmente divididos em duas categorias: **Tipos Primitivos** e **Tipos de Referência**.
 
-Tags: #javascript #fundamentals #data-types
 
----
 
 ## Tipos Primitivos (Primitive Types)
 
