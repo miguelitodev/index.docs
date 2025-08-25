@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "99f0e2aabd57acab",
+        "id": "b4f7d18dee51b001",
         "type": "tabs",
         "children": [
           {
-            "id": "da24fd603acf05c1",
+            "id": "8ee7463e661614bb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "data-structures/recursion/recursive-functions.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "recursive-functions"
+              "title": "New tab"
             }
           }
         ]
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 222.5,
+    "width": 300,
     "collapsed": true
   },
   "right": {
@@ -167,12 +163,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.5,
-    "collapsed": true
+    "width": 420.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -182,43 +176,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da24fd603acf05c1",
+  "active": "8ee7463e661614bb",
   "lastOpenFiles": [
-    "().md",
+    "data-structures/big-o-notation.md",
+    "typescript/non-null-assertion-operator.md",
+    "javascript/closures.md",
     "data-structures/recursion/recursive-functions.md",
-    "Readme.md",
+    "data-structures/recursion",
+    "data-structures/complexity-and-memory/stack-heap.md",
+    "data-structures/complexity-and-memory/data-types.md",
+    "data-structures/complexity-and-memory/big-o-notation.md",
+    "data-structures/complexity-and-memory",
     "assets/data-structures/complexity-and-memory/data-types/stack.png",
     "assets/data-structures/complexity-and-memory/data-types/stack-heap-shared-reference.png",
     "assets/data-structures/complexity-and-memory/data-types/stack-heap-reference-types.png",
-    "assets/data-structures/data-types/Pasted image 20250821065828.png",
-    "assets/data-structures/data-types/Pasted image 20250821065815.png",
-    "assets/data-structures/complexity-and-memory/data-types",
     "assets/data-structures/complexity-and-memory/big-o-notation/quadratic-o-n2.png",
     "assets/data-structures/complexity-and-memory/big-o-notation/logarithmic-o-log-n.png",
     "assets/data-structures/complexity-and-memory/big-o-notation/linear-o-n.png",
     "assets/data-structures/complexity-and-memory/big-o-notation/constant-o-1.png",
     "assets/data-structures/complexity-and-memory/big-o-notation/big-o-notation-chart.png",
-    "assets/data-structures/complexity-and-memory/big-o-notation",
-    "Untitled.base",
-    "data-structures/complexity-and-memory/stack-heap.md",
-    "data-structures/complexity-and-memory/data-types.md",
-    "assets/pasted-images",
-    "assets/data-structures/complexity-and-memory/big-o-notation",
     "assets/data-structures/complexity-and-memory/data-types",
+    "assets/data-structures/complexity-and-memory/big-o-notation",
     "assets/data-structures/complexity-and-memory",
-    "data-structures/complexity-and-memory/big-o-notation.md",
-    "data-structures/recursion",
-    "data-structures/complexity-and-memory",
-    "typescript/non-null-assertion-operator.md",
-    "assets/data-structures/complexity-and-memory/data-types",
-    "javascript/closures.md",
+    "().md",
+    "assets/data-structures/big-o-notation/quadratic-o-n2.png",
+    "assets/data-structures/big-o-notation/logarithmic-o-log-n.png",
     "data-structures/Big O Notation.md",
+    "assets/data-structures/big-o-notation",
+    "assets/data-structures",
     "data-sctructure/Big O Notation.md",
+    "data-structures",
+    "assets",
+    "data-sctructure",
     "react/libs/zustand.md",
     "react/libs/react-rewards.md",
     "react/libs/zod.md",
     "react/libs/react-hook-form.md",
     "react/_index.md",
+    "Readme.md",
     "react/hooks/useRef.md",
     "react/hooks/useLayoutEffect.md",
     "react/hooks/memo.md",
@@ -228,7 +223,6 @@
     "Morgan-Love in The Dark.md",
     "Brits-FIRE OBSESSION.md",
     "Carlton_et_al-Assombrando Adeline.md",
-    "Maas-A lâmina da assassina.md",
-    "react/libs/react-icons.md"
+    "Maas-A lâmina da assassina.md"
   ]
 }
