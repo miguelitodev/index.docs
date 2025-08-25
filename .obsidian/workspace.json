@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "template/note-template.md",
+                "file": "data-structures/recursion/recursive-functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "note-template"
+              "title": "recursive-functions"
             }
           }
         ]
@@ -182,8 +182,8 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
-    "template/Titulo.md",
     "template/note-template.md",
+    "template/Titulo.md",
     "data-structures/recursion/recursive-functions.md",
     "template",
     "().md",
