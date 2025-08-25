@@ -1,14 +1,26 @@
-# Actions (Ações) no Redux
-
-No Redux, **Actions** (Ações) são objetos simples de JavaScript que representam a intenção de mudar o estado. Elas são a única fonte de informação para a `store`.
-
-Uma ação é um "payload" de informação que envia dados da sua aplicação para a sua store. Você as envia para a store usando o método `store.dispatch()`.
-
-Tags: #react #redux #state-management #actions
-
+---
+tags:
+  - react
+  - redux
+  - state-management
+  - actions
+related:
+  - "[[reducers]]"
+  - "[[dispatch]]"
+  - "[[store]]"
+  - "[[Redux Thunk]]"
+  - "[[Redux Saga]]"
+creation-date: "2025-08-25"
 ---
 
-## Estrutura de uma Ação
+# Actions (Ações) no Redux
+
+> [!NOTE] Summary
+> No Redux, **Actions** (Ações) são objetos simples de JavaScript que representam a intenção de mudar o estado. Elas são a única fonte de informação para a `store`.
+
+## Syntax
+
+### Estrutura de uma Ação
 
 Por convenção, uma ação deve ter uma propriedade `type`, que geralmente é uma string constante. O `type` descreve a ação que está sendo realizada.
 
@@ -22,13 +34,9 @@ Por convenção, uma ação deve ter uma propriedade `type`, que geralmente é u
 - **`type` (Obrigatório):** Uma string que descreve a ação. É comum usar constantes para evitar erros de digitação (ex: `const ADD_TODO = 'ADD_TODO';`).
 - **`payload` (Opcional):** Contém os dados necessários para executar a ação. Pode ser qualquer tipo de dado (objeto, string, número).
 
----
+### Action Creators (Criadores de Ação)
 
-## Action Creators (Criadores de Ação)
-
-**Action Creators** são funções que criam e retornam objetos de ação. É uma boa prática usá-los em vez de escrever o objeto da ação manualmente toda vez. Isso ajuda a manter o código consistente e mais fácil de entender.
-
-### Exemplo de Action Creator
+**Action Creators** são funções que criam e retornam objetos de ação. É uma boa prática usá-los em vez de escrever o objeto da ação manualmente toda vez.
 
 ```javascript
 // Constante para o tipo da ação
@@ -47,27 +55,11 @@ export function addTodo(text) {
 }
 ```
 
-Agora, para criar a ação, você simplesmente chama a função:
+## Use Cases
 
-```javascript
-import { addTodo } from './actions';
-
-const addAction = addTodo('Criar um exemplo de Action Creator');
-
-// O resultado de `addAction` será:
-// {
-//   type: 'ADD_TODO',
-//   payload: { id: '...', text: 'Criar um exemplo...', completed: false }
-// }
-```
-
----
-
-## Ações Assíncronas
+### Ações Assíncronas
 
 Ações, por si só, são síncronas. Para lidar com operações assíncronas (como chamadas de API), você usa um middleware como o [[Redux Thunk]] ou [[Redux Saga]].
-
-Com o Thunk, um Action Creator pode retornar uma função em vez de um objeto. Essa função recebe `dispatch` e `getState` como argumentos.
 
 ### Exemplo com Thunk (simplificado)
 
@@ -86,12 +78,14 @@ function fetchTodos() {
 }
 ```
 
----
+## See Also
 
-## Links Relacionados
-
-- [[reducers]] (que interpretam as ações para mudar o estado)
-- [[dispatch]] (a função que envia as ações)
-- [[store]] (o objeto que mantém o estado)
+- [[reducers]]
+- [[dispatch]]
+- [[store]]
 - [[Redux Thunk]]
 - [[Redux Saga]]
+
+## References
+
+- [Redux Docs: Actions](https://redux.js.org/basics/actions)

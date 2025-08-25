@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "react/libs/react-hook-form.md",
+                "file": "kubernetes/introducao.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "react-hook-form"
+              "title": "introducao"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "react/libs/react-hook-form.md",
     "data-structures/recursion/recursive-functions.md",
     "template/note-template.md",
     "template/Titulo.md",
@@ -217,7 +218,6 @@
     "react/libs/zustand.md",
     "react/libs/react-rewards.md",
     "react/libs/zod.md",
-    "react/libs/react-hook-form.md",
     "react/_index.md",
     "Readme.md",
     "react/hooks/useRef.md",

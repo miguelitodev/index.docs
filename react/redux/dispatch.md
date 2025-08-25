@@ -1,27 +1,25 @@
+---
+tags:
+  - react
+  - redux
+  - state-management
+  - dispatch
+related:
+  - "[[actions]]"
+  - "[[reducers]]"
+  - "[[store]]"
+  - "[[useDispatch]]"
+creation-date: "2025-08-25"
+---
+
 # `dispatch` no Redux
 
-A função `dispatch` é o método que você usa para enviar (ou "despachar") [[actions]] para a `store` do Redux. É a única maneira de acionar uma mudança de estado.
+> [!NOTE] Summary
+> A função `dispatch` é o método que você usa para enviar (ou "despachar") [[actions]] para a `store` do Redux. É a única maneira de acionar uma mudança de estado.
 
-Quando você chama `dispatch(action)`, a `store` do Redux executa o [[reducers|reducer]] raiz, passando o estado atual e a `action` que você despachou. O reducer então calcula o próximo estado.
+## Syntax
 
-Tags: #react #redux #state-management #dispatch
-
----
-
-## Como Funciona
-
-O fluxo é o seguinte:
-
-1.  Você chama `dispatch(action)` de algum lugar na sua UI (por exemplo, um `onClick` de um botão).
-2.  A `store` do Redux recebe a ação.
-3.  A `store` chama a função `reducer` com os argumentos `(currentState, action)`.
-4.  O `reducer` avalia a ação e retorna o `nextState`.
-5.  A `store` salva o `nextState` e notifica todos os componentes inscritos (conectados) sobre a mudança.
-6.  Os componentes conectados re-renderizam com os novos dados do estado.
-
----
-
-## Obtendo o `dispatch`
+### Obtendo o `dispatch`
 
 Em uma aplicação React com `react-redux`, você não acessa o `dispatch` diretamente da `store`. Em vez disso, você usa o hook `useDispatch`.
 
@@ -56,9 +54,20 @@ const AddTodoInput = () => {
 };
 ```
 
----
+## Use Cases
 
-## `mapDispatchToProps` (Abordagem Antiga com `connect`)
+### Como Funciona
+
+O fluxo é o seguinte:
+
+1.  Você chama `dispatch(action)` de algum lugar na sua UI (por exemplo, um `onClick` de um botão).
+2.  A `store` do Redux recebe a ação.
+3.  A `store` chama a função `reducer` com os argumentos `(currentState, action)`.
+4.  O `reducer` avalia a ação e retorna o `nextState`.
+5.  A `store` salva o `nextState` e notifica todos os componentes inscritos (conectados) sobre a mudança.
+6.  Os componentes conectados re-renderizam com os novos dados do estado.
+
+### `mapDispatchToProps` (Abordagem Antiga com `connect`)
 
 Antes dos hooks, em componentes de classe, a função `mapDispatchToProps` era usada com o HOC `connect` para injetar `dispatch` ou `action creators` pré-vinculados como props no componente.
 
@@ -78,13 +87,13 @@ const mapDispatchToProps = dispatch => {
 export default connect(null, mapDispatchToProps)(MyComponent);
 ```
 
-Embora ainda funcione, a abordagem com o hook `useDispatch` é considerada mais moderna e simples.
-
----
-
-## Links Relacionados
+## See Also
 
 - [[actions]]
 - [[reducers]]
 - [[store]]
-- [[useDispatch]] (hook do `react-redux`)
+- [[useDispatch]]
+
+## References
+
+- [Redux Docs: Dispatch](https://redux.js.org/api/store#dispatchaction)
