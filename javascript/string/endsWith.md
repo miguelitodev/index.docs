@@ -1,12 +1,20 @@
-# `String.prototype.endsWith()`
-
-O método `endsWith()` determina se uma string termina com os caracteres de outra string, retornando `true` ou `false` conforme apropriado.
-
-Tags: #javascript #string #metodos
-
+---
+tags:
+  - javascript
+  - string
+  - methods
+related:
+  - "[[startsWith]]"
+  - "[[includes]]"
+creation-date: "2025-08-25"
 ---
 
-## Sintaxe
+# `String.prototype.endsWith()`
+
+> [!NOTE] Summary
+> O método `endsWith()` determina se uma string termina com os caracteres de outra string, retornando `true` ou `false` conforme apropriado.
+
+## Syntax
 
 ```javascript
 str.endsWith(searchString[, length])
@@ -15,9 +23,7 @@ str.endsWith(searchString[, length])
 - `searchString`: Os caracteres a serem procurados no final da string.
 - `length` (Opcional): Se fornecido, é usado como o comprimento da `str`. O padrão é `str.length`.
 
----
-
-## Exemplos
+## Use Cases
 
 ### Verificação simples
 
@@ -39,9 +45,11 @@ const str = 'Isso é um teste.';
 console.log(str.endsWith('Isso', 4)); // true
 ```
 
----
-
-## Links Relacionados
+## See Also
 
 - [[startsWith]]
 - [[includes]]
+
+## References
+
+- [MDN Web Docs: String.prototype.endsWith()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)

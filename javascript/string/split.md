@@ -1,12 +1,20 @@
-# `String.prototype.split()`
-
-O método `split()` divide uma `String` em uma lista ordenada de substrings, coloca essas substrings em um array e retorna o array. A divisão é feita procurando um padrão, que é fornecido como o primeiro parâmetro na chamada do método.
-
-Tags: #javascript #string #metodos
-
+---
+tags:
+  - javascript
+  - string
+  - methods
+related:
+  - "[[join]]"
+  - "[[substring]]"
+creation-date: "2025-08-25"
 ---
 
-## Sintaxe
+# `String.prototype.split()`
+
+> [!NOTE] Summary
+> O método `split()` divide uma `String` em uma lista ordenada de substrings, coloca essas substrings em um array e retorna o array. A divisão é feita procurando um padrão, que é fornecido como o primeiro parâmetro na chamada do método.
+
+## Syntax
 
 ```javascript
 str.split([separator[, limit]])
@@ -15,9 +23,7 @@ str.split([separator[, limit]])
 - `separator` (Opcional): Especifica o caractere (ou expressão regular) a ser usado para separar a string. Se omitido, o array retornado conterá um único elemento com a string inteira.
 - `limit` (Opcional): Um número inteiro não negativo que limita o número de substrings a serem incluídas no array.
 
----
-
-## Exemplos
+## Use Cases
 
 ### Dividindo uma string por espaços
 
@@ -64,9 +70,11 @@ const chars = word.split('');
 console.log(chars); // ['h', 'e', 'l', 'l', 'o']
 ```
 
----
-
-## Links Relacionados
+## See Also
 
 - [[join]]
 - [[substring]]
+
+## References
+
+- [MDN Web Docs: String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)

@@ -1,12 +1,21 @@
-# `Array.prototype.filter()`
-
-O método `filter()` cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
-
-Tags: #javascript #array #metodos
-
+---
+tags:
+  - javascript
+  - array
+  - methods
+related:
+  - "[[map]]"
+  - "[[reduce]]"
+  - "[[forEach]]"
+creation-date: "2025-08-25"
 ---
 
-## Sintaxe
+# `Array.prototype.filter()`
+
+> [!NOTE] Summary
+> O método `filter()` cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+
+## Syntax
 
 ```javascript
 const newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
@@ -18,9 +27,7 @@ const newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
   - `array` (Opcional): O array no qual `filter` foi chamado.
 - `thisArg` (Opcional): Valor a ser usado como `this` ao executar o `callback`.
 
----
-
-## Exemplos
+## Use Cases
 
 ### Filtrando números ímpares
 
@@ -51,10 +58,12 @@ console.log(fruits);
 // ]
 ```
 
----
-
-## Links Relacionados
+## See Also
 
 - [[map]]
 - [[reduce]]
 - [[forEach]]
+
+## References
+
+- [MDN Web Docs: Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
