@@ -85,6 +85,8 @@ fatorial(5) = 5 * 24  = 120
 
 👉 Pense nisso como **descer de galho em galho até o menor** e depois **subir carregando as respostas**.
 
+![[Pasted image 20250825191137.png]]
+
 ---
 
 ## Exemplo Avançado: Sequência de Fibonacci com Recursão
@@ -118,8 +120,4 @@ console.log(fibonacci(6)); // 8
 - [A melhor explicação de Recursividade do Youtube](https://youtu.be/qUe36p4P2CI)
     
 - [Recursion - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Recursion)
-    
-
----
-
-Quer que eu também faça uma **ilustração em caixinhas tipo fluxograma** mostrando as chamadas `fatorial(5) → fatorial(4) → ... → fatorial(1)` e a volta? Isso deixa ainda mais visual.
+  
