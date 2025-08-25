@@ -1,46 +1,28 @@
+---
+tags:
+  - react
+  - performance
+  - hoc
+  - hooks
+related:
+  - "[[useCallback]]"
+  - "[[useMemo]]"
+  - "[[shouldComponentUpdate]]"
+creation-date: "2025-08-25"
+---
+
 # `React.memo()`
 
-`React.memo` é um Higher-Order Component (HOC) que memoriza o resultado de um componente de função. Ele evita que o componente seja renderizado novamente se suas props não mudaram.
+> [!NOTE] Summary
+> `React.memo` é um Higher-Order Component (HOC) que memoriza o resultado de um componente de função. Ele evita que o componente seja renderizado novamente se suas props não mudaram.
 
-É uma otimização de performance.
-
-Tags: #react #performance #hoc #hooks
-
----
-
-## Quando Usar
-
-Use `memo` para componentes funcionais que:
-
-1.  Renderizam com frequência.
-2.  Recebem as mesmas props na maior parte do tempo.
-3.  São razoavelmente complexos para renderizar (ou seja, a memorização é mais barata que a renderização).
-
-Não use `memo` em todos os lugares. A comparação de props tem um custo, e pode ser mais caro que a própria renderização para componentes simples.
-
----
-
-## Exemplo
-
-Imagine um componente `UserProfile` que recebe `name` e `avatar`.
+## Syntax
 
 ```jsx
-import React from 'react';
-
-const UserProfile = ({ name, avatar }) => {
-  console.log(`Renderizando UserProfile para ${name}`);
-  return (
-    <div>
-      <img src={avatar} alt={name} />
-      <p>{name}</p>
-    </div>
-  );
-};
-
-export default React.memo(UserProfile);
+const MyComponent = React.memo(function MyComponent(props) {
+  /* render using props */
+});
 ```
-
-Agora, se um componente pai renderizar novamente, mas as props `name` e `avatar` para `UserProfile` permanecerem as mesmas, `UserProfile` não será renderizado novamente, e a mensagem no console não aparecerá.
 
 ### Controlando a Comparação
 
@@ -56,10 +38,20 @@ const areEqual = (prevProps, nextProps) => {
 export default React.memo(UserProfile, areEqual);
 ```
 
----
+## Use Cases
 
-## Links Relacionados
+Use `memo` para componentes funcionais que:
+
+1.  Renderizam com frequência.
+2.  Recebem as mesmas props na maior parte do tempo.
+3.  São razoavelmente complexos para renderizar (ou seja, a memorização é mais barata que a renderização).
+
+## See Also
 
 - [[useCallback]]
 - [[useMemo]]
-- [[shouldComponentUpdate]] (para componentes de classe)
+- [[shouldComponentUpdate]]
+
+## References
+
+- [React Docs: `memo`](https://react.dev/reference/react/memo)
