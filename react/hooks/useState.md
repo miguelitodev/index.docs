@@ -1,12 +1,21 @@
-# `useState()`
-
-O hook `useState` permite que você adicione uma variável de estado a um componente de função. Ele é o hook mais fundamental e um dos mais usados no React.
-
-Tags: #react #hooks #state
-
+---
+tags:
+  - react
+  - hooks
+  - state
+related:
+  - "[[useReducer]]"
+  - "[[useEffect]]"
+  - "[[Ciclo de Vida do Componente]]"
+creation-date: "2025-08-25"
 ---
 
-## Sintaxe
+# `useState()`
+
+> [!NOTE] Summary
+> O hook `useState` permite que você adicione uma variável de estado a um componente de função. Ele é o hook mais fundamental e um dos mais usados no React.
+
+## Syntax
 
 ```javascript
 const [state, setState] = useState(initialState);
@@ -16,9 +25,7 @@ const [state, setState] = useState(initialState);
 - **`setState`**: Uma função que você usa para atualizar o valor de `state` e acionar uma nova renderização do componente.
 - **`initialState`**: O valor inicial do estado. Pode ser um valor direto ou uma função que retorna o valor inicial (útil para inicializações custosas).
 
----
-
-## Exemplos
+## Use Cases
 
 ### Contador Simples
 
@@ -62,27 +69,9 @@ function NameInput() {
 }
 ```
 
----
-
-## Atualizações Funcionais
+### Atualizações Funcionais
 
 Se o novo estado depende do estado anterior, é mais seguro usar a forma de função do `setState`. O React garante que você receberá o estado mais recente, evitando problemas de concorrência.
-
-**Incorreto (pode falhar em alguns casos):**
-
-```javascript
-function Counter() {
-  const [count, setCount] = useState(0);
-
-  function handleIncrementThreeTimes() {
-    setCount(count + 1); // count é 0
-    setCount(count + 1); // count ainda é 0
-    setCount(count + 1); // count ainda é 0
-    // O resultado final será 1, não 3!
-  }
-  // ...
-}
-```
 
 **Correto (usando atualização funcional):**
 
@@ -100,10 +89,12 @@ function Counter() {
 }
 ```
 
----
+## See Also
 
-## Links Relacionados
-
-- [[useReducer]] (para lógicas de estado mais complexas)
-- [[useEffect]] (para executar efeitos colaterais após o estado mudar)
+- [[useReducer]]
+- [[useEffect]]
 - [[Ciclo de Vida do Componente]]
+
+## References
+
+- [React Docs: `useState`](https://react.dev/reference/react/useState)

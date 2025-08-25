@@ -1,17 +1,22 @@
-# `useRef()`
-
-O hook `useRef` retorna um objeto ref mutável cuja propriedade `.current` é inicializada com o argumento passado (`initialValue`). O objeto retornado persistirá durante todo o ciclo de vida do componente.
-
-`useRef` tem dois casos de uso principais:
-
-1.  **Acessar elementos do DOM.**
-2.  **Manter uma variável mutável que não causa re-renderização quando alterada.**
-
-Tags: #react #hooks #dom #reference
-
+---
+tags:
+  - react
+  - hooks
+  - dom
+  - reference
+related:
+  - "[[useState]]"
+  - "[[useEffect]]"
+  - "[[Manipulação do DOM]]"
+creation-date: "2025-08-25"
 ---
 
-## Sintaxe
+# `useRef()`
+
+> [!NOTE] Summary
+> O hook `useRef` retorna um objeto ref mutável cuja propriedade `.current` é inicializada com o argumento passado (`initialValue`). O objeto retornado persistirá durante todo o ciclo de vida do componente.
+
+## Syntax
 
 ```javascript
 const myRef = useRef(initialValue);
@@ -19,13 +24,14 @@ const myRef = useRef(initialValue);
 
 - `myRef.current`: Acessa o valor atual da referência.
 
----
+## Use Cases
 
-## Caso de Uso 1: Acessando o DOM
+`useRef` tem dois casos de uso principais:
 
-Este é o uso mais comum. Você pode anexar uma ref a um elemento JSX para obter acesso direto a ele.
+1.  **Acessar elementos do DOM.**
+2.  **Manter uma variável mutável que não causa re-renderização quando alterada.**
 
-### Exemplo: Focar em um Input
+### Caso de Uso 1: Acessando o DOM
 
 ```jsx
 import React, { useRef, useEffect } from 'react';
@@ -54,15 +60,7 @@ function TextInputWithFocusButton() {
 }
 ```
 
----
-
-## Caso de Uso 2: Variável de Instância
-
-Às vezes, você precisa de um valor que persista entre renderizações, mas que **não** acione uma nova renderização quando muda. `useState` não serve, pois ele causa re-renderização.
-
-`useRef` é perfeito para isso.
-
-### Exemplo: Armazenando o ID de um Intervalo
+### Caso de Uso 2: Variável de Instância
 
 ```jsx
 import React, { useState, useRef, useEffect } from 'react';
@@ -97,12 +95,12 @@ function Timer() {
 }
 ```
 
-Neste caso, mudar `intervalRef.current` não causa uma nova renderização do componente `Timer`. Ele apenas armazena o valor para que possamos acessá-lo mais tarde na função `handleStop` ou na limpeza do `useEffect`.
-
----
-
-## Links Relacionados
+## See Also
 
 - [[useState]]
 - [[useEffect]]
 - [[Manipulação do DOM]]
+
+## References
+
+- [React Docs: `useRef`](https://react.dev/reference/react/useRef)

@@ -1,14 +1,21 @@
-# `useReducer()`
-
-O hook `useReducer` é uma alternativa ao `useState` para gerenciar lógicas de estado mais complexas em um componente. Ele é especialmente útil quando o próximo estado depende do anterior ou quando a lógica de atualização de estado é complicada.
-
-É inspirado nos *reducers* da biblioteca Redux.
-
-Tags: #react #hooks #state-management
-
+---
+tags:
+  - react
+  - hooks
+  - state-management
+related:
+  - "[[useState]]"
+  - "[[useContext]]"
+  - "[[Redux]]"
+creation-date: "2025-08-25"
 ---
 
-## Sintaxe
+# `useReducer()`
+
+> [!NOTE] Summary
+> O hook `useReducer` é uma alternativa ao `useState` para gerenciar lógicas de estado mais complexas em um componente. Ele é especialmente útil quando o próximo estado depende do anterior ou quando a lógica de atualização de estado é complicada.
+
+## Syntax
 
 ```javascript
 const [state, dispatch] = useReducer(reducer, initialArg, init);
@@ -18,9 +25,13 @@ const [state, dispatch] = useReducer(reducer, initialArg, init);
 - `initialArg`: O estado inicial.
 - `dispatch`: Uma função que você chama para "despachar" uma ação e acionar uma atualização de estado.
 
----
+## Use Cases
 
-## `useState` vs `useReducer`
+- **Estados complexos:** Melhor para estados complexos (objetos com múltiplas propriedades aninhadas).
+- **Lógica centralizada:** Centraliza a lógica de atualização no `reducer`, tornando-a mais previsível e testável.
+- **Otimização de performance:** Otimiza a performance para componentes com muitas atualizações de estado, pois o `dispatch` é estável.
+
+### `useState` vs `useReducer`
 
 - **`useState`:**
   - Mais simples para estados primitivos (string, number, boolean) ou objetos/arrays simples.
@@ -31,15 +42,7 @@ const [state, dispatch] = useReducer(reducer, initialArg, init);
   - Centraliza a lógica de atualização no `reducer`, tornando-a mais previsível e testável.
   - Otimiza a performance para componentes com muitas atualizações de estado, pois o `dispatch` é estável.
 
----
-
-## Exemplo: Gerenciando um Contador
-
-Embora seja um exemplo simples, ele ilustra bem o fluxo.
-
-**1. Defina o Reducer**
-
-O reducer é uma função que lida com todas as transições de estado.
+### Exemplo: Gerenciando um Contador
 
 ```javascript
 function reducer(state, action) {
@@ -56,12 +59,8 @@ function reducer(state, action) {
 }
 ```
 
-**2. Use no Componente**
-
 ```jsx
 import React, { useReducer } from 'react';
-
-// (a função reducer de cima vai aqui)
 
 function Counter() {
   const initialState = { count: 0 };
@@ -70,7 +69,6 @@ function Counter() {
   return (
     <div>
       <p>Contagem: {state.count}</p>
-      {/* Despacha ações para o reducer */}
       <button onClick={() => dispatch({ type: 'increment' })}>+</button>
       <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
       <button onClick={() => dispatch({ type: 'reset' })}>Resetar</button>
@@ -79,12 +77,12 @@ function Counter() {
 }
 ```
 
-Quando um botão é clicado, a função `dispatch` envia um objeto de ação (ex: `{ type: 'increment' }`) para o `reducer`. O `reducer` então calcula o novo estado, e o React renderiza o componente novamente com o `state` atualizado.
-
----
-
-## Links Relacionados
+## See Also
 
 - [[useState]]
-- [[useContext]] (frequentemente combinado com `useReducer` para criar um "mini-Redux")
+- [[useContext]]
 - [[Redux]]
+
+## References
+
+- [React Docs: `useReducer`](https://react.dev/reference/react/useReducer)
