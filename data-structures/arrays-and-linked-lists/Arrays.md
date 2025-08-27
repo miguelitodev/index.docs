@@ -1,6 +1,3 @@
-Perfeito! Vou organizar **todos os métodos de arrays em JavaScript** que conhecemos, separados por **tipo/função**, incluindo métodos clássicos, modernos e alguns menos usados, com exemplos rápidos. 😎
-
----
 
 ## **1. Iteração / transformação**
 
@@ -84,9 +81,3 @@ Perfeito! Vou organizar **todos os métodos de arrays em JavaScript** que conhec
 |Método|O que faz|Exemplo|
 |---|---|---|
 |`with()`|Retorna cópia do array com valor substituído|`[1,2,3].with(1,99)` → `[1,99,3]`|
-
----
-
-Se você quiser, posso fazer **uma versão visual tipo “mapa mental/tabela colorida”** mostrando **todos os métodos e suas relações**, que fica super fácil de memorizar.
-
-Quer que eu faça isso?
