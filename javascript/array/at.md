@@ -30,10 +30,6 @@ const lastElement = numbers.at(-1); // 44
 ```
 - **Cuidado:** É um método mais recente (ES2022), então verifique a compatibilidade com ambientes mais antigos.
 
-## See Also
-
-- 
-
 ## References
 
 - [MDN Web Docs: Array.prototype.at()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/at)
