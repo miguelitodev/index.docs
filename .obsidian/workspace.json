@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "react/libs/sonner.md",
+                "file": "data-structures/arrays-and-linked-lists/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sonner"
+              "title": "Untitled"
             }
           }
         ]
@@ -180,8 +180,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8ee7463e661614bb",
+  "active": "46a03d15d8b2d3d9",
   "lastOpenFiles": [
+    "react/libs/sonner.md",
+    "data-structures/arrays-and-linked-lists/Untitled.md",
+    "data-structures/arrays-and-linked-lists",
     "react/libs/react-icons.md",
     "react/libs/react-hook-form.md",
     "react/_index.md",
@@ -221,12 +224,9 @@
     "assets/data-structures/complexity-and-memory",
     "data-structures/Big O Notation.md",
     "assets/data-structures/big-o-notation",
-    "assets/data-structures",
     "data-sctructure/Big O Notation.md",
     "react/libs/zustand.md",
     "react/libs/react-rewards.md",
-    "react/libs/zod.md",
-    "Readme.md",
-    "react/hooks/useRef.md"
+    "react/libs/zod.md"
   ]
 }
