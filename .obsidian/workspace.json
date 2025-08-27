@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/array/Array.from.md",
+                "file": "javascript/array/Array.of.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Array.from"
+              "title": "Array.of"
             }
           }
         ]
@@ -183,8 +183,8 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
-    "javascript/array/Array.of.md",
     "javascript/array/Array.from.md",
+    "javascript/array/Array.of.md",
     "Readme.md",
     "data-structures/arrays-and-linked-lists/Arrays.md",
     "javascript/array/join.md",
