@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/array/concat.md",
+                "file": "javascript/array/every.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "concat"
+              "title": "every"
             }
           }
         ]
@@ -183,9 +183,9 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "javascript/array/concat.md",
     "javascript/array/at.md",
     "javascript/array/every.md",
-    "javascript/array/concat.md",
     "javascript/array/Array.of.md",
     "javascript/array/Array.from.md",
     "Readme.md",
