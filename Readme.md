@@ -10,15 +10,44 @@ Prepare-se para mergulhar em tópicos que vão desde o básico até o avançado,
 
 ### Data Structures
 
-- **[Big O Notation](data-structures/complexity-and-memory/big-o-notation.md)** – Entendendo a complexidade de algoritmos com Big O.
-- **[Data Types](data-structures/complexity-and-memory/data-types.md)** – Tipos de dados primitivos e de referência em JavaScript.
-- **[Stack e Heap](data-structures/complexity-and-memory/stack-heap.md)** – Gerenciamento de memória em JavaScript.
+- **[Arrays](data-structures/arrays-and-linked-lists/Arrays.md)** - Índice de métodos de Array em JavaScript.
+- **[Recursive Functions](data-structures/recursion/recursive-functions.md)** - Funções que chamam a si mesmas.
+- #### Complexity and Memory
+    - **[Big O Notation](data-structures/complexity-and-memory/big-o-notation.md)** – Entendendo a complexidade de algoritmos com Big O.
+    - **[Data Types](data-structures/complexity-and-memory/data-types.md)** – Tipos de dados primitivos e de referência em JavaScript.
+    - **[Stack e Heap](data-structures/complexity-and-memory/stack-heap.md)** – Gerenciamento de memória em JavaScript.
 
 ### JavaScript
 
 - **[Closures](javascript/closures.md)** – Entendendo como as closures funcionam em JavaScript.
 - #### Array
-    - **[filter](javascript/array/filter.md)** – Cria um novo array com todos os elementos que passam no teste implementado pela função fornecida.
+    - **[at](javascript/array/at.md)** - Acessa um elemento por índice (inclusive negativos).
+    - **[concat](javascript/array/concat.md)** - Junta arrays, retornando um novo.
+    - **[every](javascript/array/every.md)** - Testa se todos os elementos passam no teste.
+    - **[filter](javascript/array/filter.md)** – Cria um novo array com elementos que passam em um teste.
+    - **[find](javascript/array/find.md)** - Retorna o primeiro elemento que passa no teste.
+    - **[findIndex](javascript/array/findIndex.md)** - Retorna o índice do primeiro elemento que passa no teste.
+    - **[flat](javascript/array/flat.md)** - "Achata" um array de arrays.
+    - **[forEach](javascript/array/forEach.md)** - Executa uma função para cada elemento.
+    - **[from](javascript/array/Array.from.md)** - Cria um array a partir de um objeto "array-like".
+    - **[includes](javascript/array/includes.md)** - Verifica se o array contém um valor.
+    - **[indexOf](javascript/array/indexOf.md)** - Retorna o primeiro índice de um valor.
+    - **[join](javascript/array/join.md)** - Junta os elementos de um array em uma string.
+    - **[map](javascript/array/map.md)** - Cria um novo array transformando cada elemento.
+    - **[of](javascript/array/Array.of.md)** - Cria um array a partir de argumentos.
+    - **[pop](javascript/array/pop.md)** - Remove o elemento do final.
+    - **[push](javascript/array/push.md)** - Adiciona elementos no final.
+    - **[reduce](javascript/array/reduce.md)** - Reduz o array a um único valor.
+    - **[reverse](javascript/array/reverse.md)** - Inverte o array (muta o original).
+    - **[shift](javascript/array/shift.md)** - Remove o elemento do início.
+    - **[slice](javascript/array/slice.md)** - Retorna uma cópia superficial de uma porção do array.
+    - **[some](javascript/array/some.md)** - Testa se pelo menos um elemento passa no teste.
+    - **[sort](javascript/array/sort.md)** - Ordena o array (muta o original).
+    - **[splice](javascript/array/splice.md)** - Remove, substitui ou adiciona elementos em qualquer posição.
+    - **[toReversed](javascript/array/toReversed.md)** - Retorna uma cópia invertida do array.
+    - **[toSorted](javascript/array/toSorted.md)** - Retorna uma cópia ordenada do array.
+    - **[unshift](javascript/array/unshift.md)** - Adiciona elementos no início.
+    - **[with](javascript/array/with.md)** - Retorna uma cópia do array com um valor substituído em um índice.
 - #### String
     - **[endsWith](javascript/string/endsWith.md)** – Verifica se uma string termina com os caracteres de uma string especificada.
     - **[split](javascript/string/split.md)** – Divide uma string em um array de strings, com base em um separador.
