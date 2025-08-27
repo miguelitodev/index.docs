@@ -14,7 +14,6 @@ creation-date: "2025-08-25"
 > [!NOTE] Summary
 > Uma função recursiva é uma função que chama a si mesma em sua própria definição, de forma direta ou indireta. Pense nela como uma boneca russa, onde uma boneca contém outra menor dentro de si.
 
-
 ## Syntax
 
 ### Fatorial com Recursão

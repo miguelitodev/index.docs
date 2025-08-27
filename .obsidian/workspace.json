@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "data-structures/recursion/recursive-functions.md",
+                "file": "javascript/array/filter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "recursive-functions"
+              "title": "filter"
             }
           }
         ]
@@ -182,11 +182,11 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "data-structures/recursion/recursive-functions.md",
     "kubernetes/pods.md",
     "kubernetes/overview.md",
     "kubernetes/introducao.md",
     "react/libs/react-hook-form.md",
-    "data-structures/recursion/recursive-functions.md",
     "template/note-template.md",
     "template/Titulo.md",
     "template",
