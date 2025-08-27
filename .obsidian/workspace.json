@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "data-structures/arrays-and-linked-lists/Arrays.md",
+                "file": "javascript/array/Array.of.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Arrays"
+              "title": "Array.of"
             }
           }
         ]
@@ -180,8 +180,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46a03d15d8b2d3d9",
+  "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "javascript/array/Array.from.md",
+    "data-structures/arrays-and-linked-lists/Arrays.md",
+    "javascript/array/Array.of.md",
+    "javascript/array/join.md",
     "javascript/array/toReversed.md",
     "javascript/array/toSorted.md",
     "javascript/array/sort.md",
@@ -204,11 +208,7 @@
     "javascript/array/some.md",
     "javascript/array/reduce.md",
     "javascript/array/map.md",
-    "javascript/array/forEach.md",
-    "react/libs/sonner.md",
-    "data-structures/arrays-and-linked-lists/Arrays.md",
     "data-structures/arrays-and-linked-lists",
-    "react/libs/react-icons.md",
     "template",
     "assets/data-structures/recursion/recursive-functions/recursive-factorial-call-stack.png",
     "assets/data-structures/recursion/recursive-functions",
