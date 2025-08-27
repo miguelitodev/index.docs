@@ -25,10 +25,8 @@ creation-date: "2025-08-26"
 
 #### Syntax
 ```javascript
-array.forEach(function(currentValue, index, arr), thisValue)
+array.forEach(callback(element, index, array), thisArg)
 ```
-- `currentValue`: O valor do elemento atual.
-- `index` (opcional): O índice do elemento atual.
 
 #### Use Cases
 - **Quando usar:** Para executar uma operação em cada item, como imprimir no console, atualizar um elemento de UI para cada item da lista.
@@ -43,12 +41,11 @@ array.forEach(function(currentValue, index, arr), thisValue)
 
 #### Syntax
 ```javascript
-const new_array = array.map(function(currentValue, index, arr), thisValue)
+const new_array = array.map(callback(element, index, array), thisArg)
 ```
 
 #### Use Cases
 - **Quando usar:** Para transformar cada elemento de um array em outra coisa, criando um novo array com os dados transformados.
-- **Exemplo:** Obter uma lista de IDs de um array de objetos.
 - **Cuidado:** Sempre cria um novo array. Se você não precisa do array retornado, `forEach` é mais eficiente.
 
 ---
@@ -60,12 +57,11 @@ const new_array = array.map(function(currentValue, index, arr), thisValue)
 
 #### Syntax
 ```javascript
-const new_array = array.filter(function(element, index, arr), thisValue)
+const new_array = array.filter(callback(element, index, array), thisArg)
 ```
 
 #### Use Cases
 - **Quando usar:** Para selecionar um subconjunto de elementos que atendem a um critério.
-- **Exemplo:** Remover itens inativos de uma lista.
 - **Cuidado:** Se precisar apenas do primeiro item que corresponde, `find()` é mais performático.
 
 ---
@@ -77,15 +73,11 @@ const new_array = array.filter(function(element, index, arr), thisValue)
 
 #### Syntax
 ```javascript
-array.reduce(function(accumulator, currentValue, currentIndex, arr), initialValue)
+const result = array.reduce(callback(accumulator, currentValue, index, array), initialValue)
 ```
-- `accumulator`: O valor acumulado retornado em cada iteração.
-- `currentValue`: O elemento atual.
-- `initialValue` (opcional): Um valor para ser usado como o primeiro argumento da primeira chamada do callback.
 
 #### Use Cases
-- **Quando usar:** Para "resumir" um array em um único valor (soma, média, etc.) ou para agrupar itens.
-- **Exemplo:** Somar o total de um carrinho de compras.
+- **Quando usar:** Para "resumir" um array em um único valor (soma, média) ou para agrupar itens.
 - **Cuidado:** Pode ser complexo de ler. Para transformações simples, `map` ou `filter` são mais claros.
 
 ---
@@ -97,13 +89,12 @@ array.reduce(function(accumulator, currentValue, currentIndex, arr), initialValu
 
 #### Syntax
 ```javascript
-array.some(function(element, index, arr), thisValue)
+const result = array.some(callback(element, index, array), thisArg)
 ```
 
 #### Use Cases
 - **Quando usar:** Para verificar de forma eficiente se um item que satisfaz uma condição existe.
-- **Exemplo:** Checar se há algum produto com desconto em um carrinho.
-- **Cuidado:** Não informa *qual* ou *quantos* itens passaram no teste, apenas se algum passou.
+- **Cuidado:** Não informa *qual* ou *quantos* itens passaram no teste.
 
 ---
 
@@ -114,7 +105,7 @@ array.some(function(element, index, arr), thisValue)
 
 #### Syntax
 ```javascript
-array.every(function(element, index, arr), thisValue)
+const result = array.every(callback(element, index, array), thisArg)
 ```
 
 #### Use Cases
@@ -133,12 +124,11 @@ array.every(function(element, index, arr), thisValue)
 
 #### Syntax
 ```javascript
-array.find(function(element, index, arr), thisValue)
+const found = array.find(callback(element, index, array), thisArg)
 ```
 
 #### Use Cases
-- **Quando usar:** Para encontrar um objeto específico em um array.
-- **Exemplo:** Encontrar um usuário pelo ID.
+- **Quando usar:** Para encontrar um objeto específico em um array, por exemplo, encontrar um usuário pelo seu ID.
 
 ---
 
@@ -149,7 +139,7 @@ array.find(function(element, index, arr), thisValue)
 
 #### Syntax
 ```javascript
-array.findIndex(function(element, index, arr), thisValue)
+const index = array.findIndex(callback(element, index, array), thisArg)
 ```
 
 #### Use Cases
@@ -164,7 +154,7 @@ array.findIndex(function(element, index, arr), thisValue)
 
 #### Syntax
 ```javascript
-array.indexOf(searchElement, fromIndex)
+const index = array.indexOf(searchElement, fromIndex)
 ```
 
 #### Use Cases
@@ -180,11 +170,11 @@ array.indexOf(searchElement, fromIndex)
 
 #### Syntax
 ```javascript
-array.includes(valueToFind, fromIndex)
+const hasElement = array.includes(valueToFind, fromIndex)
 ```
 
 #### Use Cases
-- **Quando usar:** Para uma verificação simples de existência, sem se importar com a posição. É mais legível que `indexOf() !== -1`.
+- **Quando usar:** Para uma verificação simples de existência. É mais legível que `indexOf() !== -1`.
 - **Cuidado:** Também compara por referência para objetos.
 
 ---
@@ -196,7 +186,7 @@ array.includes(valueToFind, fromIndex)
 
 #### Syntax
 ```javascript
-array.at(index)
+const item = array.at(index)
 ```
 
 #### Use Cases
@@ -209,39 +199,86 @@ array.at(index)
 ## **3. Métodos de Adição e Remoção (Mutação)**
 
 > [!WARNING] Cuidado
-> Os métodos a seguir **modificam o array original**. Isso pode causar efeitos colaterais inesperados se não for manuseado com cuidado.
+> Os métodos a seguir **modificam o array original**. Isso pode causar efeitos colaterais inesperados.
 
 ### `push()`
 
-- **O que faz:** Adiciona um ou mais elementos no **final** do array.
-- **Use para:** Adicionar um item a uma lista de tarefas.
-- **Cuidado:** Modifica o array.
+> [!NOTE] Summary
+> Adiciona um ou mais elementos no **final** do array e retorna o novo comprimento.
+
+#### Syntax
+```javascript
+const newLength = array.push(element1, ..., elementN)
+```
+
+#### Use Cases
+- **Quando usar:** Adicionar um item a uma lista de tarefas, registrar um novo evento em um log.
+- **Cuidado:** Modifica o array original.
+
+---
 
 ### `pop()`
 
-- **O que faz:** Remove o último elemento do array.
-- **Use para:** Implementar uma pilha (LIFO) ou desfazer uma ação.
+> [!NOTE] Summary
+> Remove o último elemento de um array e retorna aquele elemento.
+
+#### Syntax
+```javascript
+const removedElement = array.pop()
+```
+
+#### Use Cases
+- **Quando usar:** Implementar uma pilha (LIFO - Last-In, First-Out), desfazer a última ação.
 - **Cuidado:** Modifica o array. Retorna `undefined` se o array estiver vazio.
+
+---
 
 ### `shift()`
 
-- **O que faz:** Remove o primeiro elemento do array.
-- **Use para:** Processar itens em uma fila (FIFO).
-- **Cuidado:** Modifica o array. É uma operação lenta (O(n)) em arrays grandes.
+> [!NOTE] Summary
+> Remove o primeiro elemento de um array e retorna aquele elemento.
+
+#### Syntax
+```javascript
+const removedElement = array.shift()
+```
+
+#### Use Cases
+- **Quando usar:** Processar itens em uma fila (FIFO - First-In, First-Out).
+- **Cuidado:** Modifica o array. É uma operação lenta (O(n)) em arrays grandes pois re-indexa todos os elementos.
+
+---
 
 ### `unshift()`
 
-- **O que faz:** Adiciona um ou mais elementos no **início** do array.
-- **Use para:** Adicionar um item de alta prioridade no topo de uma lista.
-- **Cuidado:** Modifica o array. É uma operação lenta (O(n)).
+> [!NOTE] Summary
+> Adiciona um ou mais elementos no **início** de um array e retorna o novo comprimento.
+
+#### Syntax
+```javascript
+const newLength = array.unshift(element1, ..., elementN)
+```
+
+#### Use Cases
+- **Quando usar:** Adicionar um item de alta prioridade no topo de uma lista.
+- **Cuidado:** Modifica o array. É uma operação lenta (O(n)) pois re-indexa todos os elementos.
+
+---
 
 ### `splice()`
 
-- **O que faz:** Altera o conteúdo de um array removendo, substituindo ou adicionando elementos.
-- **Use para:** Remover ou adicionar itens em qualquer ponto do array.
-- **Cuidado:** Modifica o array. Sua sintaxe (`start`, `deleteCount`, `item1`, ...) pode ser complexa.
+> [!NOTE] Summary
+> Altera o conteúdo de um array removendo, substituindo ou adicionando elementos.
 
----
+#### Syntax
+```javascript
+const removedElements = array.splice(start, deleteCount, item1, ..., itemN)
+```
+
+#### Use Cases
+- **Quando usar:** Remover ou adicionar itens em qualquer ponto do array sabendo sua posição.
+- **Cuidado:** Modifica o array. Sua sintaxe é poderosa, mas pode ser complexa.
+
 ---
 
 ## **4. Métodos de Cópia e Imutabilidade**
@@ -251,25 +288,62 @@ array.at(index)
 
 ### `slice()`
 
-- **O que faz:** Retorna uma **cópia superficial (shallow copy)** de uma porção do array.
-- **Use para:** Criar um sub-array ou uma cópia de um array sem modificar o original.
+> [!NOTE] Summary
+> Retorna uma **cópia superficial (shallow copy)** de uma porção do array em um novo array.
+
+#### Syntax
+```javascript
+const new_array = array.slice(start, end)
+```
+
+#### Use Cases
+- **Quando usar:** Criar um sub-array ou uma cópia de um array sem modificar o original.
 - **Cuidado:** Por ser uma cópia superficial, objetos dentro do array são copiados por referência.
+
+---
 
 ### `concat()`
 
-- **O que faz:** Junta dois ou mais arrays, retornando um novo array.
-- **Use para:** Combinar múltiplos arrays.
-- **Cuidado:** O operador Spread (`...`) é geralmente mais conciso e preferido hoje em dia.
+> [!NOTE] Summary
+> Junta dois ou mais arrays, retornando um novo array que contém todos os arrays passados.
+
+#### Syntax
+```javascript
+const new_array = old_array.concat(array2, array3, ..., arrayN)
+```
+
+#### Use Cases
+- **Quando usar:** Combinar múltiplos arrays. O operador Spread (`...`) é geralmente mais conciso.
+
+---
 
 ### `flat()`
 
-- **O que faz:** Cria um novo array com todos os elementos de sub-arrays concatenados nele.
-- **Use para:** "Achat" um array de arrays, como `[[1], [2, 3]]` para `[1, 2, 3]`.
+> [!NOTE] Summary
+> Cria um novo array com todos os elementos de sub-arrays concatenados nele recursivamente até uma profundidade especificada.
+
+#### Syntax
+```javascript
+const new_array = array.flat(depth)
+```
+
+#### Use Cases
+- **Quando usar:** Para "achatar" um array de arrays, como `[[1], [2, 3]]` para `[1, 2, 3]`.
+
+---
 
 ### `with()`
 
-- **O que faz:** Retorna uma **cópia** do array com o valor em um índice substituído.
-- **Use para:** Atualizar um item em um array de forma imutável (ótimo para React).
+> [!NOTE] Summary
+> Retorna uma **cópia** do array com o valor em um índice especificado substituído pelo novo valor.
+
+#### Syntax
+```javascript
+const new_array = array.with(index, value)
+```
+
+#### Use Cases
+- **Quando usar:** Atualizar um item em um array de forma imutável (ótimo para React).
 - **Cuidado:** Método novo (ES2023), verifique a compatibilidade.
 
 ---
@@ -279,24 +353,64 @@ array.at(index)
 
 ### `sort()`
 
-- **O que faz:** Ordena os elementos do próprio array e retorna o array.
+> [!NOTE] Summary
+> Ordena os elementos do próprio array e retorna o array ordenado.
+
+#### Syntax
+```javascript
+array.sort(compareFunction)
+```
+
+#### Use Cases
+- **Quando usar:** Ordenar uma lista de produtos por preço, ou nomes em ordem alfabética.
 - **Cuidado:** **Muta o array original**. A ordenação padrão é por string Unicode. Sempre forneça uma função de comparação para números: `(a, b) => a - b`.
+
+---
 
 ### `toSorted()`
 
-- **O que faz:** Versão imutável do `sort()`. Retorna uma **cópia** ordenada do array.
-- **Use para:** Ordenar um array sem modificar o original.
+> [!NOTE] Summary
+> Versão imutável do `sort()`. Retorna uma **cópia** ordenada do array sem modificar o original.
+
+#### Syntax
+```javascript
+const sorted_array = array.toSorted(compareFunction)
+```
+
+#### Use Cases
+- **Quando usar:** Para ordenar um array quando a imutabilidade é importante.
 - **Cuidado:** Método novo (ES2023).
+
+---
 
 ### `reverse()`
 
-- **O que faz:** Inverte a ordem dos elementos do array.
+> [!NOTE] Summary
+> Inverte a ordem dos elementos de um array. O primeiro elemento se torna o último, e o último, o primeiro.
+
+#### Syntax
+```javascript
+array.reverse()
+```
+
+#### Use Cases
+- **Quando usar:** Inverter uma lista de comentários para mostrar os mais recentes primeiro.
 - **Cuidado:** **Muta o array original**.
+
+---
 
 ### `toReversed()`
 
-- **O que faz:** Versão imutável do `reverse()`. Retorna uma **cópia** invertida.
-- **Use para:** Inverter um array sem modificar o original.
+> [!NOTE] Summary
+> Versão imutável do `reverse()`. Retorna uma **cópia** invertida do array.
+
+#### Syntax
+```javascript
+const reversed_array = array.toReversed()
+```
+
+#### Use Cases
+- **Quando usar:** Para inverter um array sem modificar o original.
 - **Cuidado:** Método novo (ES2023).
 
 ---
@@ -306,18 +420,46 @@ array.at(index)
 
 ### `join()`
 
-- **O que faz:** Junta todos os elementos de um array em uma string.
-- **Use para:** Criar uma string a partir de um array, especificando um separador. `['a', 'b'].join('-')` -> `"a-b"`.
+> [!NOTE] Summary
+> Junta todos os elementos de um array em uma string e retorna esta string.
+
+#### Syntax
+```javascript
+const str = array.join(separator)
+```
+
+#### Use Cases
+- **Quando usar:** Criar uma string a partir de um array, especificando um separador. `['a', 'b'].join('-')` -> `"a-b"`.
+
+---
 
 ### `Array.from()`
 
-- **O que faz:** Cria um novo array a partir de um objeto "array-like" ou iterável.
-- **Use para:** Converter uma `NodeList` (de `querySelectorAll`) em um array para usar `map`, `filter`, etc.
+> [!NOTE] Summary
+> Cria uma nova instância de `Array` a partir de um objeto "array-like" ou iterável.
+
+#### Syntax
+```javascript
+const new_array = Array.from(arrayLike, mapFn, thisArg)
+```
+
+#### Use Cases
+- **Quando usar:** Converter uma `NodeList` (retornada por `querySelectorAll`) em um array para poder usar `map`, `filter`, etc.
+
+---
 
 ### `Array.of()`
 
-- **O que faz:** Cria um novo array com um número variável de argumentos.
-- **Use para:** Criar um array de forma previsível, evitando o comportamento `new Array(N)` que cria N posições vazias.
+> [!NOTE] Summary
+> Cria uma nova instância de `Array` com um número variável de argumentos, independentemente do número ou tipo dos argumentos.
+
+#### Syntax
+```javascript
+const new_array = Array.of(element0, element1, ..., elementN)
+```
+
+#### Use Cases
+- **Quando usar:** Para criar um array de forma previsível, evitando o comportamento de `new Array(N)` que cria N posições vazias.
 
 ## See Also
 
