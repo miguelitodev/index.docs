@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "data-structures/arrays-and-linked-lists/Untitled.md",
+                "file": "data-structures/arrays-and-linked-lists/Arrays.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Arrays"
             }
           }
         ]
@@ -180,10 +180,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46a03d15d8b2d3d9",
+  "active": "8ee7463e661614bb",
   "lastOpenFiles": [
     "react/libs/sonner.md",
-    "data-structures/arrays-and-linked-lists/Untitled.md",
+    "data-structures/arrays-and-linked-lists/Arrays.md",
     "data-structures/arrays-and-linked-lists",
     "react/libs/react-icons.md",
     "react/libs/react-hook-form.md",
