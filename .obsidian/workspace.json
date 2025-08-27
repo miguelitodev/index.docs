@@ -182,6 +182,11 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "javascript/array/every.md",
+    "javascript/array/some.md",
+    "javascript/array/reduce.md",
+    "javascript/array/map.md",
+    "javascript/array/forEach.md",
     "react/libs/sonner.md",
     "data-structures/arrays-and-linked-lists/Arrays.md",
     "data-structures/arrays-and-linked-lists",
@@ -222,11 +227,6 @@
     "assets/data-structures/complexity-and-memory/data-types",
     "assets/data-structures/complexity-and-memory/big-o-notation",
     "assets/data-structures/complexity-and-memory",
-    "data-structures/Big O Notation.md",
-    "assets/data-structures/big-o-notation",
-    "data-sctructure/Big O Notation.md",
-    "react/libs/zustand.md",
-    "react/libs/react-rewards.md",
-    "react/libs/zod.md"
+    "assets/data-structures/big-o-notation"
   ]
 }

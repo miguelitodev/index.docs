@@ -2,68 +2,42 @@
 tags:
   - javascript
   - array
-  - methods
+  - selection
 related:
   - "[[map]]"
   - "[[reduce]]"
-  - "[[forEach]]"
-creation-date: "2025-08-25"
+  - "[[find]]"
+creation-date: "2025-08-26"
 ---
 
 # `Array.prototype.filter()`
 
 > [!NOTE] Summary
-> O método `filter()` cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+> O método `filter()` cria um **novo** array com todos os elementos que passam no teste implementado pela função de callback fornecida. É uma forma declarativa e imutável de selecionar dados.
 
 ## Syntax
 
 ```javascript
-const newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
+const new_array = array.filter(callback(element, index, array), thisArg)
 ```
-
-- `callback`: Função para testar cada elemento do array. Retorna `true` para manter o elemento, `false` para descartar. Ela recebe três argumentos:
-  - `element`: O elemento atual sendo processado no array.
-  - `index` (Opcional): O índice do elemento atual.
-  - `array` (Opcional): O array no qual `filter` foi chamado.
-- `thisArg` (Opcional): Valor a ser usado como `this` ao executar o `callback`.
+- `callback`: Função para testar cada elemento do array. Retorna `true` para manter o elemento, `false` caso contrário.
 
 ## Use Cases
 
-### Filtrando números ímpares
-
+- **Quando usar:** Para selecionar um subconjunto de elementos de um array que atendem a um critério específico.
+- **Exemplo:** Filtrar apenas os números pares de um array.
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 6];
-
-const oddNumbers = numbers.filter(number => number % 2 !== 0);
-
-console.log(oddNumbers); // [1, 3, 5]
+const evens = numbers.filter(num => num % 2 === 0); // [2, 4, 6]
 ```
-
-### Filtrando objetos por uma propriedade
-
-```javascript
-const products = [
-  { name: 'Maçã', category: 'fruta' },
-  { name: 'Alface', category: 'verdura' },
-  { name: 'Banana', category: 'fruta' },
-  { name: 'Cenoura', category: 'legume' }
-];
-
-const fruits = products.filter(product => product.category === 'fruta');
-
-console.log(fruits);
-// [
-//   { name: 'Maçã', category: 'fruta' },
-//   { name: 'Banana', category: 'fruta' }
-// ]
-```
+- **Cuidado:** Se você precisa apenas encontrar o *primeiro* elemento que corresponde à condição, `find()` é mais performático.
 
 ## See Also
 
 - [[map]]
-- [[reduce]]
-- [[forEach]]
+- [[find]]
+- [[some]]
 
 ## References
 
-- [MDN Web Docs: Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [MDN Web Docs: Array.prototype.filter()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
