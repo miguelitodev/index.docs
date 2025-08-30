@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/array/some.md",
+                "file": "javascript/array/every.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "some"
+              "title": "every"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "javascript/array/some.md",
     "javascript/array/every.md",
     "javascript/array/filter.md",
     "javascript/array/find.md",
@@ -208,7 +209,6 @@
     "javascript/array/push.md",
     "javascript/array/indexOf.md",
     "javascript/array/includes.md",
-    "javascript/array/findIndex.md",
     "data-structures/arrays-and-linked-lists",
     "template",
     "assets/data-structures/recursion/recursive-functions/recursive-factorial-call-stack.png",
