@@ -8,6 +8,7 @@ related:
 creation-date: "2025-08-26"
 ---
 
+
 # `Array.prototype.every()`
 
 > [!NOTE] Summary
