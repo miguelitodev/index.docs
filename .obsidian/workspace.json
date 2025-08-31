@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/array/find.md",
+                "file": "javascript/array/map.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "find"
+              "title": "map"
             }
           }
         ]
@@ -183,11 +183,11 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
-    "javascript/array/map.md",
     "javascript/array/filter.md",
+    "javascript/array/find.md",
+    "javascript/array/map.md",
     "javascript/array/every.md",
     "javascript/array/some.md",
-    "javascript/array/find.md",
     "javascript/array/concat.md",
     "javascript/array/at.md",
     "react/libs/sonner.md",
