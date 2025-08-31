@@ -15,6 +15,7 @@ creation-date: "2025-08-26"
 > [!NOTE] Summary
 > O método `reduce()` executa uma função "redutora" em cada elemento do array, resultando em um único valor de saída. É um dos métodos mais poderosos e versáteis de array.
 
+
 ## Syntax
 
 ```javascript
