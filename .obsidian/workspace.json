@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/array/flat.md",
+                "file": "javascript/array/reduce.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "flat"
+              "title": "reduce"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "javascript/array/flat.md",
     "javascript/array/findIndex.md",
     "javascript/array/filter.md",
     "javascript/array/find.md",
@@ -201,7 +202,6 @@
     "javascript/array/toSorted.md",
     "javascript/array/sort.md",
     "javascript/array/reverse.md",
-    "javascript/array/flat.md",
     "javascript/array/slice.md",
     "javascript/array/with.md",
     "javascript/array/shift.md",
