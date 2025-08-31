@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/array/push.md",
+                "file": "javascript/array/slice.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "push"
+              "title": "slice"
             }
           }
         ]
@@ -183,8 +183,8 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
-    "javascript/array/pop.md",
     "javascript/array/push.md",
+    "javascript/array/pop.md",
     "javascript/array/join.md",
     "javascript/array/reduce.md",
     "javascript/array/flat.md",
