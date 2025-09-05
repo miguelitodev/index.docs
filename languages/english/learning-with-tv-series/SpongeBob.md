@@ -23,6 +23,9 @@ In the episode Squidward say this after spongebob and patrick though the tv and 
 
 And after say it and explain what you got about it, you while for the person to confirm
 
+---
+**Quite a (noun):** its to indicate that we think that thing or person is notable, impressive 
+
 ## Grammar
 
 ### Adjectives
