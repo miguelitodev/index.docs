@@ -10,4 +10,6 @@ Basically he was saying like "Oh a new television"
 
 They said it in episode when spongebob was carrying the brand new television with patrick to their house
 
+In other way, its when we want to somebody use or do something with calm
+
 ---
