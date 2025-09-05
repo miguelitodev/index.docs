@@ -5,4 +5,5 @@
 
 Basically he was saying like "Oh a new television"
 
-______
+---
+**Easy.. easy:** its like, take care to not broke, like when we are carrying something that is "frr"
