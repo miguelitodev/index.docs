@@ -17,7 +17,9 @@ In other way, its when we want to somebody use or do something with calm
 ---
 **Let me get this straight:** we use this when we want to be sure that we understood what was said
 
-After saying it the speaker explain what he get about the 
+After saying it the speaker explain what he get about the other said or did
+
+In the episode Squ
 
 ## Grammar
 
