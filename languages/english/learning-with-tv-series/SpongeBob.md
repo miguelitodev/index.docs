@@ -18,10 +18,14 @@ In other way, its when we want to somebody use or do something with calm
 
 ## Grammar
 
-### Short adjectives
+### Adjectives
+#### Short adjectives
 
 To say if something is more than its we can add `er` in the end, like this..
 
-adjective  +
+adjective + er
 
-> 
+> Cooler - cool
+> Faster - fast
+> Smarter - smart
+
