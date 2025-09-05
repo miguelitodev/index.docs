@@ -15,7 +15,9 @@ They said it in episode when spongebob was carrying the brand new television wit
 In other way, its when we want to somebody use or do something with calm
 
 ---
-**Let me get this straight:** we use this when we want to be sure that  
+**Let me get this straight:** we use this when we want to be sure that we understood what was said
+
+After saying it the speaker explain what he get about the 
 
 ## Grammar
 
