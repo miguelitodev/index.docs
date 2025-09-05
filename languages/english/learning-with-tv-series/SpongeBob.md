@@ -61,9 +61,9 @@ Example:
 > Six-pages document - its a document with 6 pages
 
 
-#### Efatise adjectives
+#### Emphasize adjectives
 
-We can use `Pretty` in the start to enfatize the adjectives like:
+We can use `Pretty` in the start to emphasize the adjectives but not a lot, its a informal way to do it:
 
 Examples:
 > Pretty smart
