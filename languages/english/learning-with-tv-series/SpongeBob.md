@@ -50,11 +50,16 @@ like:
 ### Compound adjectives
 Its made by two words
 
-Example: Giant-screen - has a big screen a giant screen
+Example: 
 
-Two hours - just time
+> Giant-screen - has a big screen a giant screen
+> 
+> Two hours - just time
+> Two-hours movie - a movie that has 2 hours, a 2 hours movie
 
-Two
+
+
+
 ## Words
 
 **Ordered:** we use this when we bought something on the internet like the tv, so we did a order, but we can use too in a restaurant too, to make a order of food
