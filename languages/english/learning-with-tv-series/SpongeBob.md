@@ -29,3 +29,14 @@ adjective + er
 > Faster - fast
 > Smarter - smart
 
+#### Long adjectives
+
+We dont have the er in the end, we need to say 
+
+more + adjective
+
+like:
+> More intelligent 
+> More creative
+> More fascinating
+
