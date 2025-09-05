@@ -47,7 +47,9 @@ like:
 > More creative
 > More fascinating
 
+### Compound adjectives
+
 
 ## Words
 
-**Ordered:** we use this when we bought something on the internet like the tv, so we did a order, but we can use too 
+**Ordered:** we use this when we bought something on the internet like the tv, so we did a order, but we can use too in a restaurant too, to make a order of food
