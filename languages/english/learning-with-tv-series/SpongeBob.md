@@ -50,4 +50,4 @@ like:
 
 ## Words
 
-**Ordered:** we use this when we bought something on the internet like the tv, so we did a order
+**Ordered:** we use this when we bought something on the internet like the tv, so we did a order, but we can use too 
