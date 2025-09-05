@@ -18,3 +18,10 @@ In other way, its when we want to somebody use or do something with calm
 
 ## Grammar
 
+### Short adjectives
+
+To say if something is more than its we can add `er` in the end, like this..
+
+adjective  +
+
+> 
