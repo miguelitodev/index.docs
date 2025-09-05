@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "typescript/non-null-assertion-operator.md",
+                "file": "react/libs/react-rewards.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "non-null-assertion-operator"
+              "title": "react-rewards"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "8ee7463e661614bb",
   "lastOpenFiles": [
+    "typescript/non-null-assertion-operator.md",
     "react/libs/zustand.md",
     "react/libs/react-rewards.md",
     "javascript/array/with.md",
@@ -208,7 +209,6 @@
     "javascript/array/findIndex.md",
     "javascript/array/find.md",
     "javascript/array/map.md",
-    "javascript/array/some.md",
     "data-structures/arrays-and-linked-lists",
     "template",
     "assets/data-structures/recursion/recursive-functions/recursive-factorial-call-stack.png",
