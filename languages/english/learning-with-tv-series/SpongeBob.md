@@ -56,6 +56,9 @@ Example:
 > 
 > Two hours - just time
 > Two-hours movie - a movie that has 2 hours, a 2 hours movie
+> 
+> Six pages - just 6 pages
+> Six-pages document - its a document with 6 pages
 
 
 
