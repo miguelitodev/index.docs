@@ -19,7 +19,7 @@ In other way, its when we want to somebody use or do something with calm
 
 After saying it the speaker explain what he get about the other said or did
 
-In the episode Squ
+In the episode Squidward say this after spongebob and patrick though the tv and enter in the tv box to have fun, so they bought the tv just to use the box  
 
 ## Grammar
 
