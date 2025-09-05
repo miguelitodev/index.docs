@@ -28,6 +28,8 @@ And after say it and explain what you got about it, you while for the person to 
 
 > Its quite a list - in the big bag theory one of characters bring a list to the other to show what he will do, and they answer with that
 
+> thats quite a plan - squidward say it after understood what they make and why about the TV
+
 
 
 ## Grammar
