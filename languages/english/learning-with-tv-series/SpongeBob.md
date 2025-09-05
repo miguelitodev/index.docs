@@ -48,8 +48,13 @@ like:
 > More fascinating
 
 ### Compound adjectives
+Its made by two words
 
+Example: Giant-screen - has a big screen a giant screen
 
+Two hours - just time
+
+Two
 ## Words
 
 **Ordered:** we use this when we bought something on the internet like the tv, so we did a order, but we can use too in a restaurant too, to make a order of food
