@@ -6,4 +6,8 @@
 Basically he was saying like "Oh a new television"
 
 ---
-**Easy.. easy:** its like, take care to not broke, like when we are carrying something that is "frr"
+**Easy.. easy:** its like, take care to not broke, like when we are carrying something that is "fragil"
+
+They said it in episode when spongebob was carrying the brand new television with patrick to their house
+
+---
